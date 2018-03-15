@@ -1,7 +1,10 @@
 # AMinorWebsite1.0
 In this project, we aim to revamp the UConn A Minor's website.  This will be a group project for ACM's Web Dev group.
+
 The purpose of this project is to learn how to use relevant, modern frameworks and libraries to propell yourself into the world of web development.
+
 To make sure that you get the most out of this project, I strongly encourage you to familiarize yourselves with basic JavaScript, as it will be a huge part of this project.  
+
 The stack we will be using is: React.js/CSS/Node.js/npm
 
 Do not worry if you don't know any of these frameworks or libraries.  The point of this project is to learn and to become better at using them, so as long as you try your best, you will be fine!
