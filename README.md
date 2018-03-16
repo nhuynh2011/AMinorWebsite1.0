@@ -16,6 +16,7 @@ Included in this folder is the hello.js file that was used in this tutorial to t
 
 The following is a link to React.js's documentation.  Please follow it all the way through before proceeding.  This will allow you to gain a basic understanding of how to implement and use react.js in a web application.
 https://reactjs.org/docs/try-react.html
+
 Please also do this tutorial to practice employing the information you have just obtained.
 https://reactjs.org/tutorial/tutorial.html
 

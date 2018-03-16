@@ -1,0 +1,68 @@
+#container {
+	
+}
+
+#nav {
+	background: gray;
+}
+
+#nav ul {
+	li-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav li {
+	display: inline;
+	font-size: 45px;
+	text-align: center;
+	padding: 0 5.5% 0 5.5%;
+}
+
+.centered {
+	text-align: center;
+	position: relative;
+}
+
+.primary {
+	background-color: blue;
+	border: solid;
+	border-radius: 30px;
+	padding: 14px;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	clear: both;
+}
+
+.secondary {
+	background-color: red;
+	border: solid;
+	border-radius: 30px;
+	padding: 12px;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	color: white;
+	clear: both;
+}
+
+.heading {
+	border: solid;
+	border-radius: 30px;
+	padding: 12px;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	color: black;
+	clear: both;
+}
