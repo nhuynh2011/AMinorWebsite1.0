@@ -1,68 +1,176 @@
-#container {
-	
-}
-
-#nav {
-	background: gray;
-}
-
-#nav ul {
-	li-style-type: none;
+/* Core Style */
+#body {
 	margin: 0;
-	padding: 0;
-}
-
-#nav a {
-	color: white;
-	text-decoration: none;
-}
-
-#nav li {
-	display: inline;
-	font-size: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #333;
+	color: #fff;
+	font-size: 1.4em;
+	line-height: 1.5;
 	text-align: center;
-	padding: 0 5.5% 0 5.5%;
 }
 
-.centered {
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0px;
+	padding: 1em 0;
+}
+
+.btn {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	margin: .5em 0;
+	border: 1px solid #666;
+}
+
+.btn:hover {
+	background: #eaeaea;
+	color: #333;
+}
+
+/* Header Showcase */
+
+#showcase {
+	min-height: 450px;
+	color: #fff;
 	text-align: center;
-	position: relative;
 }
 
-.primary {
-	background-color: blue;
-	border: solid;
-	border-radius: 30px;
-	padding: 14px;
-	text-decoration: none;
-	position: relative;
-	display: inline-block;
-	font-size: 20px;
-	color: white;
-	clear: both;
+#showcase .bg-image {
+	position: absolute;
+	background: #333 url('http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/16939343-1112850225528296-7042910916617304665-n_orig.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	height: 450px;
+	z-index: -1;
+	opacity: .4;
 }
 
-.secondary {
-	background-color: red;
-	border: solid;
-	border-radius: 30px;
-	padding: 12px;
-	text-decoration: none;
-	position: relative;
-	display: inline-block;
-	font-size: 18px;
-	color: white;
-	clear: both;
+#showcase h1 {
+	padding-top: 100px;
+	padding-bottom: 0px;
 }
 
-.heading {
-	border: solid;
-	border-radius: 30px;
-	padding: 12px;
+#showcase .content-wrap,
+#section-a .content-wrap {
+	padding: 0 1.5em;
+}
+
+/* Section A */
+
+#section-a {
+	background: #eaeaea;
+	color: #333;
+	padding-bottom: 2em;
+}
+
+/* Section B */
+
+#section-b {
+	padding: 2em 1em 1em;
+}
+
+#section-b ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#section-b li {
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+	background: #fff;
+	color: #333;
+	padding: 2em;
+}
+
+/* Section D */
+
+#section-d .box {
+	padding: 2em;
+	color: #fff;
+}
+
+#section-d .box:first-child {
+	background: #0053d8;
+}
+
+/* Footer */
+
+#main-footer {
+	padding: 2em;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#main-footer a {
+	color: #2690d4;
 	text-decoration: none;
-	position: relative;
-	display: inline-block;
-	font-size: 18px;
-	color: black;
-	clear: both;
+}
+
+/* Media Queries */
+
+@media(min-width: 700px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
+	}
+	
+	#section-a .content-text {
+		columns: 1;
+		column-gap: 2em;
+	}
+	
+	#section-a .content-text p {
+		padding-top: 0;
+	}
+	
+	.content-wrap, 
+	#section-b ul {
+		grid-column: 1/5;
+	}
+	
+	#section-b ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	#section-b li {
+		width: 31%;
+	}
+	
+	#section-d, #section-e {
+		grid-column: 1/5;
+		display: flex;
+	}
+	
+	.box, 
+	#main-footer div {
+		grid-column: 2/4;
+	}
 }
