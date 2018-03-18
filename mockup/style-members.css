@@ -1,6 +1,7 @@
 /* Core Style */
 
 #body {
+	padding-top: 55px;
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	background: #333;
@@ -47,11 +48,14 @@ p {
 
 /* Bootstrap Modification */
 
-nav {
-	border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background: transparent;
+.bg-medium-dark {
+	background: #333;
+	opacity: .8;
+}
+
+.bg-medium-dark:hover {
+	background: #333;
+	opacity: 1;
 }
 
 .nav-link {
