@@ -1,10 +1,11 @@
 /* Core Style */
+
 #body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	background: #333;
 	color: #fff;
-	font-size: 1.4em;
+	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -12,7 +13,7 @@
 img {
 	display: block;
 	width: 100%;
-	height: auto;
+	height: cover;
 }
 
 h1, h2, h3 {
@@ -22,7 +23,7 @@ h1, h2, h3 {
 
 p {
 	margin: 0px;
-	padding: 1em 0;
+	padding: 1em 5%;
 }
 
 .btn {
@@ -40,6 +41,30 @@ p {
 	color: #333;
 }
 
+/* Bootstrap Modification */
+
+nav {
+	border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background: transparent;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+.nav-link:hover {
+	color: #b2cfff
+}
+
+.active-tab {
+	border: #fff;
+	border-radius: 5px;
+	background: #222;
+	opacity: 1;
+}
+
 /* Header Showcase */
 
 #showcase {
@@ -55,7 +80,7 @@ p {
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: cover;
-	height: 450px;
+	height: 100%;
 	z-index: -1;
 	opacity: .4;
 }
@@ -79,6 +104,12 @@ p {
 }
 
 /* Section B */
+
+#section-b .card img {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
 
 #section-b {
 	padding: 2em 1em 1em;
@@ -116,7 +147,7 @@ p {
 }
 
 #section-d .box:first-child {
-	background: #0053d8;
+	background: #002f6f;
 }
 
 /* Footer */
@@ -129,7 +160,7 @@ p {
 }
 
 #main-footer a {
-	color: #2690d4;
+	color: #0344ad;
 	text-decoration: none;
 }
 
@@ -139,6 +170,10 @@ p {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
+	}
+	
+	#showcase .bg-image {
+		height: 550px;
 	}
 	
 	#section-a .content-text {
