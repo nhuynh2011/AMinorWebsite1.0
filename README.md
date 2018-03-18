@@ -22,3 +22,16 @@ https://reactjs.org/tutorial/tutorial.html
 
 
 After you have completed the installation for Node.js/npm and the documentation/tutorial for React.js, you are ready to get started! Let's start developing!
+
+
+The following timeline for this project is:
+
+Start Date: 3-17-18 | End Date: 5-19-18 | Project Duration: 10 weeks
+
+Design/Preparation Phase: 2 weeks (3-17-18 to 3-31-18)
+
+Design Revisions: 1 week (4-1-18 to 4-7-18)
+
+Development: 4 weeks (4-8-18 to 5-5-18)
+
+Modifications and Deployment: 2 weeks (5-6-18 to 5-19-18)
