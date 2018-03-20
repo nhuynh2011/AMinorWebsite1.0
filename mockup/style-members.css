@@ -113,16 +113,20 @@ p {
 
 /* Section B */
 
+#section-b .card {
+	border: none;
+}
+
 #section-b .card img {
 	display: block;
 	width: 100%;
-	height: 300px;
+	height: 250px;
 }
 
 #section-b .card-4 img {
 	display: block;
 	width: 100%;
-	height: 350px;
+	height: 300px;
 }
 
 #section-b {
@@ -147,6 +151,8 @@ p {
 
 .card-content {
 	padding: 1.5em;
+	height: 100%;
+	border: none;
 }
 
 /* Section C */
