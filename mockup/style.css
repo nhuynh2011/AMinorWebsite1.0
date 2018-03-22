@@ -58,7 +58,7 @@ p {
 }
 
 .nav-link:hover {
-	color: #b2cfff
+	color: #b2cfff;
 }
 
 .active-tab {
@@ -172,7 +172,7 @@ p {
 }
 
 #section-d .box:first-child {
-	background: #002f6f;
+	background: #001f7f;
 }
 
 /* Footer */
