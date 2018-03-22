@@ -22,6 +22,16 @@ h1, h2, h3, h4 {
 	padding: 1em 0;
 }
 
+h5 {
+	margin: 0px;
+	padding: .5em 5% 0 5%;
+}
+
+h6 {
+	margin: 0px;
+	padding: .25em 5% 1em 5%;
+}
+
 p {
 	margin: 0px;
 	padding: 1em 5%;
@@ -159,9 +169,20 @@ p {
 /* Section C */
 
 #section-c {
+	text-align: center;
 	background: #fff;
 	color: #333;
-	padding: 2em;
+	padding: 2em 6em 2em 6em;
+}
+
+#section-c .left-side p {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	color: #666;
+}
+
+#section-c .right-side {
+	padding-top: 2em;
 }
 
 /* Section D */
@@ -227,6 +248,27 @@ p {
 	
 	#section-b li {
 		width: 95%;
+	}
+	
+	#section-c {
+		text-align: left;
+	}
+	
+	#section-c .left-side {
+		width: 55%;
+		border-left: 1px solid #ccc;
+		float: left;
+	}
+	
+	#section-c .right-side {
+		padding-top: 0;
+		width: 40%;
+		float: right;
+	}
+	
+	#section-c .right-side img {
+		margin-left: auto; 
+		margin-right: auto;
 	}
 	
 	#section-d, #section-e {
