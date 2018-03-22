@@ -1,0 +1,4 @@
+If all pictures are the same resolution, you can simply get rid of 
+height stylings and the pictures will scale much better
+
+Add in music playing APIs for repertoire page
