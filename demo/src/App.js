@@ -29,7 +29,7 @@ const App = () =>
 		  <Route path='/services' component={Services} />
 		  <Route path='/repertoire' component={Repertoire} />
 		  <Route path='/contact' component={Contact} />
-          <Route component={NotFound} />
+          <Route path='*' component={NotFound} />
         </Switch>
       </Layout>
     </Router>
