@@ -66,6 +66,8 @@
 				<input type="text" id="name" name="name" placeholder="Your Name"><br>
 				<label for="org">Organization</label><br>
 				<input type="text" id="org" name="org" placeholder="Your Organization Name"><br>
+				<label for="email">Email</label><br>
+				<input type="text" id="email" name="email" placeholder="Your Email"><br>
 				
 				<label for="reason">Reason for Contact</label><br>
 				<select onchange="toggleOther()" id="reason" name="reason">
@@ -100,6 +102,22 @@
 				<input type="submit" value="Submit" id="submit" class="btn"><br><br>
 			
 			</form>
+			<!--
+			< ? php
+			if(isset($_POST['submit])) {
+				$name=$_POST['name'];
+				$email=$_POST['email'];
+				$org=$_POST['org'];
+				$subject=$_POST['reason'];
+				$message=$_POST['desc'];
+				$adminwebsite="nick.huynh@uconn.edu";
+				//echo $name.' '.$email.' '.$subject.' '.$message;
+				//set headers reply to
+					$headers="Reply-to:$email";
+					mail($adminwebsite, $subject, $message, $headers);
+			}
+			?>
+			-->
 		</div>
 		
 		</section>

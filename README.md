@@ -24,16 +24,41 @@ https://reactjs.org/tutorial/tutorial.html
 After you have completed the installation for Node.js/npm and the documentation/tutorial for React.js, you are ready to get started! Let's start developing!
 
 
-The following timeline for this project is:
+Edit: The timeline for the project has altered because I didn't take into account the learning curve that this project would have
 
-Start Date: 3-17-18 | End Date: 5-19-18 | Project Duration: 10 weeks
+Start Date: 3-17-18 | End Date: 8-10-18 | Project Duration: 20 weeks
 
 Design/Preparation Phase: 2 weeks (3-17-18 to 3-31-18)
 
-Design Revisions: 1 week (4-1-18 to 4-7-18)
+Development: 16 weeks (3-31-18 to 7-27-18)
 
-Development: 4 weeks (4-8-18 to 5-5-18)
+Modifications and Deployment: 2 weeks (7-27-18 to 8-10-18)
 
-Modifications and Deployment: 2 weeks (5-6-18 to 5-19-18)
 
-Edit: Chris can edit this repo
+Tasks to do after finishing the website:
+1.) Use PHP to create form emailing
+2.) Create a Members Database containing Members information (Using MySQL?)
+3.) Create an admin panel with verified user login/password combinations that will allow moderators (such as President, VP, or Secretary) to make changes to Members DB (such as adding in new members, removing old members and transferring them to past members page, new albums, etc)
+
+Note: Use Route /admin for this
+
+Ongoing bugs list -->
+
+
+Overall:
+
+1.) Bootstrap isn't imported correctly
+
+Home Page:
+
+1.) Changing source of image is broken?
+
+2.) Removed the <p> element.  We still need to make it a slideshow
+
+Services Page:
+
+1.) Add functionality for clicking on pdf
+
+Section B:
+
+1.) In general don't know how I want to format this yet.  All pages with cards will be delayed for last developed
