@@ -120,13 +120,11 @@ p {
 #section-b .card img {
 	display: block;
 	width: 100%;
-	height: 250px;
 }
 
 #section-b .card-4 img {
 	display: block;
 	width: 100%;
-	height: 300px;
 }
 
 #section-b {
@@ -216,15 +214,26 @@ p {
 
 	#section-b ul {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
 	}
 
-	#section-b li {
-		width: 19%;
+	#section-b .membercard:hover {
+		cursor: pointer;
+		transition: 0.2s;
+		opacity: .8;
+	}
+
+	#section-b .card-3 {
+		width: 30%;
 	}
 
 	#section-b .card-4 {
-		width: 22%
+		width: 22%;
+	}
+
+	#section-b .card-5 {
+		width: 18.5%;
 	}
 
 	#section-b .content-header {

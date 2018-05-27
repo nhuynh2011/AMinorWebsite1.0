@@ -11,8 +11,8 @@ class NavBar extends Component {
             <img src="https://shift8-stardothostingin.netdna-ssl.com/wp-content/uploads/2016/01/menu-512.png"alt="hamburger menu"/>
           </span>
         </button>
-        <div>
-          <ul id="nav">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav" id="nav">
             <li className="NavItem"><NavLink to="/" className="nav-link" activeClassName="active-tab" exact>Home</NavLink></li>
             <li className="NavItem"><NavLink to="/news" className="nav-link"activeClassName="active-tab">News</NavLink></li>
             <li className="NavItem"><NavLink to="/history" className="nav-link" activeClassName="active-tab">History</NavLink></li>

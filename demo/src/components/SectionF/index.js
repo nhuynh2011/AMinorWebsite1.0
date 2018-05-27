@@ -18,9 +18,8 @@ class SectionF extends Component {
       return
     }
     return this.state.paragraphs.map(paragraph => {
-      console.log(paragraph)
       return (
-        <p>{paragraph}</p>
+        <p key={paragraph.length}>{paragraph}</p>
       )
     })
   }
