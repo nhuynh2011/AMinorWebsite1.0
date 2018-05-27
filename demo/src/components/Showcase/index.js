@@ -18,7 +18,7 @@ class Showcase extends Component {
   render() {
     return (
       <header id="showcase" className="grid">
-        <img className="bg-image" src={ this.state.image }>
+        <img className="bg-image" src={ this.state.image } alt="">
         </img>
         <div className="content-wrap">
           <h1>{this.state.heading}</h1>
