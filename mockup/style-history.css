@@ -117,13 +117,13 @@ p {
 }
 
 #section-a #flyer {
-	width: 40%; 
-	display: block; 
+	width: 40%;
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	transition: 0.2s; 
+	transition: 0.2s;
 	cursor: pointer;
-	box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3); 
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
 }
 
 #section-a #flyer:hover {
@@ -168,21 +168,23 @@ p {
 
 /* Section C */
 
-#section-c {
+#section-f {
 	text-align: center;
 	background: #fff;
 	color: #333;
 	padding: 2em 6em 2em 6em;
 }
 
-#section-c .left-side p {
+#section-f .left-side p {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	color: #666;
 }
 
-#section-c .right-side {
+#section-f .right-side {
 	padding-top: 2em;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* Section D */
@@ -217,66 +219,68 @@ p {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
 	}
-	
+
 	#showcase .bg-image {
 		height: 550px;
 	}
-	
+
 	#section-a .content-text {
 		columns: 1;
 		column-gap: 2em;
 	}
-	
+
 	#section-a .content-text p {
 		padding-top: 0;
 	}
-	
+
 	#section-b .content-header {
 		padding-top: 0em;
 		grid-column: 2/4;
 	}
-	
-	.content-wrap, 
+
+	.content-wrap,
 	#section-b ul {
 		grid-column: 1/5;
 	}
-	
+
 	#section-b ul {
 		display: flex;
 		justify-content: space-around;
 	}
-	
+
 	#section-b li {
 		width: 95%;
 	}
-	
-	#section-c {
+
+	#section-f {
 		text-align: left;
 	}
-	
-	#section-c .left-side {
-		width: 55%;
+
+	#section-f .left-side {
+		width: 60%;
 		border-left: 1px solid #ccc;
 		float: left;
 	}
-	
-	#section-c .right-side {
+
+	#section-f .right-side {
 		padding-top: 0;
-		width: 40%;
+		width: 35%;
 		float: right;
 	}
-	
-	#section-c .right-side img {
-		margin-left: auto; 
+
+	#section-f .right-side img {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 	#section-d, #section-e {
 		grid-column: 1/5;
 		display: flex;
 	}
-	
-	.box, 
+
+	.box,
 	#main-footer div {
 		grid-column: 2/4;
 	}

@@ -12,7 +12,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Showcase
-					image="shark.png"
+					image="./images/huddlephoto.jpg"
 					heading="What's New with A Minor?"
 					tag="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus non magna sed laoreet. Morbi non metus sit amet ante pharetra rhoncus. Mauris volutpat leo odio, vitae mollis justo luctus nec. In et dignissim sem, ut viverra dui. Phasellus eget aliquam quam. Donec commodo vitae metus vitae congue. Sed pellentesque tortor quis suscipit sagittis. Suspendisse scelerisque, lacus varius tempor congue, arcu elit rutrum massa, sed mollis velit risus sollicitudin ex. Donec sollicitudin luctus ex, id dignissim eros gravida eget. Donec eu vehicula leo, vel vestibulum dolor. Mauris tempus condimentum est vitae varius. Vivamus elit tellus, molestie sit amet tristique eget, fringilla at tortor. Cras est lorem, fringilla vitae egestas eget, scelerisque et ex."
 					button="Read More"
@@ -29,7 +29,7 @@ class Home extends Component {
 						tag="Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem."
 						email="uconnaminor@gmail.com" />
 					<SectionE
-						heading="Follow us on Social Media!"
+						heading="Follow us on Social Media"
 						tag="Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem."/>
 				</main>
 			</div>
