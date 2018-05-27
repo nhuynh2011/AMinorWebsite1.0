@@ -12,9 +12,9 @@ class SectionC extends Component {
 
   render() {
     return (
-      <section id="section-c" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">{this.state.heading}</h2>
+      <section id="section-c" className="grid">
+        <div className="content-wrap">
+          <h2 className="content-title">{this.state.heading}</h2>
           <p>{this.state.tag}</p>
         </div>
       </section>

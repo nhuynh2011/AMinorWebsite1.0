@@ -13,9 +13,9 @@ class SectionD extends Component {
 
   render() {
     return (
-      <section id="section-d" class="grid">
-        <div class="box">
-          <h2 class="content-title">{this.state.heading}</h2>
+      <section id="section-d" className="grid">
+        <div className="box">
+          <h2 className="content-title">{this.state.heading}</h2>
           <p>{this.state.tag}</p>
           <p>{this.state.email}</p>
         </div>
