@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
-import NavElem from '../NavElem'
+import { NavLink } from 'react-router-dom'
 
 class NavBar extends Component {
   render() {
     return (
-      <ul id="nav">
-        <NavElem name="Home" link="/" />
-        <NavElem name="News" link="/news" />
-        <NavElem name="History" link="/history" />
-        <NavElem name="Members" link="/members" />
-        <NavElem name="Services" link="/services" />
-        <NavElem name="Repertoire" link="/repertoire" />
-        <NavElem name="Contact Us" link="/contact" />
-      </ul>
+      <nav>
+        <ul id="nav">
+          <li><NavLink to="/" activeClassName="active-tab" exact>Home</NavLink></li>
+          <li><NavLink to="/news" activeClassName="active-tab">News</NavLink></li>
+          <li><NavLink to="/history" activeClassName="active-tab">History</NavLink></li>
+          <li><NavLink to="/members" activeClassName="active-tab">Members</NavLink></li>
+          <li><NavLink to="/services" activeClassName="active-tab">Services</NavLink></li>
+          <li><NavLink to="/repertoire" activeClassName="active-tab">Repertoire</NavLink></li>
+          <li><NavLink to="/contact" activeClassName="active-tab">Contact Us</NavLink></li>
+        </ul>
+      </nav>
     )
   }
 }
