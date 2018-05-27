@@ -23,7 +23,7 @@ class SectionA extends Component {
   render() {
     if (this.state.attachment)
       return (
-        <section id="section-a" classNameName="grid">
+        <section id="section-a" className="grid">
           <div className="content-wrap">
             <h2 className="content-title">{this.state.heading}</h2>
             <div className="content-text">
@@ -35,7 +35,7 @@ class SectionA extends Component {
       )
     else if (this.state.button)
       return (
-          <section id="section-a" classNameName="grid">
+          <section id="section-a" className="grid">
             <div className="content-wrap">
               <h2 className="content-title">{this.state.heading}</h2>
               <div className="content-text">
