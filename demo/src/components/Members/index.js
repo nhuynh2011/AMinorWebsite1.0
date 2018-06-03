@@ -18,37 +18,44 @@ class Members extends Component {
 							name="Jayson Gilbert"
 							position="President"
 							bio="/members/JaysonGilbert"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Nick Huynh"
 							position="Vice President"
 							bio="/members/NickHuynh"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Andrea Benvenuto"
 							position="Secretary"
 							bio="/members/AndreaBenvenuto"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Laura Calandra"
 							position="Treasurer"
 							bio="/members/LauraCalandra"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Laura Calandra"
 							position="Treasurer"
 							bio="/members/LauraCalandra"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Laura Calandra"
 							position="Treasurer"
 							bio="/members/LauraCalandra"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 						<Card
 							name="Laura Calandra"
 							position="Treasurer"
 							bio="/members/LauraCalandra"
-							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg" />
+							img="http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1583-nick_1.jpg"
+							clickable="y" />
 					</ul>
 				</section>
 			</div>

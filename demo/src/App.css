@@ -357,7 +357,7 @@ p {
 		flex-wrap: wrap;
 	}
 
-	#section-b .membercard:hover {
+	#section-b .clickable:hover {
 		cursor: pointer;
 		transition: 0.2s;
 		opacity: .8;
