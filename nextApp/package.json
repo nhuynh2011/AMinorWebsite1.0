@@ -3,11 +3,13 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "static": "next build and next export",
     "start": "next start"
   },
   "dependencies": {
     "next": "^6.0.3",
     "next-page-transitions": "^1.0.0-alpha.4",
+    "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   }

@@ -1,0 +1,1 @@
+export default () => <p>News</p>
