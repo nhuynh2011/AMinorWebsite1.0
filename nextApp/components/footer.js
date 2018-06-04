@@ -7,10 +7,14 @@ export default () =>
         {`
           footer{
             background: black;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            bottom: 0;
             color: white;
-            max-width: 50vw;
+            width: 70vw;
             padding: 40px 0;
-            margin: 0 auto;
+            position: absolute;
+            right:15vw;
             text-align: center;
           }
 

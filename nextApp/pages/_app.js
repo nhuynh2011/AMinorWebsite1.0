@@ -7,11 +7,9 @@ import Footer from '../components/footer'
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
-
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
-
     return { pageProps }
   }
 
@@ -20,7 +18,6 @@ export default class MyApp extends App {
 
     return (
       <Container>
-        <h1>Test Title</h1>
         <Header />
         <PageTransition timeout={300} classNames="page-transition">
           <Component {...pageProps} />

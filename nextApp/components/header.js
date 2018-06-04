@@ -1,20 +1,51 @@
 import Link from 'next/link'
+import { Component } from 'react'
 
-export default () =>
-  <ul>
-    <li>
-      <Link href="/news"><a>Click to go to the News Page</a></Link>
-    </li>
-    <li>
-      <Link href="/history"><a>Click to go to the History Page</a></Link>
-    </li>
-    <li>
-      <Link href="/members"><a>Click to go to the Members Page</a></Link>
-    </li>
-    <li>
-      <Link href="/services"><a>Click to go to the Services Page</a></Link>
-    </li>
-    <li>
-      <Link href="/repertoire"><a>Click to go to the Repertoire Page</a></Link>
-    </li>
-  </ul>
+
+export default class extends Component {
+  constructor(props) {
+    super(props)
+    this.links = [
+      {title: 'Home', href: '/'},
+      {title: 'News', href: '/news'},
+      {title: 'History', href: '/history'},
+      {title: 'Members', href: '/members'},
+      {title: 'Services', href: '/services'},
+      {title: 'Repertoire', href: '/repertoire'}
+    ]
+  }
+
+  render() {
+    return (
+      <header>
+        <nav>
+          <ul>
+            {this.links.map(link =>
+              <li key={link.href}><Link href={link.href}><a>{link.title}</a></Link></li>
+            )}
+          </ul>
+        </nav>
+
+        <style jsx>
+          {`
+            ul {
+              align-items: center;
+              display: flex;
+              list-style-type: none;
+              justify-content: center;
+            }
+
+            li {
+              margin: 10px;
+            }
+
+            a {
+              text-decoration: none;
+            }
+          `}
+        </style>
+      </header>
+    )
+  }
+
+}
