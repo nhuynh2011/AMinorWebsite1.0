@@ -1,12 +1,15 @@
-import Link from 'next/link'
 import { Component } from 'react'
+import NavLink from './navLink'
 
 
 export default class extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      activeLink: 'Home'
+    }
     this.links = [
-      {title: 'Home', href: '/'},
+      {title: 'Home', href: '/', isActive: true},
       {title: 'News', href: '/news'},
       {title: 'History', href: '/history'},
       {title: 'Members', href: '/members'},
@@ -20,8 +23,12 @@ export default class extends Component {
       <header>
         <nav>
           <ul>
-            {this.links.map(link =>
-              <li key={link.href}><Link href={link.href}><a>{link.title}</a></Link></li>
+            {this.links.map(link => <NavLink
+              isActive={link.isActive}
+              href={link.href}
+              key={link.title}
+              title={link.title}
+              />
             )}
           </ul>
         </nav>
@@ -33,14 +40,6 @@ export default class extends Component {
               display: flex;
               list-style-type: none;
               justify-content: center;
-            }
-
-            li {
-              margin: 10px;
-            }
-
-            a {
-              text-decoration: none;
             }
           `}
         </style>
