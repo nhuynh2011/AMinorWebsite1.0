@@ -42,7 +42,7 @@ We are using [next-page-transitions](https://github.com/illinois/next-page-trans
 2. Building:
     1. Build, export, and locally serve, the static site to [localhost:3000](http://localhost:3000/)
         ~~~ bash
-        $ npm run export-serve
+        $ npm run serve
         ~~~
     2. Only build and export the static site
         ~~~ bash
