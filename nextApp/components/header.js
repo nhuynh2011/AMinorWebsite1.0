@@ -1,7 +1,6 @@
 import { Component } from 'react'
 import NavLink from './navLink'
 
-
 export default class extends Component {
   constructor(props) {
     super(props)
@@ -9,7 +8,7 @@ export default class extends Component {
       activeLink: 'Home'
     }
     this.links = [
-      {title: 'Home', href: '/', isActive: true},
+      {title: 'Home', href: '/'},
       {title: 'News', href: '/news'},
       {title: 'History', href: '/history'},
       {title: 'Members', href: '/members'},
@@ -18,17 +17,21 @@ export default class extends Component {
     ]
   }
 
+  setActiveLink = (newActiveLink) => {
+    this.setState({ activeLink: newActiveLink })
+  }
+
   render() {
     return (
       <header>
         <nav>
           <ul>
             {this.links.map(link => <NavLink
-              isActive={link.isActive}
+              updateActiveLink={this.setActiveLink}
               href={link.href}
+              isActive={link.title === this.state.activeLink}
               key={link.title}
-              title={link.title}
-              />
+              title={link.title}/>
             )}
           </ul>
         </nav>
