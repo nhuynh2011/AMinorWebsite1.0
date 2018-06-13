@@ -6,7 +6,7 @@ Here is some documentation to get familiar with if you plan on adding to this re
 
 ####Developer Stack
 
-This is a [React.js](https://reactjs.org/) application that uses [Next.js](https://nextjs.org/)t to build our react application into a static site.
+This is a [React.js](https://reactjs.org/) application that uses [Next.js](https://nextjs.org/) to build our react application into a static site.
 
 Next.js uses [styled-jsx](https://www.npmjs.com/package/styled-jsx) package for component scoped css.
 
@@ -16,7 +16,7 @@ We are using [next-page-transitions](https://github.com/illinois/next-page-trans
 
 1. Install Node.js and NPM ([here](https://nodejs.org/en/download/))
 
-2. Install react:
+2. Install react.js:
     ~~~ bash
     $ npm install -g react-create-app
     ~~~
