@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import NavLink from './navLink'
+import NavSlider from './navSlider'
 import Router from 'next/router'
 
 export default class extends Component {
@@ -10,16 +11,16 @@ export default class extends Component {
     }
     this.links = [
       {title: 'Home', href: '/'},
-      {title: 'News', href: '/news'},
       {title: 'History', href: '/history'},
       {title: 'Members', href: '/members'},
-      {title: 'Services', href: '/services'},
-      {title: 'Repertoire', href: '/repertoire'}
+      {title: 'News', href: '/news'},
+      {title: 'Repertoire', href: '/repertoire'},
+      {title: 'Services', href: '/services'}
     ]
   }
 
   componentDidMount() {
-    this.setState({ activeLink: Router.pathname })
+    this.setState({ activeLink: document.getElementById(Router.asPath) })
   }
 
   setActiveLink = (newActiveLink) => {
@@ -31,21 +32,27 @@ export default class extends Component {
       <header>
         <nav>
           <ul>
-            {this.links.map(link => <NavLink
-              updateActiveLink={this.setActiveLink}
-              href={link.href}
-              isActive={link.href === this.state.activeLink}
-              key={link.title}
-              title={link.title}/>
+            {this.links.map(link =>
+              <NavLink
+                href={link.href}
+                key={link.title}
+                prefetch
+                title={link.title}
+                updateActiveLink={this.setActiveLink}>
+              </NavLink>
             )}
           </ul>
+          <NavSlider
+            xOffset={this.state.activeLink ? this.state.activeLink.offsetLeft - 10 : 0}
+            width={this.state.activeLink ? this.state.activeLink.offsetWidth + 20 : 0}
+          />
         </nav>
 
         <style jsx>
           {`
             header {
               background: black;
-              margin: 0;
+              padding: 15px;
             }
 
             ul {
@@ -54,12 +61,10 @@ export default class extends Component {
               list-style-type: none;
               justify-content: center;
               margin: 0;
-              -webkit-padding-start: ;
             }
           `}
         </style>
       </header>
     )
   }
-
 }

@@ -12,6 +12,7 @@
     "next-page-transitions": "^1.0.0-alpha.4",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "serve": "^8.2.0"
   }
 }

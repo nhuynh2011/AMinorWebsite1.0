@@ -12,47 +12,54 @@ Next.js uses [styled-jsx](https://www.npmjs.com/package/styled-jsx) package for 
 
 We are using [next-page-transitions](https://github.com/illinois/next-page-transitions) to animate page transitions. 
 
-####Installation
+#### Installation
 
-1. Install Node.js and NPM ([here](https://nodejs.org/en/download/))
+1. Install [Node.js and NPM](https://nodejs.org/en/download/)
 
-2. Install react:
-    ~~~ bash
-    $ npm install -g react-create-app
-    ~~~
 
-3. Enter the following shell commands to setup and run the app locally:
+2. Enter the following shell commands to setup and run the app locally:
     ~~~ bash 
     $ git clone https://github.com/nhuynh2011/AMinorWebsite1.0
     
-    $ cd AMinorWebsite1.0/nextApp
+    $ cd ./nextApp
     
     $ npm install
     
     $ npm run dev
     ~~~
     
-#### Building the static site
+#### Building the static site (This is what the static site will actually be deployed as)
 
-1. Install server package:
+1. Build, export, and locally serve, the static site to [localhost:3000](http://localhost:3000/)
     ~~~ bash
-    $ npm install -g server
+    $ npm run serve
     ~~~
-
-2. Building:
-    1. Build, export, and locally serve, the static site to [localhost:3000](http://localhost:3000/)
-        ~~~ bash
-        $ npm run serve
-        ~~~
-    2. Only build and export the static site
-        ~~~ bash
-        $ npm run export
-        ~~~
-        
-####Directory Structure
-
-
+2. Only build and export the static site into the ```nextApp/out``` directory
+    ~~~ bash
+    $ npm run export
+    ~~~
     
+#### Directory Structure
+
+1. ```.next``` is a *local* directory contains the site generate after running:
+    ~~~ bash
+    $ npm run build
+    ~~~
+2. ```node_modules``` is a *local* directory containing all of the node modules downloaded after running:
+    ~~~bash
+    $ npm install 
+    ~~~
+3. ```components``` is a directory containing all of the React components used through out the website
+
+4. ```out``` is the *local* directory containing all static website that will be deployed after running:
+    ~~~ bash 
+    $ npm run export
+    or 
+    $ npm run serve
+    ~~~
+5. ```pages``` is the directory containing all of the pages of the website. 
+6. ```static``` is the directory that contains any static assets such as images, fonts, ect...
+7. ```next.config.js``` is the file that contains the configuration for Next.js. Include any routing for pages here.
         
 
 
