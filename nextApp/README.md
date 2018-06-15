@@ -41,24 +41,24 @@ We are using [next-page-transitions](https://github.com/illinois/next-page-trans
     
 #### Directory Structure
 
-1. ```.next``` is a *local* directory containing the site generated after running:
+1. ```/.next``` is a *local* directory containing the site generated after running:
     ~~~ bash
     $ npm run build
     ~~~
-2. ```node_modules``` is a *local* directory containing all of the node modules installed after running:
+2. ```/node_modules``` is a *local* directory containing all of the node modules installed after running:
     ~~~bash
     $ npm install 
     ~~~
-3. ```components``` is a directory containing all of the React [hopefully reuseable ;)] components used through out the website
+3. ```/components``` is a directory containing all of the React [hopefully reuseable ;)] components used through out the website
 
-4. ```out``` is the *local* directory containing the static website that will be deployed after running:
+4. ```/out``` is the *local* directory containing the static website that will be deployed after running:
     ~~~ bash 
     $ npm run export
     or 
     $ npm run serve
     ~~~
-5. ```pages``` is the directory containing all of the pages of the website. 
-6. ```static``` is the directory containing any static assets such as images, fonts, ect...
+5. ```/pages``` is the directory containing all of the pages of the website. 
+6. ```/static``` is the directory containing any static assets such as images, fonts, ect...
 7. ```next.config.js``` is the file containing the configuration for Next.js. Including any routing for static pages here.
         
 
