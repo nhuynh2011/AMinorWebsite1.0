@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import NavLink from './navLink'
+import Link from 'next/link'
 import NavSlider from './navSlider'
 import Router from 'next/router'
 
@@ -7,7 +7,8 @@ export default class extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeLink: undefined
+      navSliderOffsetLeft: 0,
+      navSliderWidth: 0
     }
     this.links = [
       {title: 'Home', href: '/'},
@@ -20,11 +21,16 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    this.setState({ activeLink: document.getElementById(Router.asPath) })
+    this.setActiveLink(document.getElementById(Router.asPath).firstChild)
   }
 
-  setActiveLink = (newActiveLink) => {
-    this.setState({ activeLink: newActiveLink })
+  setActiveLink = (activeLink) => {
+    if (activeLink.tagName === "A") {
+      this.setState({
+        navSliderOffsetLeft: activeLink.offsetLeft,
+        navSliderWidth: activeLink.offsetWidth
+      })
+    }
   }
 
   render() {
@@ -33,19 +39,16 @@ export default class extends Component {
         <nav>
           <ul>
             {this.links.map(link =>
-              <NavLink
-                href={link.href}
-                key={link.title}
-                prefetch
-                title={link.title}
-                updateActiveLink={this.setActiveLink}>
-              </NavLink>
+              <li id={link.href} key={link.title} onClick={(e) => this.setActiveLink(e.target)}>
+                <Link href={link.href} prefetch><a>{link.title}</a></Link>
+              </li>
             )}
           </ul>
+
           <NavSlider
-            xOffset={this.state.activeLink ? this.state.activeLink.offsetLeft - 10 : 0}
-            width={this.state.activeLink ? this.state.activeLink.offsetWidth + 20 : 0}
-          />
+            xOffset={this.state.navSliderOffsetLeft}
+            width={this.state.navSliderWidth}>
+          </NavSlider>
         </nav>
 
         <style jsx>
@@ -61,6 +64,18 @@ export default class extends Component {
               list-style-type: none;
               justify-content: center;
               margin: 0;
+            }
+
+            li {
+              margin: 0 5px;
+              z-index: 3;
+            }
+
+            a {
+              color: white;
+              font-size: 25px;
+              padding: 0 10px;
+              text-decoration: none;
             }
           `}
         </style>

@@ -1,1 +1,1 @@
-export default () => <p>Repertoire</p>
+export default () => <h1>Repertoire</h1>

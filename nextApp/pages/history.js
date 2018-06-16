@@ -1,1 +1,1 @@
-export default () => <p>History</p>
+export default () => <h1>History</h1>

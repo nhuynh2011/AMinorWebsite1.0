@@ -1,6 +1,7 @@
 import App, { Container } from 'next/app'
 import React from 'react'
 import { PageTransition } from 'next-page-transitions'
+import Head from '../components/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Router from 'next/router'
@@ -55,6 +56,7 @@ export default class MyApp extends App {
     const { Component, pageProps, router } = this.props
     return (
       <Container>
+        <Head title="Home" />
         <Header></Header>
         <PageTransition timeout={TIMEOUT} classNames="page-transition">
           <Component key={router.route} {...pageProps}></Component>

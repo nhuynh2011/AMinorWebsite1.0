@@ -1,1 +1,1 @@
-export default () => <p>Members</p>
+export default () => <h1>Members</h1>
