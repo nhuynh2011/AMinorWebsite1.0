@@ -6,8 +6,6 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Router from 'next/router'
 
-const TIMEOUT = 1000
-
 export default class MyApp extends App {
 
   constructor(props) {
@@ -54,14 +52,21 @@ export default class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props
+    const TIMEOUT = 1000
+
     return (
       <Container>
-        <Head title="Home" />
+        <Head title="Home"></Head>
+
         <Header></Header>
-        <PageTransition timeout={TIMEOUT} classNames="page-transition">
-          <Component key={router.route} {...pageProps}></Component>
-        </PageTransition>
-        <Footer />
+
+        <main>
+          <PageTransition timeout={TIMEOUT} classNames="page-transition">
+            <Component key={router.route} {...pageProps}></Component>
+          </PageTransition>
+        </main>
+
+        <Footer></Footer>
 
         <style jsx global>
           {`
@@ -88,6 +93,10 @@ export default class MyApp extends App {
               overflow-x: hidden;
               text-rendering: optimizeLegibility;
               word-spacing: .125rem;
+            }
+
+            main {
+              height: 200px;
             }
 
             .page-transition-enter {
