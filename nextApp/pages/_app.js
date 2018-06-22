@@ -52,6 +52,7 @@ export default class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props
+
     const TIMEOUT = 1000
 
     return (
@@ -96,7 +97,7 @@ export default class MyApp extends App {
             }
 
             main {
-              height: 200px;
+              height: 400px;
             }
 
             .page-transition-enter {

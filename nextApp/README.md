@@ -28,13 +28,23 @@ We are using [next-page-transitions](https://github.com/illinois/next-page-trans
     $ npm run dev
     ~~~
     
-#### Building the static site (This is what the static site will actually be deployed as)
+#### Building & Serving this site (This is what the static site will actually be deployed as)
 
-1. Build, export, and locally serve, the static site to [localhost:3000](http://localhost:3000/)
+1. Build and locally serve site to [localhost:3000](http://localhost:3000/)
+   ~~~ bash
+   $ npm run dev
+   ~~~
+   
+   `Use this when developing the site locally, as hot relaoding is built in`
+
+2. Build, export, and locally serve, the static site to [localhost:5000](http://localhost:5000/)
     ~~~ bash
     $ npm run serve
     ~~~
-2. Only build and export the static site into the ```nextApp/out``` directory
+    `Use thus when you want to test the site as it would be in production`
+    
+    
+3. Only build and export the static site into the ```nextApp/out``` directory
     ~~~ bash
     $ npm run export
     ~~~
@@ -61,7 +71,21 @@ We are using [next-page-transitions](https://github.com/illinois/next-page-trans
 6. ```/static``` is the directory containing any static assets such as images, fonts, ect...
 7. ```next.config.js``` is the file containing the configuration for Next.js. Including any routing for static pages here.
         
+#### Code Style
 
+Code style is the way in whic we style the code. Although there are many ways to do this (and most are usually individual preference), we do our best to pick styles that imporve readability and maintainability.
+
+* Throughout this code base we use tabs that are equivalent to 2 spaces. 
+
+* All React components have 2 tags
+    `<component></component>`
+
+* We sort as many things as we can in alphabetical order, such as CSS properties and method names in React Components:
+    ~~~css
+    el {
+      
+    }
+    ~~~
 
 
  
