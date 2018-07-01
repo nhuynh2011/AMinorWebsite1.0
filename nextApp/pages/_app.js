@@ -11,36 +11,57 @@ export default class MyApp extends App {
   constructor(props) {
     super(props)
     this.state = {
-      pageIn: "-",
-      pageOut: ""
+      isPageEnteringFromLeft: true
     }
   }
 
-  componentDidMount() {
+	/**
+   * Add an event listener to get the page transition direction when the route changes
+	 */
+	componentDidMount() {
     Router.onRouteChangeStart = url => {
-      this.getPageTransitionDirection(url)
+      this.setPageTransitionDirection(url)
     }
   }
 
-  componentWillUnmount() {
+	/**
+   * Remove the route event listener
+	 */
+	componentWillUnmount() {
     Router.onRouteChangeStart = null
   }
 
-  getPageTransitionDirection(newRoute) {
+	/**
+   * Given an new route, compare the new route with the old route and determine the direction the page transition
+	 * @param newRoute - new route to be taken
+	 */
+  setPageTransitionDirection(newRoute) {
     let currRoute = this.props.router.route
     if (currRoute.localeCompare(newRoute) === -1) {
       this.setState({
-        pageIn: "-",
-        pageOut: ""
+        isPageEnteringFromLeft: false
       })
     }
     else if (currRoute.localeCompare(newRoute) === 1) {
       this.setState({
-        pageIn: "",
-        pageOut: "-"
+	      isPageEnteringFromLeft: true
       })
     }
   }
+
+
+	/**
+   * Return the direction of the transition for the page coming in
+	 * @returns {string} - '' means the left direction, '-' means the right direction
+	 */
+	getPageInDirection() {
+    return this.state.isPageEnteringFromLeft ? '' : '-'
+  }
+
+  getPageOutDirection() {
+    return this.state.isPageEnteringFromLeft ? '-' : ''
+  }
+
 
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
@@ -53,13 +74,13 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props
 
-    const TIMEOUT = 1000
+    const TIMEOUT = 600
 
     return (
       <Container>
         <Head title="Home"></Head>
 
-        <Header></Header>
+        <Header isPageMovingRight={this.state.isPageEnteringFromLeft}></Header>
 
         <main>
           <PageTransition timeout={TIMEOUT} classNames="page-transition">
@@ -83,25 +104,25 @@ export default class MyApp extends App {
             }
 
             html {
+
               --page-transition: ${2 * TIMEOUT}ms;
             }
 
             body {
-              font-family: "DIN";
+              font-family: 'Titillium Web', sans-serif;
               font-feature-settings: "kern" 1, "liga" 1;
               line-height: 1.414;
               margin: 0;
-              overflow-x: hidden;
               text-rendering: optimizeLegibility;
               word-spacing: .125rem;
             }
 
             main {
-              height: 400px;
+              overflow: hidden;
             }
 
             .page-transition-enter {
-              transform: translateX(${this.state.pageIn}100vw);
+              transform: translateX(${this.getPageInDirection()}100vw);
               opacity: 0;
             }
 
@@ -123,7 +144,7 @@ export default class MyApp extends App {
 
             .page-transition-exit-active {
               opacity: 0;
-              transform: translateX(${this.state.pageOut}100vw);
+              transform: translateX(${this.getPageOutDirection()}100vw);
             }
           `}
         </style>

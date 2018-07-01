@@ -28,7 +28,7 @@ export default () => {
 
       <ul>
         {icons.map(icon =>
-          <li key={icon.title}>
+	        <li key={icon.title}>
             <a href={icon.href}>
               <svg className={'icon'} viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
                 <path d={icon.path}></path>
@@ -44,21 +44,24 @@ export default () => {
       <style jsx>
         {`
         footer{
+          align-items: center;
           background: black;
           color: white;
-          padding: 50px 0 90px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          padding:  1rem 0 2rem;
         }
 
         h2 {
-          margin: 0 0 20px;
+          margin: 0 0 2.828rem;
           text-align: center;
+          width: 100%;
         }
 
         ul {
-          left: 40px;
           list-style-type: none;
-          position: absolute;
-          margin: 0;
+          margin: 0 1rem;
           -webkit-padding-start: 0;
         }
 
@@ -80,25 +83,33 @@ export default () => {
         .icon {
           display: block;
           fill: currentColor;
-          font-size: 2em;
-          height: 1em;
+          height: 1.682rem;
           margin: 0 auto;
-          width: 1em;
+          width: 1.682rem;
         }
 
         .icon-title {
-          font-size: .75em;
+          font-size: .5rem;
         }
 
         .copyright {
-          font-size: 1.25em;
-          margin-top: 20px;
-          position: absolute;
-          right: 40px;
+          font-size: 1.189rem;
+          font-weight: 200;
+          margin: 0 1rem;
         }
 
         .copyright-name {
           font-weight: 900;
+        }
+
+        @media screen and (max-width: 53.816rem) {
+          footer {
+            flex-direction: column;
+          }
+
+          ul {
+            margin-bottom: 2.828rem;
+          }
         }
       `}
       </style>
