@@ -50,6 +50,7 @@ export default () => {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
+          max-width: 64rem;
           padding:  1rem 0 2rem;
         }
 
