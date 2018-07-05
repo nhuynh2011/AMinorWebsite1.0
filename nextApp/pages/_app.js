@@ -60,7 +60,7 @@ export default class MyApp extends App {
 
         <Header></Header>
 
-        <main>
+        <main role="main">
           <PageTransition timeout={TIMEOUT} classNames="page-transition">
             <Component key={router.route} {...pageProps}></Component>
           </PageTransition>
@@ -96,7 +96,7 @@ export default class MyApp extends App {
             }
 
             main {
-              height: 200px;
+              padding: 1rem;
             }
 
             .page-transition-enter {
