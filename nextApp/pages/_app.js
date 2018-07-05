@@ -4,6 +4,8 @@ import { PageTransition } from 'next-page-transitions'
 import Head from '../components/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import MemberData from '../components/MemberData'
+
 import Router from 'next/router'
 
 export default class MyApp extends App {
@@ -59,6 +61,8 @@ export default class MyApp extends App {
         <Head title="Home"></Head>
 
         <Header></Header>
+
+        <MemberData />
 
         <main>
           <PageTransition timeout={TIMEOUT} classNames="page-transition">

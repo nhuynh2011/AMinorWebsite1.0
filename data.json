@@ -1,0 +1,376 @@
+{
+  "news": {
+    "article_1": {
+      "heading": "A Minor Website Redesign!",
+      "subheading": "Full site redesign led by Nick Huynh and Chris Shank",
+      "text": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim. Mauris sem nisl, facilisis ut eleifend sit amet, efficitur eu erat. Fusce quis aliquet nunc, in imperdiet sem. Pellentesque mollis odio eget ipsum ultrices sollicitudin. Quisque placerat sodales dui eu blandit. Quisque quis augue posuere, hendrerit dui nec, dignissim quam. Sed gravida dapibus augue, in semper est volutpat quis. In ante libero, vestibulum non posuere ut, bibendum eget ex. Curabitur eros sem, blandit eu laoreet non, malesuada vel ipsum. Donec in quam vitae arcu egestas congue. Etiam ac nisl erat. Curabitur ac ante nec nisl viverra imperdiet eu id mauris. Nullam tincidunt odio ac ex rutrum, quis faucibus elit blandit. Phasellus nec orci eget nunc laoreet feugiat ac ut libero. Proin pretium justo eget auctor vulputate.",
+        "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
+        "Proin consequat sapien non nulla imperdiet, sit amet mattis nunc posuere. Proin malesuada dignissim magna, in gravida leo hendrerit vel. Duis lacinia risus elementum, varius nibh eu, aliquet tortor. Integer pretium tempus nulla, accumsan eleifend lorem vulputate a. Vestibulum suscipit aliquam diam aliquet hendrerit. Sed malesuada metus eleifend dolor blandit vestibulum. Ut volutpat sagittis odio. Nulla felis sapien, vestibulum ut tortor id, condimentum molestie metus."
+      ]
+    }
+  },
+  "members": {
+    "past": [
+      "Person 1",
+      "Person 2",
+      "Person 3",
+      "Person 4",
+      "Person 5",
+      "Person 6",
+      "Person 7",
+      "Person 8",
+      "Person 9",
+      "Person 10",
+      "Person 11",
+      "Person 12",
+      "Person 13",
+      "Person 14",
+      "Person 15",
+      "Person 16",
+      "Person 17",
+      "Person 18",
+      "Person 19",
+      "Person 20",
+      "Person 21",
+      "Person 22",
+      "Person 23",
+      "Person 24",
+      "Person 25",
+      "Person 26",
+      "Person 27",
+      "Person 28",
+      "Person 29"
+    ],
+    "current": {
+      "Jayson Gilbert": {
+        "positions": [
+          "President"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Nick Huynh": {
+        "positions": [
+          "Vice President"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Laura Calandra": {
+        "positions": [
+          "Treasurer"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Andria Benvenuto": {
+        "positions": [
+          "Secretary & Social Media"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Narineh Torosyan": {
+        "positions": [
+          "Music Director"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Emma Kelly": {
+        "positions": [
+          "Assistant Music Director"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Aditya Kulkarni": {
+        "positions": [
+          "Member"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Wilmer Gonzalez": {
+        "positions": [
+          "Member"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+      "Aditya Kulkarni": {
+        "positions": [
+          "Member"
+        ],
+        "bio": [
+          ""
+        ]
+      },
+    }
+  },
+  "repertoire": {
+    "past": [
+      "\"See You Again\" by Wiz Khalifa ft. Charlie Puth",
+      "\"New Year's Day\" by Pentatonix",
+      "\"Irresistible\" by Fall Out Boy ft. Demi Lovato",
+      "\"Talking Habits\" (Talking Body/Habits mash-up) by Tove Lo",
+      "\"Wildest Dreams\" by Taylor Swift",
+      "\"I Was Here\" by Beyonce",
+      "\"Gold\" from the Broadway show Once",
+      "\"Justin Bieber Medley\" by Justin Bieber and Selena Gomez",
+      "\"American Boy\" by Estelle ft. Kanye West",
+      "\"Elastic Heart\" by Sia",
+      "\"Levels\" by Nick Jonas",
+      "\"Honeymoon Avenue\" by Ariana Grande",
+      "\"No Air\" by Jordin Sparks ft. Chris Brown",
+      "\"FourFiveSeconds\" by Rihanna, Kanye West and Paul McCartney",
+      "\"Beautiful\" by Christina Aguilera",
+      "\"Flat on the Floor\" by Carrie Underwood",
+      "\"Latch\" by Sam Smith",
+      "\"Aha!\" by Imogen Heap",
+      "\"Michael Jackson Medley\" by Michael Jackson",
+      "\"Teenage Dream\" by Katy Perry",
+      "\"Never Let Me Go\" by Florence + The Machine",
+      "\"Boys of Summer\" by Don Henley",
+      "\"Sunrise\" by Norah Jones",
+      "\"Dancing with a Broken Heart\" by John Mayer",
+      "\"Freer\" by Declan Bennett",
+      "\"Beyonce Medley\" by Beyonce",
+      "\"The Chain\" by Ingrid Michaelson",
+      "\"Ragged Wood\" by Fleet Foxes",
+      "\"King of Anything\" by Sara Bareilles",
+      "\"Cry Me a River\" by Justin Timberlake",
+      "\"Gavin's Song\" by Marc Broussard",
+      "\"Lion King Medley\" from Lion King",
+      "\"It Don't Have to Change\" by John Legend",
+      "\"Free Ride\" by The Edgar Winter Group",
+      "\"Moondance\" by Van Morrison",
+      "\"Toxic\" by Britney Spears",
+      "\"Into the Ocean\" by Blue October",
+      "\"Hanging by a Moment\" by Lifehouse",
+      "\"Under the Sea (from The Little Mermaid)\" by Alan Menken and Howard Ashman",
+      "\"Everything You Want\" by Vertical Horizon",
+      "\"Don't Stop Me Now\" by Queen",
+      "\"Nobody Knows\" by The Tony Rich Project",
+      "\"Space Between\" by Dave Matthews Band",
+      "\"Gonna Fly Now\" by Bill Conti",
+      "\"Gangsta Paradise\" by Coolio",
+      "\"Cold\" by Crossfade",
+      "\"Always Be My Baby\" by Mariah Carey",
+      "\"For What It's Worth\" by Buffalo Springfield",
+      "\"Joy to the World\" by Three Dog Night",
+      "\"Techno/Listen to Your Heart in Heaven\"",
+      "\"I Feel the Earth Move\" by Carole King",
+      "\"The Sign\" by Ace of Base",
+      "\"The Lazy Boy\"",
+      "\"Imagine\" by The Beatles",
+      "\"Mr. Brightside\" by The Killers",
+      "\"Hine Ba Hashalom\" by Nurit Hirsch",
+      "\"Yue Liang Dai Biao Wo Duh Xin (Moon Represent My Heart)\" by Teresa Teng",
+      "\"In My Life\" by The Beatles",
+      "\"Can't Take My Eyes Off Of You\" by Bob Crewe and Bob Gaudio",
+      "\"White Flag\" by Dido",
+      "\"Dreams\" by The Cranberries",
+      "\"Life is a Highway\" by Rascal Flatts",
+      "\"Africa\" by Toto",
+      "\"Seven Days a Week\" by The Sounds",
+      "\"Amsterdam\" by Guster",
+      "\"Love You Anyway\" by Boyzone",
+      "\"Just For Now\" by Imogen Heap",
+      "\"Dreams\" by The Cranberries"
+    ]
+  },
+  "discography": {
+    "summary": [
+      "Here's some of our music, past and present!  Over the years, A Minor​ has had the opportunity to professionally record music and produce several awesome albums. However, the cost of creating an album (including studio time, mixing, and mastering) can cost up to $10,000.",
+      "We appreciate any and all contributions."
+    ],
+    "Ignite": {
+      "year": 2016,
+      "release": "December 2, 2016",
+      "logo": "ignitelogo.png",
+      "design": "Mai Walters",
+      "recording": "Liquid 5th Production",
+      "mastering": "Eric Scholz",
+      "text": [
+        "We are so grateful to all who were involved in the making of this album -- thank you SO much, we could not have done it without your support and guidance!",
+        "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut."
+      ],
+      "links": {
+        "itunes": "",
+        "applemusic": "",
+        "spotify": ""
+      },
+      "songs": {
+        "Irresistible" : {
+          "time": "4:33",
+          "opb": "Fall Out Boy (feat. Demi Lovato)",
+          "sololists": "Danielle Wrubel and Jessica Fernandes",
+          "arranger": "Jeremiah Merkel"
+        },
+        "Wildest Dreams" : {
+          "time": "3:46",
+          "opb": "Taylor Swift",
+          "sololists": "Rachel Conte",
+          "arranger": "Jeremiah Merkel"
+        },
+        "Talking Habits" : {
+          "time": "3:34",
+          "opb": "Tove Lo",
+          "sololists": "Jeremiah Merkel and Narineh Torosyan",
+          "arranger": "Jeremiah Merkel"
+        },
+        "Gold" : {
+          "time": "2:50",
+          "opb": "from the Broadway musical \"Once\"",
+          "sololists": "Ensemble",
+          "arranger": "David Moul"
+        },
+        "Control" : {
+          "time": "3:38",
+          "opb": "Halsey",
+          "sololists": "Andria Benvenuto",
+          "arranger": "Jessica Fernandes and Jeremiah Merkel"
+        },
+        "See You Again" : {
+          "time": "4:29",
+          "opb": "Wiz Khalifa (feat. Charlie Puth)",
+          "sololists": "Elaina Giodano and Ivan Paz",
+          "arranger": "Jeremiah Merkel and Nicholas Tan"
+        },
+        "Bieber Medley" : {
+          "time": "5:49",
+          "opb": "Justin Bieber and Selena Gomez",
+          "sololists": "Jeremiah Merkel, Lauren Drainville, Bobby Wyman and Matt Brandt",
+          "arranger": "Jeremiah Merkel"
+        },
+        "Elastic Heart" : {
+          "time": "4:20",
+          "opb": "Sia",
+          "sololists": "Rachel Conte",
+          "arranger": "Jeremiah Merkel"
+        },
+        "New Year's Day" : {
+          "time": "3:39",
+          "opb": "Pentatonix",
+          "sololists": "Andria Benvenuto",
+          "arranger": "Jessica Fernandes"
+        },
+        "American Boy" : {
+          "time": "2:56",
+          "opb": "Estelle (feat. Kanye West)",
+          "sololists": "Lauren Drainville and Nick Tambini",
+          "arranger": "VJ Rosales"
+        },
+        "I Was Here" : {
+          "time": "2:43",
+          "opb": "Beyonce",
+          "sololists": "Narineh Torosyan",
+          "arranger": "Jessica Fernandes and Jeremiah Merkel"
+        }
+      }
+    },
+    "Incognito": {
+      "year": 2012,
+      "release": "November 26th, 2016",
+      "logo": "incognitologo.png",
+      "design": "Jackson Tsai",
+      "recording": "Angela Ugolini | The vocal Company",
+      "mastering": "Dave Sperandio | Diovoce",
+      "text": [
+        "Many thanks to Angela, Dave and Jackson for all of your help.",
+        "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut and distributed for at no profit."
+      ],
+      "links": {
+        "freedownload": ""
+      },
+      "songs": {
+        "Beyonce Medley" : {
+          "time": "5:47",
+          "opb": "Beyonce & Destiny's Child",
+          "sololists": "Jasmine Kehrhahn, Mandy Cook, Taylor Meltzer, Justine Nixon and Caroline Cacciola",
+          "arranger": "Noah Berg"
+        },
+        "The Chain" : {
+          "time": "3:18",
+          "opb": "Ingrid Michaelson",
+          "sololists": "Jasmine Kehrhahn",
+          "arranger": "Amanda Friedman"
+        },
+        "Ragged Wood" : {
+          "time": "3:15",
+          "opb": "Fleet Foxes",
+          "sololists": "Paul Banach",
+          "arranger": "Paul Banach"
+        },
+        "King of Anything" : {
+          "time": "3:23",
+          "opb": "Sara Bareilles",
+          "sololists": "Justine Nixon",
+          "arranger": "Mandy Cook"
+        },
+        "Cry Me A River" : {
+          "time": "4:59",
+          "opb": "Justin Timberlake",
+          "sololists": "Simon Abrahms",
+          "arranger": "Mandy Cook"
+        },
+        "Gavin's Song" : {
+          "time": "2:45",
+          "opb": "Mark Broussard",
+          "sololists": "Taylor Meltzer",
+          "arranger": "Jenny Bunce"
+        },
+        "The Lion King Medley" : {
+          "time": "6:27",
+          "opb": "Hanz Zimmer, et. al.",
+          "sololists": "Lauren Arcement, Jasmine Kehrhahn, Taylor Meltzer, Connor Sullivan, Cody White and Adam Bstrom",
+          "arranger": "UW Madhatters"
+        },
+        "Fix You" : {
+          "time": "4:06",
+          "opb": "Coldplay",
+          "sololists": "Jasmine Kehrhahn",
+          "arranger": "Jasmine Kehrhahn"
+        },
+        "It Don't Have to Change" : {
+          "time": "2:58",
+          "opb": "John Legend",
+          "sololists": "Cody White",
+          "arranger": "Laura Weismantel"
+        },
+        "Free Ride" : {
+          "time": "2:43",
+          "opb": "Edgar Winter Group",
+          "sololists": "Connor Sullivan",
+          "arranger": "Mandy Cook"
+        }
+      }
+    }
+  },
+  "services": {
+    "summary": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim. Mauris sem nisl, facilisis ut eleifend sit amet, efficitur eu erat. Fusce quis aliquet nunc, in imperdiet sem. Pellentesque mollis odio eget ipsum ultrices sollicitudin. Quisque placerat sodales dui eu blandit. ",
+      "Quisque quis augue posuere, hendrerit dui nec, dignissim quam. Sed gravida dapibus augue, in semper est volutpat quis. In ante libero, vestibulum non posuere ut, bibendum eget ex. Curabitur eros sem, blandit eu laoreet non, malesuada vel ipsum. Donec in quam vitae arcu egestas congue. Etiam ac nisl erat. Curabitur ac ante nec nisl viverra imperdiet eu id mauris. Nullam tincidunt odio ac ex rutrum, quis faucibus elit blandit. Phasellus nec orci eget nunc laoreet feugiat ac ut libero. Proin pretium justo eget auctor vulputate."
+    ],
+    "gigs": {
+      "what_to_expect": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. ",
+      "pricing": "In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
+      "inquiries": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat."
+    },
+    "master_classes": {
+      "what_to_expect": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. ",
+      "pricing": "In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
+      "inquiries": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat."
+    }
+  }
+}
