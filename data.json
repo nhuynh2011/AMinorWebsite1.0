@@ -43,78 +43,74 @@
       "Person 29"
     ],
     "current": {
-      "Jayson Gilbert": {
-        "positions": [
-          "President"
-        ],
-        "bio": [
-          ""
-        ]
+      "eboard": {
+        "Jayson Gilbert": {
+          "positions": [
+            "President"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Nick Huynh": {
+          "positions": [
+            "Vice President"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Laura Calandra": {
+          "positions": [
+            "Treasurer"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Andria Benvenuto": {
+          "positions": [
+            "Secretary & Social Media"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Narineh Torosyan": {
+          "positions": [
+            "Music Director"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Emma Kelly": {
+          "positions": [
+            "Assistant Music Director"
+          ],
+          "bio": [
+            ""
+          ]
+        }
       },
-      "Nick Huynh": {
-        "positions": [
-          "Vice President"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Laura Calandra": {
-        "positions": [
-          "Treasurer"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Andria Benvenuto": {
-        "positions": [
-          "Secretary & Social Media"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Narineh Torosyan": {
-        "positions": [
-          "Music Director"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Emma Kelly": {
-        "positions": [
-          "Assistant Music Director"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Aditya Kulkarni": {
-        "positions": [
-          "Member"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Wilmer Gonzalez": {
-        "positions": [
-          "Member"
-        ],
-        "bio": [
-          ""
-        ]
-      },
-      "Aditya Kulkarni": {
-        "positions": [
-          "Member"
-        ],
-        "bio": [
-          ""
-        ]
-      },
+      "general": {
+        "Aditya Kulkarni": {
+          "positions": [
+            "Member"
+          ],
+          "bio": [
+            ""
+          ]
+        },
+        "Wilmer Gonzalez": {
+          "positions": [
+            "Member"
+          ],
+          "bio": [
+            ""
+          ]
+        }
+      }
     }
   },
   "repertoire": {
