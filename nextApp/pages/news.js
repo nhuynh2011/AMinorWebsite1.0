@@ -1,1 +1,1 @@
-export default () => <h1>News</h1>
+export default () => <h1clear>News</h1clear>

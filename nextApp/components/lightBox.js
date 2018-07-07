@@ -20,6 +20,8 @@ export default class extends Component {
 			positionOfMainRect = mainEl.getBoundingClientRect(),
 			positionOfRect = el.getBoundingClientRect()
 
+		console.log(positionOfMainRect.top - positionOfRect.top)
+
 		this.setState(prevState => ({
 			lightBoxExpandedX: `${positionOfMainRect.left - positionOfRect.left}px`,
 			lightBoxExpandedY: `${positionOfMainRect.top - positionOfRect.top}px`,
@@ -51,12 +53,12 @@ export default class extends Component {
 						}
 
 						.lightbox {
+							background: rgba(0,0,0,0.5);
 							border-radius: 1rem;
 							box-shadow: 0 .5rem 2rem 0 rgba(0,0,0,0.5);
 							height: 100%;
 							position: relative;
-							transition: background 1s,
-													border-radius 1s,
+							transition: border-radius 1s,
 													height 1s,
 													transform 1s,
 													width 1s;
@@ -69,7 +71,6 @@ export default class extends Component {
 							height: 100%;
 							max-height: 22.626rem;
 							max-width: 13.453rem;
-							transition: margin 1s;
 							width: 100%;
 						}
 
@@ -88,17 +89,15 @@ export default class extends Component {
 						}
 
 						.lightbox-expand {
-							background: rgba(0,0,0,0.5);
 							border-radius: 0;
 							height: ${lightBoxExpandedHeight};
+							position: fixed;
 							transform: translate(${lightBoxExpandedX}, ${lightBoxExpandedY});
 							width: ${lightBoxExpandedWidth};
 							z-index: 10;
 						}
 
-						.lightbox-expand .lightbox-content{
-							margin: 0 auto;
-						}
+						.lightbox-expand .lightbox-content {}
 					`}
 				</style >
 			</section>

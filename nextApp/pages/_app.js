@@ -96,6 +96,7 @@ export default class MyApp extends App {
             }
 
             main {
+              height: calc(100vh - 65px - 202px - 2rem);
               padding: 1rem;
             }
 

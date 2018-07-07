@@ -39,7 +39,11 @@ export default () => {
         )}
       </ul>
 
-      <div className={'copyright'}>©2018<span className={'copyright-name'}>NickHuynh</span>&<span className={'copyright-name'}>ChrisShank</span></div>
+      <div className={'copyright'}>
+        ©2018<span className={'copyright-name'}>NickHuynh</span>
+        &
+        <span className={'copyright-name'}>ChrisShank</span>
+      </div>
 
       <style jsx>
         {`
@@ -47,6 +51,11 @@ export default () => {
           background: black;
           color: white;
           padding: 50px 0 90px;
+          position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
         }
 
         h2 {

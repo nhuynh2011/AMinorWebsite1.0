@@ -13,6 +13,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-spring": "^5.4.0",
     "react-transition-group": "^2.4.0",
     "serve": "^9.0.0"
   }
