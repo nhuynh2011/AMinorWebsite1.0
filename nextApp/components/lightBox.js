@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Transition } from 'react-transition-group'
+import ReactDOM from 'react-dom'
 
 export default class extends Component {
 
@@ -15,12 +15,10 @@ export default class extends Component {
 		}
 	}
 
-	resizeLightBox = (el) => {
+	resizeLightBox = () => {
 		let mainEl = document.querySelector('[role="main"]'),
 			positionOfMainRect = mainEl.getBoundingClientRect(),
-			positionOfRect = el.getBoundingClientRect()
-
-		console.log(positionOfMainRect.top - positionOfRect.top)
+			positionOfRect = ReactDOM.findDOMNode(this).getBoundingClientRect()
 
 		this.setState(prevState => ({
 			lightBoxExpandedX: `${positionOfMainRect.left - positionOfRect.left}px`,
@@ -36,12 +34,9 @@ export default class extends Component {
 
 		return (
 			<section>
-				<div className={`lightbox${isLightBoxExpanded ? ' lightbox-expand' : ''}`} onClick={(e) => this.resizeLightBox(e.target)}>
+				<div className={`lightbox${isLightBoxExpanded ? ' lightbox-expand' : ''}`} onClick={() => this.resizeLightBox()}>
 					<div className="lightbox-content">
-						<h1>Nick</h1>
-						<img alt="" src="/static/images/member.jpg"/>
-						<h2>President</h2>
-						<p>Bio...</p>
+						{this.props.children(this.state.isLightBoxExpanded)}
 					</div>
 				</div>
 
@@ -69,35 +64,25 @@ export default class extends Component {
 							background: lightgray;
 							border-radius: 1rem;
 							height: 100%;
+							margin: 0 auto;
 							max-height: 22.626rem;
 							max-width: 13.453rem;
+							transition: transform .75s;
 							width: 100%;
-						}
-
-						.lightbox h1, .lightbox h2, .lightbox p {
-							text-align: center;
-							-webkit-margin-before: 0;
-              -webkit-margin-after: 0;
-						}
-
-						.lightbox img {
-							display: block;
-							border-radius: 50%;
-							height: 4rem;
-							margin: 0 auto;
-							width: 4rem;
 						}
 
 						.lightbox-expand {
 							border-radius: 0;
 							height: ${lightBoxExpandedHeight};
-							position: fixed;
 							transform: translate(${lightBoxExpandedX}, ${lightBoxExpandedY});
 							width: ${lightBoxExpandedWidth};
 							z-index: 10;
 						}
 
-						.lightbox-expand .lightbox-content {}
+						.lightbox-expand .lightbox-content {
+              transform: translateY(50%);
+              transition: transform 1s;
+						}
 					`}
 				</style >
 			</section>
