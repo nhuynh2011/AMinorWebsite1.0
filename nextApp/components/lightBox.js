@@ -15,7 +15,7 @@ export default class extends Component {
 
 	render() {
 		const { isLightBoxExpanded } = this.state
-		const { timeout } = this.props
+		const { timeout, zIndexExpanded } = this.props
 
 		return (
 			<div>
@@ -48,13 +48,11 @@ export default class extends Component {
 							width: 13.455rem;
 						}
 
-						.content {
-							position: fixed;
-						}
+						.content {}
 
 						.expand-entering, .expand-entered {
 							transform: scale(1.6, 1.4);
-							z-index: 99;
+							z-index: ${zIndexExpanded};
 						}
 
 						.expand-entering, .expand-exiting, .expand-entering .content, .expand-exiting .content {
@@ -64,6 +62,7 @@ export default class extends Component {
 
 						.expand-exiting, .expand-exited, .expand-exited .content {
 							transform: scale(1);
+							z-index: 0;
 						}
 
 						.expand-entering .content, .expand-entered .content {
@@ -81,7 +80,7 @@ export default class extends Component {
 
 						.overlay-entering, .overlay-entered {
 							opacity: 1;
-							z-index: 98;
+							z-index: ${zIndexExpanded - 1};
 						}
 
 						.overlay-entering, .overlay-exiting {

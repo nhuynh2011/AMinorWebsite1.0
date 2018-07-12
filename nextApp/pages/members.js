@@ -7,7 +7,7 @@ export default () =>
 	<section>
 		<ul>
 			<li>
-				<LightBox timeout={fadeTime}>
+				<LightBox timeout={fadeTime} zIndexExpanded={99}>
 					{ expandedState => (
 						<Fragment>
 							<h1>Nick</h1>
@@ -21,7 +21,7 @@ export default () =>
 				</LightBox>
 			</li>
 			<li>
-				<LightBox timeout={fadeTime}>
+				<LightBox timeout={fadeTime} zIndexExpanded={99}>
 					{ expandedState => (
 						<Fragment>
 							<h1>Nick</h1>
