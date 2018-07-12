@@ -1,18 +1,20 @@
 import { Fragment } from 'react'
 import LightBox from '../components/lightBox'
 
+const fadeTime = 1000
+
 export default () =>
 	<ul>
 		<li>
-			<LightBox>
-				{ isLightBoxExpanded => (
+			<LightBox timeout={fadeTime}>
+				{ expandedState => (
 					<Fragment>
 						<h1>Nick</h1>
-						<img alt="" src="/static/images/member.jpg"/>
+						<img alt="" className={`img-${expandedState}`} src="/static/images/member.jpg"/>
 						<h2>President</h2>
-						{isLightBoxExpanded && (
-							<p>Bio...</p>
-						)}
+						<div className={`fade-${expandedState}`}>
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim.</p>
+						</div>
 					</Fragment>
 				)}
 			</LightBox>
@@ -42,11 +44,47 @@ export default () =>
 
 				img {
 					display: block;
+					margin: 0 auto;
+				}
+
+				.img-entering, .img-entered {
 					border-radius: 50%;
 					height: 5.657rem;
-					margin: 0 auto;
 					width: 5.657rem;
+
 				}
+
+				.img-entering, .img-exiting {
+					transition: border-radius ${fadeTime}ms,
+											height ${fadeTime}ms,
+											width ${fadeTime}ms;
+					will-change: border-radius;
+				}
+
+				.img-exiting, .img-exited {
+					border-radius: 0;
+					height: 13.455rem;
+					width: 13.455rem;
+				}
+
+				.fade-entering, .fade-entered {
+					opacity: 1;
+				}
+
+				.fade-entering {
+					transition: opacity ${fadeTime - 150}ms 150ms;
+					will-change: opacity;
+				}
+
+				.fade-exiting {
+					transition: opacity ${fadeTime / 2}ms ;
+					will-change: opacity;
+				}
+
+				.fade-exiting, .fade-exited {
+					opacity: 0;
+				}
+
 			`}
 		</style>
 	</ul>
