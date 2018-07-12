@@ -6,15 +6,11 @@ export default class extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = {
-			isLightBoxExpanded: false
-		}
+		this.state = { isLightBoxExpanded: false	}
 	}
 
 	resizeLightBox = () => {
-		this.setState(prevState => ({
-			isLightBoxExpanded: !prevState.isLightBoxExpanded
-		}))
+		this.setState(prevState => ({	isLightBoxExpanded: !prevState.isLightBoxExpanded 	}))
 	}
 
 	render() {
@@ -22,7 +18,7 @@ export default class extends Component {
 		const { timeout } = this.props
 
 		return (
-			<section>
+			<div>
 				<Transition
 					in={isLightBoxExpanded}
 				  timeout={timeout}
@@ -47,22 +43,23 @@ export default class extends Component {
 							border-radius: 1rem;
 							box-shadow: 0 .5rem 2rem 0 rgba(0,0,0,0.5);
 							height: 19.028rem;
+							overflow: hidden;
 							position: relative;
 							width: 13.455rem;
-							z-index: 10;
 						}
 
 						.content {
-							position: absolute;
+							position: fixed;
 						}
 
 						.expand-entering, .expand-entered {
 							transform: scale(1.6, 1.4);
+							z-index: 99;
 						}
 
 						.expand-entering, .expand-exiting, .expand-entering .content, .expand-exiting .content {
-							transition: transform ${timeout}ms;
-							will-change: transform;
+							transition: transform ${timeout}ms,
+													z-index ${timeout}ms;
 						}
 
 						.expand-exiting, .expand-exited, .expand-exited .content {
@@ -80,24 +77,25 @@ export default class extends Component {
 								right: 0;
 								bottom: 0;
 								left: 0;
-							will-change: opacity;
-							z-index: 2;
 						}
 
 						.overlay-entering, .overlay-entered {
 							opacity: 1;
+							z-index: 98;
 						}
 
 						.overlay-entering, .overlay-exiting {
-							transition: opacity ${timeout}ms;
+							transition: opacity ${timeout}ms,
+													z-index ${timeout}ms;
 						}
 
 						.overlay-exiting, .overlay-exited {
 							opacity: 0;
+							z-index: -1;
 						}
 					`}
 				</style >
-			</section>
+			</div>
 		)
 	}
 

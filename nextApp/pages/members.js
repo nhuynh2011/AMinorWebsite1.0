@@ -4,21 +4,37 @@ import LightBox from '../components/lightBox'
 const fadeTime = 1000
 
 export default () =>
-	<ul>
-		<li>
-			<LightBox timeout={fadeTime}>
-				{ expandedState => (
-					<Fragment>
-						<h1>Nick</h1>
-						<img alt="" className={`img-${expandedState}`} src="/static/images/member.jpg"/>
-						<h2>President</h2>
-						<div className={`fade-${expandedState}`}>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim.</p>
-						</div>
-					</Fragment>
-				)}
-			</LightBox>
-		</li>
+	<section>
+		<ul>
+			<li>
+				<LightBox timeout={fadeTime}>
+					{ expandedState => (
+						<Fragment>
+							<h1>Nick</h1>
+							<img alt="" className={`img-${expandedState}`} src="/static/images/member.jpg"/>
+							<h2>President</h2>
+							<div className={`fade-${expandedState}`}>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim.</p>
+							</div>
+						</Fragment>
+					)}
+				</LightBox>
+			</li>
+			<li>
+				<LightBox timeout={fadeTime}>
+					{ expandedState => (
+						<Fragment>
+							<h1>Nick</h1>
+							<img alt="" className={`img-${expandedState}`} src="/static/images/member.jpg"/>
+							<h2>President</h2>
+							<div className={`fade-${expandedState}`}>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim.</p>
+							</div>
+						</Fragment>
+					)}
+				</LightBox>
+			</li>
+		</ul>
 
 		<style jsx>
 			{`
@@ -58,7 +74,6 @@ export default () =>
 					transition: border-radius ${fadeTime}ms,
 											height ${fadeTime}ms,
 											width ${fadeTime}ms;
-					will-change: border-radius;
 				}
 
 				.img-exiting, .img-exited {
@@ -73,12 +88,10 @@ export default () =>
 
 				.fade-entering {
 					transition: opacity ${fadeTime - 150}ms 150ms;
-					will-change: opacity;
 				}
 
 				.fade-exiting {
 					transition: opacity ${fadeTime / 2}ms ;
-					will-change: opacity;
 				}
 
 				.fade-exiting, .fade-exited {
@@ -87,4 +100,4 @@ export default () =>
 
 			`}
 		</style>
-	</ul>
+	</section>
