@@ -4,7 +4,7 @@ import LightBox from '../components/lightBox'
 
 const fadeTime = 1000
 
-const PAGE = ({ members }) => (
+const MEMBERS_PAGE = ({ members }) => (
 	<section>
 		<ul>
 			<li>
@@ -92,10 +92,10 @@ const PAGE = ({ members }) => (
 	</section>
 )
 
-PAGE.getInitialProps = async () => {
+MEMBERS_PAGE.getInitialProps = async () => {
 	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=members')
 	const members = await response.json()
 	return { members }
 }
 
-export default PAGE
+export default MEMBERS_PAGE
