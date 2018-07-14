@@ -40,7 +40,7 @@ export default class extends Component {
 					{`
 						.lightbox {
 							background: lightgray;
-							border-radius: 1rem;
+							border-radius: .5rem;
 							box-shadow: 0 .5rem 2rem 0 rgba(0,0,0,0.5);
 							height: 19.028rem;
 							overflow: hidden;

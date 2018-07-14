@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "next": "^6.0.3",
     "next-page-transitions": "^1.0.0-alpha.4",
     "prop-types": "^15.6.1",
