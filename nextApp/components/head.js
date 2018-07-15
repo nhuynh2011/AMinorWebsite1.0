@@ -10,6 +10,7 @@ const Head = (props) => (
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../static/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700" rel="stylesheet"/>
   </NextHead>
 )
 
