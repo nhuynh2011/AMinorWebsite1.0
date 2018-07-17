@@ -1,5 +1,5 @@
 export default () => {
-  let icons = [
+  const icons = [
     {
       title: 'Twitter',
       href: 'https://twitter.com/UConnAMinor',
@@ -24,34 +24,41 @@ export default () => {
 
   return (
     <footer>
-      <h2 className={'catch-phrase'}>Peace. Love. AMinor.</h2>
 
-      <ul>
-        {icons.map(icon =>
-	        <li key={icon.title}>
-            <a href={icon.href}>
-              <svg className={'icon'} viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
-                <path d={icon.path}></path>
-              </svg>
-              <span className={'icon-title'}>{icon.title}</span>
-            </a>
-          </li>
-        )}
-      </ul>
+      <div className="footer-flex-box">
+        <h2 className={'catch-phrase'}>Peace. Love. AMinor.</h2>
 
-      <div className={'copyright'}>©2018<span className={'copyright-name'}>NickHuynh</span>&<span className={'copyright-name'}>ChrisShank</span></div>
+        <ul>
+          {icons.map(icon =>
+            <li key={icon.title}>
+              <a href={icon.href}>
+                <svg className={'icon'} viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d={icon.path}></path>
+                </svg>
+                <span className={'icon-title'}>{icon.title}</span>
+              </a>
+            </li>
+          )}
+        </ul>
+
+        <div className={'copyright'}>©2018<span className={'copyright-name'}>NickHuynh</span>&<span className={'copyright-name'}>ChrisShank</span></div>
+      </div>
 
       <style jsx>
         {`
-        footer{
-          align-items: center;
+        footer {
           background: black;
           color: white;
+          padding:  1rem 0 2rem;
+        }
+
+        .footer-flex-box {
+          align-items: center;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
+          margin: auto;
           max-width: 64rem;
-          padding:  1rem 0 2rem;
         }
 
         h2 {
@@ -104,7 +111,7 @@ export default () => {
         }
 
         @media screen and (max-width: 53.816rem) {
-          footer {
+          .footer-flex-box {
             flex-direction: column;
           }
 
