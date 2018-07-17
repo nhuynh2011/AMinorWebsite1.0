@@ -6,7 +6,8 @@ const NEWS_PAGE = ({ news }) => (
 
 NEWS_PAGE.getInitialProps = async () => {
 	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=news')
-	const news = await response.json()
+	const data = await response.json()
+	const news = data.message.content
 	return { news }
 }
 
