@@ -1,388 +1,477 @@
 [
-	{
-		"page": "news",
-		"content": {
-			"article_1": {
-				"heading": "A Minor Website Redesign!",
-				"date_published": "*Date*",
-				"subheading": "Full site redesign led by Nick Huynh and Chris Shank",
-				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim. Mauris sem nisl, facilisis ut eleifend sit amet, efficitur eu erat. Fusce quis aliquet nunc, in imperdiet sem. Pellentesque mollis odio eget ipsum ultrices sollicitudin. Quisque placerat sodales dui eu blandit. Quisque quis augue posuere, hendrerit dui nec, dignissim quam. Sed gravida dapibus augue, in semper est volutpat quis. In ante libero, vestibulum non posuere ut, bibendum eget ex. Curabitur eros sem, blandit eu laoreet non, malesuada vel ipsum. Donec in quam vitae arcu egestas congue. Etiam ac nisl erat. Curabitur ac ante nec nisl viverra imperdiet eu id mauris. Nullam tincidunt odio ac ex rutrum, quis faucibus elit blandit. Phasellus nec orci eget nunc laoreet feugiat ac ut libero. Proin pretium justo eget auctor vulputate.",
-					"Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
-					"Proin consequat sapien non nulla imperdiet, sit amet mattis nunc posuere. Proin malesuada dignissim magna, in gravida leo hendrerit vel. Duis lacinia risus elementum, varius nibh eu, aliquet tortor. Integer pretium tempus nulla, accumsan eleifend lorem vulputate a. Vestibulum suscipit aliquam diam aliquet hendrerit. Sed malesuada metus eleifend dolor blandit vestibulum. Ut volutpat sagittis odio. Nulla felis sapien, vestibulum ut tortor id, condimentum molestie metus."
-				]
-			}
-		}
-	},
-	{
-		"page": "members",
-		"content": {
-			"past": [
-				"Person 1",
-				"Person 2",
-				"Person 3",
-				"Person 4",
-				"Person 5",
-				"Person 6",
-				"Person 7",
-				"Person 8",
-				"Person 9",
-				"Person 10",
-				"Person 11",
-				"Person 12",
-				"Person 13",
-				"Person 14",
-				"Person 15",
-				"Person 16",
-				"Person 17",
-				"Person 18",
-				"Person 19",
-				"Person 20",
-				"Person 21",
-				"Person 22",
-				"Person 23",
-				"Person 24",
-				"Person 25",
-				"Person 26",
-				"Person 27",
-				"Person 28",
-				"Person 29"
-			],
-			"current": {
-				"eboard": {
-					"Jayson Gilbert": {
-						"positions": [
-							"President"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Nick Huynh": {
-						"positions": [
-							"Vice President"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Laura Calandra": {
-						"positions": [
-							"Treasurer"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Andria Benvenuto": {
-						"positions": [
-							"Secretary & Social Media"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Narineh Torosyan": {
-						"positions": [
-							"Music Director"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Emma Kelly": {
-						"positions": [
-							"Assistant Music Director"
-						],
-						"bio": [
-							"test"
-						]
-					}
-				},
-				"general": {
-					"Aditya Kulkarni": {
-						"positions": [
-							"Member"
-						],
-						"bio": [
-							"test"
-						]
-					},
-					"Wilmer Gonzalez": {
-						"positions": [
-							"Member"
-						],
-						"bio": [
-							"test"
-						]
-					}
-				}
-			}
-		}
-	},
-	{
+  {
+    "page": "news",
+    "content": {
+      "article_1": {
+        "heading": "A Minor Website Redesign!",
+        "subheading": "Full site redesign led by Nick Huynh and Chris Shank",
+        "author": "Nick Huynh",
+        "text": [
+          "When I joined the group in the Spring of 2018, I wanted to get invested into our group.  At the time, I had a huge interest in web development, and I was leading the web development group in the Computer Science club on campus, called Association for Computing Machienry.  I wanted to expand and test my skillset, so I decided that I needed to start some type of project.",
+          "After looking at the A Minor website, I decided that I'd want to revamp it just to see what I could learn while doing so.  I can't even begin to state how much fun I had learning all of these new technologies that I've never used before, and being able to have the opportunity to work on something that us, as a group, can actually get some benefit out of.",
+          "I was able to recruit one of my friends, Chris Shank, and he ended up being the front-end designer and developer for the website, while I primarily focused on the backend and data aspect of the site.  Overall, this entire experience has been something that I very much enjoyed, and I can't wait to continue this project and to update the layout and functionality of the site!"
+        ]
+      }
+    }
+  },
+  {
+    "page": "members",
+    "content": {
+      "past": [
+        "Vu Tran (co-founder)",
+        "Steven Su (co-founder)",
+        "Victoria Slate",
+        "Cong To",
+        "Nasia Bachman-Streitfield",
+        "Mai Le",
+        "Kyunga (Katie) Bu",
+        "Laila Berzins",
+        "Eliza Morgan",
+        "Stephanie Rutkowski",
+        "Lizz Johnson",
+        "Lauren Silber",
+        "Jeffrey Corbinshley",
+        "Joseph Tarantino",
+        "Erik Lindquist",
+        "David Thieken",
+        "Daniel Mallek",
+        "Daniel Lin",
+        "Benjamin Bishop",
+        "Amanda Friendman",
+        "Jenny Bunce",
+        "Caitlin Cuskley",
+        "Laura Weismantel",
+        "Julian Murillo",
+        "Dan Gaewski",
+        "Sarah Parsons",
+        "Sam Ferrigno",
+        "Paul Banach",
+        "Paul Stellar",
+        "Amanda Cook",
+        "Jackson Tsai",
+        "Jasmine Kehrhahn",
+        "Simon Abrahms",
+        "Cody White",
+        "Taylor Meltzer",
+        "Adam Bestrom",
+        "Bobby Ober",
+        "Caroline Cacciola",
+        "Connor Sullivan",
+        "Justine Nixon",
+        "Lauren Arcement",
+        "Ryan Allen",
+        "Sahib Sawhney",
+        "Emily Stocker",
+        "Jillina Chongruk",
+        "Veronica Lee",
+        "Cole von Rechtofen",
+        "Jaclyn Sabogal",
+        "Jen Miao",
+        "Ben Aube",
+        "Nicholas Tan",
+        "Lauren Drainville",
+        "Dani Wrubel",
+        "Jerry Merkel",
+        "Emilio Loret de Mola",
+        "Ivan Paz",
+        "Matt Brandt",
+        "Rachel Conte",
+        "Nick Tambini",
+        "Elaina Giordano",
+        "Jessica Fernandes"
+      ],
+      "current": {
+        "exec": [
+          {
+            "Jayson Gilbert": {
+              "position": "President",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-4312.jpg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/img-4312_1.jpg?1491510657",
+              "major": "Chemical Engineering",
+              "minor": "Music",
+              "class": 2019,
+              "part": "Tenor",
+              "hometown": "Old Bridge, NJ",
+              "bio": "Jayson joined A Minor with very little knowledge or experience of a cappella, but he couldn't have been more happy about his decision to do so! He loves spending time with people who love singing just as much as he does. When Jayson isn't singing (which is never), you will either find him in the Fine Arts building practicing the piano or in his room watching Netflix. He fills his free time with watching shows like \"Game of Thrones\", \"The Flash\", and \"How to Get Away with Murder\". While he takes pride in his Netflix-watching capabilities, he more so hopes to develop his singing capabilities with A Minor, in hopes of developing a music career later in life."
+            }
+          },
+          {
+            "Nick Huynh": {
+              "position": "Vice President",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/fullsizeoutput-f56.jpeg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/fullsizeoutput-f5e_orig.jpeg",
+              "major": "Computer Science & Engineering",
+              "minor": "Mathematics",
+              "class": 2020,
+              "part": "Baritone",
+              "hometown": "Wethersfield, CT",
+              "bio": "Nick is a junior majoring in Computer Science and Engineering. He is currently the President of the Association for Computing Machinery. In his spare time, he loves to lift, freelance code, play tennis and meet new people.  One of Nick's future goals is to start up his own company and help inner city kids become invested in the field of technology."
+            }
+          },
+          {
+            "Laura Calandra": {
+              "position": "Treasurer",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/13988214-1127737953967482-736386395801587924-o_1.jpg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/13988214-1127737953967482-736386395801587924-o.jpeg?1511840379",
+              "major": "Actuarial Science",
+              "minor": "None",
+              "class": 2021,
+              "part": "Mezzo",
+              "hometown": "Southington, CT",
+              "bio": "Just like all of the A Minorians, Laura LOVES to sing! When she isn’t singing around the house bothering her friends, family, and roommates, she is dancing, acting, or doing math problems. Laura obsesses over musical theater (yes, Hamilton and Dear Evan Hansen, I see you). Laura’s favorite thing to do besides perform is eat! She loves every form of chicken, potatoes, and ice cream. You can find Laura on the couch almost every night (at home, because college dorms) with a big bowl of chocolate ice cream with strawberries and rainbow sprinkles watching Everybody Loves Raymond with her two biggest supporters (love you, mom and dad *winky face emoji*)."
+            }
+          },
+          {
+            "Andi Benvenuto": {
+              "position": "Secretary & Social Media",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1534-andi_1.jpg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/editor/1445446697.png?1487552922",
+              "major": "Biological Sciences",
+              "minor": "None",
+              "class": 2019,
+              "part": "Soprano",
+              "hometown": "Wolcott, CT",
+              "bio": "Andi (short for Andria), in addition to being an A Minorian, sings anywhere and everywhere and you can usually see her listening to music and singing along on the way to class, while doing homework, in the shower, while eating, while sleeping… basically all the time. In addition to being a music geek, Andi loves traveling, is a devout coffee drinker of all kinds, could eat pizza everyday (heart eyes emoji) and is obsessed with scarves. If you see her around, she’ll probably have a huge smile on her face and looooooves making new friends. If she weren’t completely dedicated to science, she’d probably end up being a \"professional\" public speaker for some sort of non-profit since she loves talking in front of people. Also, she connects to Elle Woods on a spiritual level. "
+            }
+          },
+          {
+            "Narineh Torosyan": {
+              "position": "Music Director",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1567-narineh_1.jpg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/1445446436.png?1487553033",
+              "major": "Allied Health",
+              "minor": "None",
+              "class": 2019,
+              "part": "Alto",
+              "hometown": "West Hartford, CT",
+              "bio": "The moment Narineh knew A Cappella was what she wanted to do in college was in 2012 when she saw \"Pitch Perfect\". The night she found out she was in A Minor was when her Aca-dreams came true. Along with singing, Narineh has been playing piano since she was 5. In her free time, she likes to play volleyball, watch all of the James Bond movies in a row, drink an insane amount of bubble tea, and listen to an absurd amount of music from her favorite artist, Bruno Mars. In the future, Narineh plans to go into medicine, but until then A Cappella is her job."
+            }
+          },
+          {
+            "Emma Kelly": {
+              "position": "Assistant Music Director",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/fullsizeoutput-e5f.jpeg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/emma2.jpeg?1516382993",
+              "major": "ACES Pre-Pharmacy",
+              "minor": "None",
+              "class": 2021,
+              "part": "Alto",
+              "hometown": "Bristol, CT",
+              "bio": "Music has been a part of Emma's life for as long as she can remember. Her a cappella journey began at Bristol Eastern High School as a member of Strawberry Fields, and she couldn't be more excited to continue her journey as a member of A Minor. Her favorite artists are Marina and the Diamonds and The 1975. Aside from music and singing, Emma has a strong passion for Thai food, bubble tea, and chicken parmesan (although she is in the process of reducing her meat intake, so leaving behind chicken parm will be a traumatic experience). Emma has a deep love for animals and the environment. She is currently in the EcoHouse Learning Community on campus. Outside of rehearsal, you can find Emma procrastinating, eating, or attempting to make people laugh (typically, she just tells some really bad jokes)."
+            }
+          }
+        ],
+        "generalmembers": [
+          {
+            "Aditya Kulkarni": {
+              "position": "Member",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/fullsizeoutput-f59.jpeg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/img-5191.jpg?1523987648",
+              "major": "Computer Science & Engineering",
+              "minor": "None",
+              "class": 2021,
+              "part": "Beatboxer/Bass",
+              "hometown": "Wallingford, CT",
+              "bio": "Unlike his fellow A Minorians, Aditya (aka Adi) started his a cappella journey right here at UConn itself. He quotes that A Minor is easily the best thing he has done in his second semester. Besides cracking jokes, Adi enjoys being active, traveling, and music. He loves spending time with his friends, helping anyone he can, and has a great desire of being successful in life. When Adi isn't working hard to get his CSE major, you will find him binge watching popular shows and movies, playing video games, and getting involved on campus!"
+            }
+          },
+          {
+            "Wilmer Gonzalez": {
+              "position": "Member",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/fullsizeoutput-e67.jpeg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/fullsizeoutput-e65_1.jpeg?1516908281",
+              "major": "Pyschology & Pre-Pharmacy",
+              "minor": "None",
+              "class": 2019,
+              "part": "Baritone",
+              "hometown": "Waterbury, CT",
+              "bio": "Wilmer (better known as Will) is in the Pre-Pharmacy program here at UConn, but is also working towards a B.S. in Psychology. When he's not buried in schoolwork, you'll likely find him singing or just acting like a total goofball. He went to Waterbury Arts Magnet School, where his focus was in music, but when he came to UConn, he didn't have many opportunities to continue doing what he loved--that is, until he joined A Minor! Apart from singing, Will likes to play video games, hang out with friends, and (most importantly) sleep. Despite his seemingly lax nature, he is always working hard to better himself and help those around him, while working towards his goal of being a pharmacist, and having fun along the way, of course!"
+            }
+          },
+          {
+            "Bobby Wyman": {
+              "position": "Member",
+              "cardpic": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/img-1554-bobby_1.jpg",
+              "imageurl": "http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/published/1445446146.png?1504496798",
+              "major": "Finance",
+              "minor": "None",
+              "class": 2019,
+              "part": "Tenor",
+              "hometown": "Wilton, CT",
+              "bio": "Bobby began to love singing when he started participating in musicals his sophomore year of high school. He knew he wanted to continue singing in college after his senior year, when he was inspired by his choir teacher/ musical director to get involved with singing in whatever way that he could. Bobby’s dream is to have an amazing family when he grows up."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
     "page": "repertoire",
-		"content": {
-			"past": [
-				"\"See You Again\" by Wiz Khalifa ft. Charlie Puth",
-				"\"New Year's Day\" by Pentatonix",
-				"\"Irresistible\" by Fall Out Boy ft. Demi Lovato",
-				"\"Talking Habits\" (Talking Body/Habits mash-up) by Tove Lo",
-				"\"Wildest Dreams\" by Taylor Swift",
-				"\"I Was Here\" by Beyonce",
-				"\"Gold\" from the Broadway show Once",
-				"\"Justin Bieber Medley\" by Justin Bieber and Selena Gomez",
-				"\"American Boy\" by Estelle ft. Kanye West",
-				"\"Elastic Heart\" by Sia",
-				"\"Levels\" by Nick Jonas",
-				"\"Honeymoon Avenue\" by Ariana Grande",
-				"\"No Air\" by Jordin Sparks ft. Chris Brown",
-				"\"FourFiveSeconds\" by Rihanna, Kanye West and Paul McCartney",
-				"\"Beautiful\" by Christina Aguilera",
-				"\"Flat on the Floor\" by Carrie Underwood",
-				"\"Latch\" by Sam Smith",
-				"\"Aha!\" by Imogen Heap",
-				"\"Michael Jackson Medley\" by Michael Jackson",
-				"\"Teenage Dream\" by Katy Perry",
-				"\"Never Let Me Go\" by Florence + The Machine",
-				"\"Boys of Summer\" by Don Henley",
-				"\"Sunrise\" by Norah Jones",
-				"\"Dancing with a Broken Heart\" by John Mayer",
-				"\"Freer\" by Declan Bennett",
-				"\"Beyonce Medley\" by Beyonce",
-				"\"The Chain\" by Ingrid Michaelson",
-				"\"Ragged Wood\" by Fleet Foxes",
-				"\"King of Anything\" by Sara Bareilles",
-				"\"Cry Me a River\" by Justin Timberlake",
-				"\"Gavin's Song\" by Marc Broussard",
-				"\"Lion King Medley\" from Lion King",
-				"\"It Don't Have to Change\" by John Legend",
-				"\"Free Ride\" by The Edgar Winter Group",
-				"\"Moondance\" by Van Morrison",
-				"\"Toxic\" by Britney Spears",
-				"\"Into the Ocean\" by Blue October",
-				"\"Hanging by a Moment\" by Lifehouse",
-				"\"Under the Sea (from The Little Mermaid)\" by Alan Menken and Howard Ashman",
-				"\"Everything You Want\" by Vertical Horizon",
-				"\"Don't Stop Me Now\" by Queen",
-				"\"Nobody Knows\" by The Tony Rich Project",
-				"\"Space Between\" by Dave Matthews Band",
-				"\"Gonna Fly Now\" by Bill Conti",
-				"\"Gangsta Paradise\" by Coolio",
-				"\"Cold\" by Crossfade",
-				"\"Always Be My Baby\" by Mariah Carey",
-				"\"For What It's Worth\" by Buffalo Springfield",
-				"\"Joy to the World\" by Three Dog Night",
-				"\"Techno/Listen to Your Heart in Heaven\"",
-				"\"I Feel the Earth Move\" by Carole King",
-				"\"The Sign\" by Ace of Base",
-				"\"The Lazy Boy\"",
-				"\"Imagine\" by The Beatles",
-				"\"Mr. Brightside\" by The Killers",
-				"\"Hine Ba Hashalom\" by Nurit Hirsch",
-				"\"Yue Liang Dai Biao Wo Duh Xin (Moon Represent My Heart)\" by Teresa Teng",
-				"\"In My Life\" by The Beatles",
-				"\"Can't Take My Eyes Off Of You\" by Bob Crewe and Bob Gaudio",
-				"\"White Flag\" by Dido",
-				"\"Dreams\" by The Cranberries",
-				"\"Life is a Highway\" by Rascal Flatts",
-				"\"Africa\" by Toto",
-				"\"Seven Days a Week\" by The Sounds",
-				"\"Amsterdam\" by Guster",
-				"\"Love You Anyway\" by Boyzone",
-				"\"Just For Now\" by Imogen Heap",
-				"\"Dreams\" by The Cranberries"
-			]
-		}
-	},
-	{
-		"page": "discography",
-		"content": {
-			"summary": [
-				"Here's some of our music, past and present!  Over the years, A Minor​ has had the opportunity to professionally record music and produce several awesome albums. However, the cost of creating an album (including studio time, mixing, and mastering) can cost up to $10,000.",
-				"We appreciate any and all contributions."
-			],
-			"Ignite": {
-				"year": 2016,
-				"release": "December 2, 2016",
-				"logo": "ignitelogo.png",
-				"design": "Mai Walters",
-				"recording": "Liquid 5th Production",
-				"mastering": "Eric Scholz",
-				"text": [
-					"We are so grateful to all who were involved in the making of this album -- thank you SO much, we could not have done it without your support and guidance!",
-					"Album funded by the Undergraduate Student Government (USG) at the University of Connecticut."
-				],
-				"links": {
-					"itunes": "test",
-					"applemusic": "test",
-					"spotify": "test"
-				},
-				"songs": {
-					"Irresistible": {
-						"time": "4:33",
-						"opb": "Fall Out Boy (feat. Demi Lovato)",
-						"sololists": "Danielle Wrubel and Jessica Fernandes",
-						"arranger": "Jeremiah Merkel"
-					},
-					"Wildest Dreams": {
-						"time": "3:46",
-						"opb": "Taylor Swift",
-						"sololists": "Rachel Conte",
-						"arranger": "Jeremiah Merkel"
-					},
-					"Talking Habits": {
-						"time": "3:34",
-						"opb": "Tove Lo",
-						"sololists": "Jeremiah Merkel and Narineh Torosyan",
-						"arranger": "Jeremiah Merkel"
-					},
-					"Gold": {
-						"time": "2:50",
-						"opb": "from the Broadway musical \"Once\"",
-						"sololists": "Ensemble",
-						"arranger": "David Moul"
-					},
-					"Control": {
-						"time": "3:38",
-						"opb": "Halsey",
-						"sololists": "Andria Benvenuto",
-						"arranger": "Jessica Fernandes and Jeremiah Merkel"
-					},
-					"See You Again": {
-						"time": "4:29",
-						"opb": "Wiz Khalifa (feat. Charlie Puth)",
-						"sololists": "Elaina Giodano and Ivan Paz",
-						"arranger": "Jeremiah Merkel and Nicholas Tan"
-					},
-					"Bieber Medley": {
-						"time": "5:49",
-						"opb": "Justin Bieber and Selena Gomez",
-						"sololists": "Jeremiah Merkel, Lauren Drainville, Bobby Wyman and Matt Brandt",
-						"arranger": "Jeremiah Merkel"
-					},
-					"Elastic Heart": {
-						"time": "4:20",
-						"opb": "Sia",
-						"sololists": "Rachel Conte",
-						"arranger": "Jeremiah Merkel"
-					},
-					"New Year's Day": {
-						"time": "3:39",
-						"opb": "Pentatonix",
-						"sololists": "Andria Benvenuto",
-						"arranger": "Jessica Fernandes"
-					},
-					"American Boy": {
-						"time": "2:56",
-						"opb": "Estelle (feat. Kanye West)",
-						"sololists": "Lauren Drainville and Nick Tambini",
-						"arranger": "VJ Rosales"
-					},
-					"I Was Here": {
-						"time": "2:43",
-						"opb": "Beyonce",
-						"sololists": "Narineh Torosyan",
-						"arranger": "Jessica Fernandes and Jeremiah Merkel"
-					}
-				}
-			},
-			"Incognito": {
-				"year": 2012,
-				"release": "November 26th, 2016",
-				"logo": "incognitologo.png",
-				"design": "Jackson Tsai",
-				"recording": "Angela Ugolini | The vocal Company",
-				"mastering": "Dave Sperandio | Diovoce",
-				"text": [
-					"Many thanks to Angela, Dave and Jackson for all of your help.",
-					"Album funded by the Undergraduate Student Government (USG) at the University of Connecticut and distributed for at no profit."
-				],
-				"links": {
-					"freedownload": "test"
-				},
-				"songs": {
-					"Beyonce Medley": {
-						"time": "5:47",
-						"opb": "Beyonce & Destiny's Child",
-						"sololists": "Jasmine Kehrhahn, Mandy Cook, Taylor Meltzer, Justine Nixon and Caroline Cacciola",
-						"arranger": "Noah Berg"
-					},
-					"The Chain": {
-						"time": "3:18",
-						"opb": "Ingrid Michaelson",
-						"sololists": "Jasmine Kehrhahn",
-						"arranger": "Amanda Friedman"
-					},
-					"Ragged Wood": {
-						"time": "3:15",
-						"opb": "Fleet Foxes",
-						"sololists": "Paul Banach",
-						"arranger": "Paul Banach"
-					},
-					"King of Anything": {
-						"time": "3:23",
-						"opb": "Sara Bareilles",
-						"sololists": "Justine Nixon",
-						"arranger": "Mandy Cook"
-					},
-					"Cry Me A River": {
-						"time": "4:59",
-						"opb": "Justin Timberlake",
-						"sololists": "Simon Abrahms",
-						"arranger": "Mandy Cook"
-					},
-					"Gavin's Song": {
-						"time": "2:45",
-						"opb": "Mark Broussard",
-						"sololists": "Taylor Meltzer",
-						"arranger": "Jenny Bunce"
-					},
-					"The Lion King Medley": {
-						"time": "6:27",
-						"opb": "Hanz Zimmer, et. al.",
-						"sololists": "Lauren Arcement, Jasmine Kehrhahn, Taylor Meltzer, Connor Sullivan, Cody White and Adam Bstrom",
-						"arranger": "UW Madhatters"
-					},
-					"Fix You": {
-						"time": "4:06",
-						"opb": "Coldplay",
-						"sololists": "Jasmine Kehrhahn",
-						"arranger": "Jasmine Kehrhahn"
-					},
-					"It Don't Have to Change": {
-						"time": "2:58",
-						"opb": "John Legend",
-						"sololists": "Cody White",
-						"arranger": "Laura Weismantel"
-					},
-					"Free Ride": {
-						"time": "2:43",
-						"opb": "Edgar Winter Group",
-						"sololists": "Connor Sullivan",
-						"arranger": "Mandy Cook"
-					}
-				}
-			}
-		}
-	},
-	{
-		"page": "services",
-		"content": {
-			"summary": [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus metus, rutrum ultricies sem vel, tempor sollicitudin enim. Mauris sem nisl, facilisis ut eleifend sit amet, efficitur eu erat. Fusce quis aliquet nunc, in imperdiet sem. Pellentesque mollis odio eget ipsum ultrices sollicitudin. Quisque placerat sodales dui eu blandit. ",
-				"Quisque quis augue posuere, hendrerit dui nec, dignissim quam. Sed gravida dapibus augue, in semper est volutpat quis. In ante libero, vestibulum non posuere ut, bibendum eget ex. Curabitur eros sem, blandit eu laoreet non, malesuada vel ipsum. Donec in quam vitae arcu egestas congue. Etiam ac nisl erat. Curabitur ac ante nec nisl viverra imperdiet eu id mauris. Nullam tincidunt odio ac ex rutrum, quis faucibus elit blandit. Phasellus nec orci eget nunc laoreet feugiat ac ut libero. Proin pretium justo eget auctor vulputate."
-			],
-			"gigs": {
-				"what_to_expect": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. ",
-				"pricing": "In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
-				"inquiries": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat."
-			},
-			"master_classes": {
-				"what_to_expect": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. ",
-				"pricing": "In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat.",
-				"inquiries": "Nulla et pulvinar turpis. Nam condimentum et risus nec pulvinar. Sed tempus porttitor est eu cursus. Quisque vel risus vitae elit interdum luctus ut sed ex. In hac habitasse platea dictumst. Donec malesuada a massa et varius. Ut et tincidunt nisi. Vivamus pharetra ultricies pharetra. Donec rutrum interdum dolor, at elementum metus porttitor at. Curabitur magna dolor, porta quis pulvinar at, sagittis ut augue. Sed at quam a ipsum ullamcorper placerat."
-			}
-		}
-	}
+    "content": {
+      "past": [
+        "\"See You Again\" by Wiz Khalifa ft. Charlie Puth",
+        "\"New Year's Day\" by Pentatonix",
+        "\"Irresistible\" by Fall Out Boy ft. Demi Lovato",
+        "\"Talking Habits\" (Talking Body/Habits mash-up) by Tove Lo",
+        "\"Wildest Dreams\" by Taylor Swift",
+        "\"I Was Here\" by Beyonce",
+        "\"Gold\" from the Broadway show Once",
+        "\"Justin Bieber Medley\" by Justin Bieber and Selena Gomez",
+        "\"American Boy\" by Estelle ft. Kanye West",
+        "\"Elastic Heart\" by Sia",
+        "\"Levels\" by Nick Jonas",
+        "\"Honeymoon Avenue\" by Ariana Grande",
+        "\"No Air\" by Jordin Sparks ft. Chris Brown",
+        "\"FourFiveSeconds\" by Rihanna, Kanye West and Paul McCartney",
+        "\"Beautiful\" by Christina Aguilera",
+        "\"Flat on the Floor\" by Carrie Underwood",
+        "\"Latch\" by Sam Smith",
+        "\"Aha!\" by Imogen Heap",
+        "\"Michael Jackson Medley\" by Michael Jackson",
+        "\"Teenage Dream\" by Katy Perry",
+        "\"Never Let Me Go\" by Florence + The Machine",
+        "\"Boys of Summer\" by Don Henley",
+        "\"Sunrise\" by Norah Jones",
+        "\"Dancing with a Broken Heart\" by John Mayer",
+        "\"Freer\" by Declan Bennett",
+        "\"Beyonce Medley\" by Beyonce",
+        "\"The Chain\" by Ingrid Michaelson",
+        "\"Ragged Wood\" by Fleet Foxes",
+        "\"King of Anything\" by Sara Bareilles",
+        "\"Cry Me a River\" by Justin Timberlake",
+        "\"Gavin's Song\" by Marc Broussard",
+        "\"Lion King Medley\" from Lion King",
+        "\"It Don't Have to Change\" by John Legend",
+        "\"Free Ride\" by The Edgar Winter Group",
+        "\"Moondance\" by Van Morrison",
+        "\"Toxic\" by Britney Spears",
+        "\"Into the Ocean\" by Blue October",
+        "\"Hanging by a Moment\" by Lifehouse",
+        "\"Under the Sea (from The Little Mermaid)\" by Alan Menken and Howard Ashman",
+        "\"Everything You Want\" by Vertical Horizon",
+        "\"Don't Stop Me Now\" by Queen",
+        "\"Nobody Knows\" by The Tony Rich Project",
+        "\"Space Between\" by Dave Matthews Band",
+        "\"Gonna Fly Now\" by Bill Conti",
+        "\"Gangsta Paradise\" by Coolio",
+        "\"Cold\" by Crossfade",
+        "\"Always Be My Baby\" by Mariah Carey",
+        "\"For What It's Worth\" by Buffalo Springfield",
+        "\"Joy to the World\" by Three Dog Night",
+        "\"Techno/Listen to Your Heart in Heaven\"",
+        "\"I Feel the Earth Move\" by Carole King",
+        "\"The Sign\" by Ace of Base",
+        "\"The Lazy Boy\"",
+        "\"Imagine\" by The Beatles",
+        "\"Mr. Brightside\" by The Killers",
+        "\"Hine Ba Hashalom\" by Nurit Hirsch",
+        "\"Yue Liang Dai Biao Wo Duh Xin (Moon Represent My Heart)\" by Teresa Teng",
+        "\"In My Life\" by The Beatles",
+        "\"Can't Take My Eyes Off Of You\" by Bob Crewe and Bob Gaudio",
+        "\"White Flag\" by Dido",
+        "\"Dreams\" by The Cranberries",
+        "\"Life is a Highway\" by Rascal Flatts",
+        "\"Africa\" by Toto",
+        "\"Seven Days a Week\" by The Sounds",
+        "\"Amsterdam\" by Guster",
+        "\"Love You Anyway\" by Boyzone",
+        "\"Just For Now\" by Imogen Heap",
+        "\"Dreams\" by The Cranberries"
+      ]
+    }
+  },
+  {
+    "page": "discography",
+    "content": {
+      "summary": [
+        "Here's some of our music, past and present!  Over the years, A Minor​ has had the opportunity to professionally record music and produce several awesome albums. However, the cost of creating an album (including studio time, mixing, and mastering) can cost up to $10,000.",
+        "We appreciate any and all contributions."
+      ],
+      "Ignite": {
+        "year": 2016,
+        "release": "December 2, 2016",
+        "logo": "ignitelogo.png",
+        "design": "Mai Walters",
+        "recording": "Liquid 5th Production",
+        "mastering": "Eric Scholz",
+        "text": [
+          "We are so grateful to all who were involved in the making of this album -- thank you SO much, we could not have done it without your support and guidance!",
+          "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut."
+        ],
+        "links": {
+          "itunes": "#",
+          "applemusic": "#",
+          "spotify": "#"
+        },
+        "songs": {
+          "Irresistible" : {
+            "time": "4:33",
+            "opb": "Fall Out Boy (feat. Demi Lovato)",
+            "soloists": "Danielle Wrubel and Jessica Fernandes",
+            "arranger": "Jeremiah Merkel"
+          },
+          "Wildest Dreams" : {
+            "time": "3:46",
+            "opb": "Taylor Swift",
+            "soloists": "Rachel Conte",
+            "arranger": "Jeremiah Merkel"
+          },
+          "Talking Habits" : {
+            "time": "3:34",
+            "opb": "Tove Lo",
+            "soloists": "Jeremiah Merkel and Narineh Torosyan",
+            "arranger": "Jeremiah Merkel"
+          },
+          "Gold" : {
+            "time": "2:50",
+            "opb": "from the Broadway musical \"Once\"",
+            "soloists": "Ensemble",
+            "arranger": "David Moul"
+          },
+          "Control" : {
+            "time": "3:38",
+            "opb": "Halsey",
+            "soloists": "Andria Benvenuto",
+            "arranger": "Jessica Fernandes and Jeremiah Merkel"
+          },
+          "See You Again" : {
+            "time": "4:29",
+            "opb": "Wiz Khalifa (feat. Charlie Puth)",
+            "soloists": "Elaina Giodano and Ivan Paz",
+            "arranger": "Jeremiah Merkel and Nicholas Tan"
+          },
+          "Bieber Medley" : {
+            "time": "5:49",
+            "opb": "Justin Bieber and Selena Gomez",
+            "soloists": "Jeremiah Merkel, Lauren Drainville, Bobby Wyman and Matt Brandt",
+            "arranger": "Jeremiah Merkel"
+          },
+          "Elastic Heart" : {
+            "time": "4:20",
+            "opb": "Sia",
+            "soloists": "Rachel Conte",
+            "arranger": "Jeremiah Merkel"
+          },
+          "New Year's Day" : {
+            "time": "3:39",
+            "opb": "Pentatonix",
+            "soloists": "Andria Benvenuto",
+            "arranger": "Jessica Fernandes"
+          },
+          "American Boy" : {
+            "time": "2:56",
+            "opb": "Estelle (feat. Kanye West)",
+            "soloists": "Lauren Drainville and Nick Tambini",
+            "arranger": "VJ Rosales"
+          },
+          "I Was Here" : {
+            "time": "2:43",
+            "opb": "Beyonce",
+            "soloists": "Narineh Torosyan",
+            "arranger": "Jessica Fernandes and Jeremiah Merkel"
+          }
+        }
+      },
+      "Incognito": {
+        "year": 2012,
+        "release": "November 26th, 2016",
+        "logo": "incognitologo.png",
+        "design": "Jackson Tsai",
+        "recording": "Angela Ugolini | The vocal Company",
+        "mastering": "Dave Sperandio | Diovoce",
+        "text": [
+          "Many thanks to Angela, Dave and Jackson for all of your help.",
+          "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut and distributed for at no profit."
+        ],
+        "links": {
+          "freedownload": "#"
+        },
+        "songs": {
+          "Beyonce Medley" : {
+            "time": "5:47",
+            "opb": "Beyonce & Destiny's Child",
+            "soloists": "Jasmine Kehrhahn, Mandy Cook, Taylor Meltzer, Justine Nixon and Caroline Cacciola",
+            "arranger": "Noah Berg"
+          },
+          "The Chain" : {
+            "time": "3:18",
+            "opb": "Ingrid Michaelson",
+            "soloists": "Jasmine Kehrhahn",
+            "arranger": "Amanda Friedman"
+          },
+          "Ragged Wood" : {
+            "time": "3:15",
+            "opb": "Fleet Foxes",
+            "soloists": "Paul Banach",
+            "arranger": "Paul Banach"
+          },
+          "King of Anything" : {
+            "time": "3:23",
+            "opb": "Sara Bareilles",
+            "soloists": "Justine Nixon",
+            "arranger": "Mandy Cook"
+          },
+          "Cry Me A River" : {
+            "time": "4:59",
+            "opb": "Justin Timberlake",
+            "soloists": "Simon Abrahms",
+            "arranger": "Mandy Cook"
+          },
+          "Gavin's Song" : {
+            "time": "2:45",
+            "opb": "Mark Broussard",
+            "soloists": "Taylor Meltzer",
+            "arranger": "Jenny Bunce"
+          },
+          "The Lion King Medley" : {
+            "time": "6:27",
+            "opb": "Hanz Zimmer, et. al.",
+            "soloists": "Lauren Arcement, Jasmine Kehrhahn, Taylor Meltzer, Connor Sullivan, Cody White and Adam Bstrom",
+            "arranger": "UW Madhatters"
+          },
+          "Fix You" : {
+            "time": "4:06",
+            "opb": "Coldplay",
+            "soloists": "Jasmine Kehrhahn",
+            "arranger": "Jasmine Kehrhahn"
+          },
+          "It Don't Have to Change" : {
+            "time": "2:58",
+            "opb": "John Legend",
+            "soloists": "Cody White",
+            "arranger": "Laura Weismantel"
+          },
+          "Free Ride" : {
+            "time": "2:43",
+            "opb": "Edgar Winter Group",
+            "soloists": "Connor Sullivan",
+            "arranger": "Mandy Cook"
+          }
+        }
+      }
+    }
+  },
+  {
+    "page": "services",
+    "content": {
+      "summary": [
+        "Want a premier a cappella group for your upcoming event?  Looking to take your a cappella group to the next level?  Look no further;  A Minor is an International Championship of Collegiate A Cappella (ICCA) Northeast Quarterfinal Champion.  We are also signed with a renowned record label, The Vocal Company.",
+        "Contact us at bookings.aminor@gmail.com to discuss any questions or to book us for a gig or masterclass!"
+      ],
+      "gigs": {
+        "what_to_expect": "A Minor can come and perform at YOUR event.  This can be anything from a live performance, show or even something crazy like a wedding!  Please reach out to us at bookings.aminor@gmail.com and let us know any details and we will discuss to work something out!",
+        "pricing": [
+          "15 min set - $150",
+          "30 min set - $250",
+          "30+ min set - Contact Us"
+        ]
+      },
+      "master_classes": {
+        "what_to_expect": "Want to take your a capella to another level?  A Minor now teaches master classes and we can help you out!  In these master classes, we will perform a song for you and teach you it as well.  Everything from vowel placement to blend to posture will be covered.  Not only that, we will also answer any questions that you may have to the best our abilities.  Contact us today at bookings.aminor@gmail.com to get your quote!",
+        "pricing": [
+          "Master Class - $300-$500"
+        ]
+      }
+    }
+  }
 ]
