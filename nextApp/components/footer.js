@@ -47,15 +47,10 @@ export default () => {
 
       <style jsx>
         {`
-        footer{
+        footer {
           background: black;
           color: white;
           padding: 50px 0 90px;
-          position: fixed;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
         }
 
         h2 {

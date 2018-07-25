@@ -7,16 +7,7 @@ const fadeTime = 1000
 export default class extends Component {
 
 	static async getInitialProps() {
-		const response  = await fetch(
-			'https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=members',
-			{
-				method: "GET",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				credentials: "include"
-			}
-		)
+		const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=members')
 		const data = await response.json()
 		const members = data.message.content
 		return { members }
@@ -24,92 +15,160 @@ export default class extends Component {
 
 	render() {
 		const { members } = this.props
+
 		return (
 			<section>
+
+				<h3>Eboard Members</h3>
 				<ul>
-					{Object.entries(members.current.eboard).map(member => (
-						<li key={member[0]}>
-							<LightBox timeout={fadeTime} zIndexExpanded={99}>
-								{expandedState => (
-									<Fragment>
-										<img alt="" className={`img-${expandedState}`} src="/static/images/member.jpg"/>
-										<h1>{member[0]}</h1>
-										<h4>{member[1].positions[0]}</h4>
-										<div className={`fade-${expandedState}`}>
-											<p>{member[1].bio[0]}</p>
-										</div>
-									</Fragment>
-								)}
-							</LightBox>
-						</li>
-					))}
+					{members.current.exec.map(exec => {
+						const name = Object.keys(exec)[0]
+						const execData = exec[name]
+
+						return (
+							<li key={name}>
+								<LightBox timeout={fadeTime} zIndexExpanded={99}>
+									{expandedState => (
+										<Fragment>
+											<img alt="" className={`img-${expandedState}`} src={execData.cardpic}/>
+											<div className={`content-${expandedState}`}>
+												<h1>{name}</h1>
+												<h4>{execData.position}</h4>
+												<div className={`fade-${expandedState}`}>
+													<p>{execData.part}</p>
+													<p>{execData.major}</p>
+													<p className="bio">{execData.bio}</p>
+												</div>
+											</div>
+										</Fragment>
+									)}
+								</LightBox>
+							</li>
+						)
+					})}
+				</ul>
+
+				<h3>Members</h3>
+				<ul>
+					{members.current.generalmembers.map(exec => {
+						const name = Object.keys(exec)[0]
+						const execData = exec[name]
+
+						return (
+							<li key={name}>
+								<LightBox timeout={fadeTime} zIndexExpanded={99}>
+									{expandedState => (
+										<Fragment>
+											<img alt="" className={`img-${expandedState}`} src={execData.cardpic}/>
+											<div className={`content-${expandedState}`}>
+												<h1>{name}</h1>
+												<h4>{execData.position}</h4>
+												<div className={`fade-${expandedState}`}>
+													<p>{execData.part}</p>
+													<p>{execData.major}</p>
+													<p className="bio">{execData.bio}</p>
+												</div>
+											</div>
+										</Fragment>
+									)}
+								</LightBox>
+							</li>
+						)
+					})}
 				</ul>
 
 				<style jsx>
-					{`
-				ul {
-					display flex;
-					flex-wrap: wrap;
-					list-style-type: none;
-					justify-content: center;
-					-webkit-padding-start: 0;
-					-webkit-margin-before: 0;
-		      -webkit-margin-after: 0;
-				}
+					{
+						`
+							h3 {
+								text-align: center;
+							}
 
-				li {
-					margin: 1rem;
-				}
+							ul {
+								display flex;
+								flex-wrap: wrap;
+								list-style-type: none;
+								justify-content: center;
+								-webkit-padding-start: 0;
+								margin: 0 auto;
+								-webkit-margin-before: 0;
+					      -webkit-margin-after: 0;
+					      max-width: 53.819rem;
+							}
 
-				h1, h4, p {
-					text-align: center;
-					-webkit-margin-before: 0;
-		      -webkit-margin-after: 0;
-				}
+							li {
+								margin: 1rem;
+							}
 
-				img {
-					display: block;
-					margin: 0 auto;
-				}
+							.content-entering, .content-entered, .content-exiting, .content-exited {
+								transform-origin: center top;
+							}
 
-				.img-entering, .img-entered {
-					border-radius: 50%;
-					height: 5.657rem;
-					width: 5.657rem;
+							.content-entering, .content-entered {
+								transform: translateY(-8rem) scale(0.5);
+							}
 
-				}
+							.content-entering, .content-exiting {
+								transition: transform ${fadeTime}ms;
+							}
 
-				.img-entering, .img-exiting {
-					transition: border-radius ${fadeTime}ms,
-											height ${fadeTime}ms,
-											width ${fadeTime}ms;
-				}
+							.content-exiting, .content-exited {}
 
-				.img-exiting, .img-exited {
-					border-radius: 0;
-					border-top-left-radius: .5rem;
-					border-top-right-radius: .5rem;
-					height: 13.455rem;
-					width: 13.455rem;
-				}
+							img {
+								display: block;
+								margin: 0 auto;
+								height: 13.455rem;
+								width: 13.455rem;
+								will-change: transform;
+							}
 
-				.fade-entering, .fade-entered {
-					opacity: 1;
-				}
+							.img-entering, .img-entered {
+								border-radius: 50%;
+								transform: translateY(-4rem) scale(0.3);
+							}
 
-				.fade-entering {
-					transition: opacity ${fadeTime - 150}ms 150ms;
-				}
+							.img-entering, .img-exiting {
+								transition: border-radius ${fadeTime}ms,
+														transform ${fadeTime}ms;
+							}
 
-				.fade-exiting {
-					transition: opacity ${fadeTime / 2}ms ;
-				}
+							.img-exiting, .img-exited {
+								border-top-left-radius: .5rem;
+								border-top-right-radius: .5rem;
+							}
 
-				.fade-exiting, .fade-exited {
-					opacity: 0;
-				}
+							.fade-entering, .fade-entered {
+								opacity: 1;
+							}
 
-			`}
+							.fade-entering {
+								transition: opacity ${fadeTime - 150}ms 150ms;
+							}
+
+							.fade-exiting {
+								transition: opacity ${fadeTime / 2}ms;
+							}
+
+							.fade-exiting, .fade-exited {
+								opacity: 0;
+							}
+
+							h1, h4, p {
+								text-align: center;
+								-webkit-margin-before: 0;
+					      -webkit-margin-after: 0;
+							}
+
+							p {
+								transform: translateX(-22%);
+								width: 175%;
+							}
+
+							.bio {
+								font-size: .707rem;
+							}
+						`
+					}
 				</style>
 			</section>
 		)

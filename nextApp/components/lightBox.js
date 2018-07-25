@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom'
 import {Component, Fragment} from 'react'
 import { Transition } from 'react-transition-group'
 
@@ -6,15 +7,43 @@ export default class extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = { isLightBoxExpanded: false	}
+		this.state = {
+			isLightBoxExpanded: false,
+			transformX: 0,
+			transformY: 0
+		}
 	}
 
-	resizeLightBox = () => {
-		this.setState(prevState => ({	isLightBoxExpanded: !prevState.isLightBoxExpanded 	}))
+	componentDidMount() {
+		document.addEventListener('resize', this.repositionLightBox)
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('resize', this.repositionLightBox)
+	}
+
+	repositionLightBox = () => {
+		if (this.state.isLightBoxExpanded) {
+			this.resizeLightBox(this.state.isLightBoxExpanded)
+		}
+	}
+
+	resizeLightBox = (isLightBoxExpanded) => {
+		const lightBox = ReactDOM.findDOMNode(this)
+		const centerOfPageX = window.innerWidth / 2
+		const centerOfPageY = (window.innerHeight / 2) + window.scrollY
+		const centerOfLightBoxX = lightBox.offsetLeft + (lightBox.offsetWidth / 2)
+		const centerOfLightBoxY = lightBox.offsetTop + (lightBox.offsetHeight / 2)
+
+		this.setState({
+			isLightBoxExpanded: isLightBoxExpanded,
+			transformX: centerOfPageX - centerOfLightBoxX,
+			transformY: centerOfPageY - centerOfLightBoxY
+		})
 	}
 
 	render() {
-		const { isLightBoxExpanded } = this.state
+		const { isLightBoxExpanded, transformX, transformY } = this.state
 		const { timeout, zIndexExpanded } = this.props
 
 		return (
@@ -25,16 +54,13 @@ export default class extends Component {
 				>
 					{(state) =>	(
 						<Fragment>
-							<div className={`lightbox expand-${state}`} onClick={() => this.resizeLightBox()}>
-								<div className="content">
-									{this.props.children(state)}
-								</div>
+							<div className={`lightbox expand-${state}`} onClick={() => this.resizeLightBox(!isLightBoxExpanded)}>
+								{this.props.children(state)}
 							</div>
-							<div className={`overlay overlay-${state}`} onClick={() => isLightBoxExpanded && this.resizeLightBox()}></div>
+							<div className={`overlay overlay-${state}`} onClick={() => isLightBoxExpanded && this.resizeLightBox(false)}></div>
 						</Fragment>
 					)}
 				</Transition>
-
 
 				<style jsx>
 					{`
@@ -45,13 +71,13 @@ export default class extends Component {
 							height: 19.028rem;
 							overflow: hidden;
 							position: relative;
+							transform: rotate(0.0001deg);
 							width: 13.455rem;
+							will-change: transform;
 						}
 
-						.content {}
-
 						.expand-entering, .expand-entered {
-							transform: scale(1.6, 1.4);
+							transform: translate(${transformX}px, ${transformY}px) scale(2.5, 2);
 							z-index: ${zIndexExpanded};
 						}
 
@@ -60,13 +86,8 @@ export default class extends Component {
 													z-index ${timeout}ms;
 						}
 
-						.expand-exiting, .expand-exited, .expand-exited .content {
-							transform: scale(1);
+						.expand-exiting, .expand-exited {
 							z-index: 0;
-						}
-
-						.expand-entering .content, .expand-entered .content {
-							transform: scale(0.8);
 						}
 
 						.overlay {
@@ -76,6 +97,7 @@ export default class extends Component {
 								right: 0;
 								bottom: 0;
 								left: 0;
+							will-change: opacity;
 						}
 
 						.overlay-entering, .overlay-entered {

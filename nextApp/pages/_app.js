@@ -17,9 +17,7 @@ export default class MyApp extends App {
   }
 
   componentDidMount() {
-    Router.onRouteChangeStart = url => {
-      this.getPageTransitionDirection(url)
-    }
+    Router.onRouteChangeStart = url => this.getPageTransitionDirection(url)
   }
 
   componentWillUnmount() {
@@ -83,6 +81,7 @@ export default class MyApp extends App {
 
             html {
               --page-transition: ${2 * TIMEOUT}ms;
+              font-size: 18px;
             }
 
             body {
@@ -96,7 +95,6 @@ export default class MyApp extends App {
             }
 
             main {
-              height: calc(100vh - 65px - 202px - 2rem);
               padding: 1rem;
             }
 
