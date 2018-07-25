@@ -1,5 +1,5 @@
 export default () => {
-  let icons = [
+  const icons = [
     {
       title: 'Twitter',
       href: 'https://twitter.com/UConnAMinor',
@@ -24,25 +24,23 @@ export default () => {
 
   return (
     <footer>
-      <h2 className={'catch-phrase'}>Peace. Love. AMinor.</h2>
+      <div className="footer-flex-box">
+        <h2 className={'catch-phrase'}>Peace. Love. AMinor.</h2>
 
-      <ul>
-        {icons.map(icon =>
-          <li key={icon.title}>
-            <a href={icon.href}>
-              <svg className={'icon'} viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
-                <path d={icon.path}></path>
-              </svg>
-              <span className={'icon-title'}>{icon.title}</span>
-            </a>
-          </li>
-        )}
-      </ul>
+        <ul>
+          {icons.map(icon =>
+            <li key={icon.title}>
+              <a href={icon.href}>
+                <svg className={'icon'} viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d={icon.path}></path>
+                </svg>
+                <span className={'icon-title'}>{icon.title}</span>
+              </a>
+            </li>
+          )}
+        </ul>
 
-      <div className={'copyright'}>
-        ©2018<span className={'copyright-name'}>NickHuynh</span>
-        &
-        <span className={'copyright-name'}>ChrisShank</span>
+        <div className={'copyright'}>©2018<span className={'copyright-name'}>NickHuynh</span>&<span className={'copyright-name'}>ChrisShank</span></div>
       </div>
 
       <style jsx>
@@ -50,19 +48,27 @@ export default () => {
         footer {
           background: black;
           color: white;
-          padding: 50px 0 90px;
+          padding:  1rem 0 2rem;
+        }
+
+        .footer-flex-box {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin: auto;
+          max-width: 64rem;
         }
 
         h2 {
-          margin: 0 0 20px;
+          margin: 0 0 2.828rem;
           text-align: center;
+          width: 100%;
         }
 
         ul {
-          left: 40px;
           list-style-type: none;
-          position: absolute;
-          margin: 0;
+          margin: 0 1rem;
           -webkit-padding-start: 0;
         }
 
@@ -84,25 +90,33 @@ export default () => {
         .icon {
           display: block;
           fill: currentColor;
-          font-size: 2em;
-          height: 1em;
+          height: 1.682rem;
           margin: 0 auto;
-          width: 1em;
+          width: 1.682rem;
         }
 
         .icon-title {
-          font-size: .75em;
+          font-size: .5rem;
         }
 
         .copyright {
-          font-size: 1.25em;
-          margin-top: 20px;
-          position: absolute;
-          right: 40px;
+          font-size: 1.189rem;
+          font-weight: 200;
+          margin: 0 1rem;
         }
 
         .copyright-name {
           font-weight: 900;
+        }
+
+        @media screen and (max-width: 53.816rem) {
+          .footer-flex-box {
+            flex-direction: column;
+          }
+
+          ul {
+            margin-bottom: 2.828rem;
+          }
         }
       `}
       </style>
