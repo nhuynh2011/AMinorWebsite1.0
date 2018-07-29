@@ -4,7 +4,6 @@ import { PageTransition } from 'next-page-transitions'
 import Head from '../components/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import MemberData from '../components/MemberData'
 
 import Router from 'next/router'
 
@@ -21,9 +20,7 @@ export default class MyApp extends App {
    * Add an event listener to get the page transition direction when the route changes
 	 */
 	componentDidMount() {
-    Router.onRouteChangeStart = url => {
-      this.setPageTransitionDirection(url)
-    }
+    Router.onRouteChangeStart = url => this.setPageTransitionDirection(url)
   }
 
 	/**
@@ -84,7 +81,11 @@ export default class MyApp extends App {
 
         <Header isPageMovingRight={this.state.isPageEnteringFromLeft}></Header>
 
+<<<<<<< HEAD
         <main>
+=======
+        <main role="main">
+>>>>>>> cd2d55760a1d754cc8ddf2157d25978eca039f66
           <PageTransition timeout={TIMEOUT} classNames="page-transition">
             <Component key={router.route} {...pageProps}></Component>
           </PageTransition>
@@ -108,6 +109,7 @@ export default class MyApp extends App {
             html {
 
               --page-transition: ${2 * TIMEOUT}ms;
+              font-size: 18px;
             }
 
             body {
@@ -120,7 +122,7 @@ export default class MyApp extends App {
             }
 
             main {
-              overflow: hidden;
+              padding: 1rem;
             }
 
             .page-transition-enter {
