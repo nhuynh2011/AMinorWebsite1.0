@@ -13,6 +13,13 @@ export default class extends Component {
 		return { members }
 	}
 
+	putMinor(arg) {
+		if (arg.minor != 'None') return (
+			'Minor: ' + arg.minor
+		);
+		else return
+	}
+
 	render() {
 		const { members } = this.props
 
@@ -36,7 +43,9 @@ export default class extends Component {
 												<h4>{execData.position}</h4>
 												<div className={`fade-${expandedState}`}>
 													<p>{execData.part}</p>
-													<p>{execData.major}</p>
+													<p>Major: {execData.major}</p>
+													<p>{this.putMinor(execData)}</p>
+													<br />
 													<p className="bio">{execData.bio}</p>
 												</div>
 											</div>
@@ -64,8 +73,10 @@ export default class extends Component {
 												<h1>{name}</h1>
 												<h4>{execData.position}</h4>
 												<div className={`fade-${expandedState}`}>
-													<p>{execData.part}</p>
-													<p>{execData.major}</p>
+													<p>Part: {execData.part}</p>
+													<p>Major: {execData.major}</p>
+													<p>{this.putMinor(execData)}</p>
+													<br />
 													<p className="bio">{execData.bio}</p>
 												</div>
 											</div>
