@@ -1,8 +1,20 @@
-export default () =>
-  <div>
-    <h1>Services</h1>
-    <ul>
-      <li>Gigs</li>
-      <li>Master Classes</li>
-    </ul>
-  </div>
+export default () => (
+	<section>
+		<p>Rep</p>
+
+		<style jsx global>
+			{
+				`
+					@media screen and (min-width: 45.256rem) {
+						footer {
+							position: fixed;
+								right: 0;
+								left: 0;
+								bottom: 0;
+						}
+					}
+				`
+			}
+		</style>
+	</section>
+)
