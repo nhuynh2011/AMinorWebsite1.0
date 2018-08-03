@@ -81,11 +81,7 @@ export default class MyApp extends App {
 
         <Header isPageMovingRight={this.state.isPageEnteringFromLeft}></Header>
 
-<<<<<<< HEAD
-        <main>
-=======
         <main role="main">
->>>>>>> cd2d55760a1d754cc8ddf2157d25978eca039f66
           <PageTransition timeout={TIMEOUT} classNames="page-transition">
             <Component key={router.route} {...pageProps}></Component>
           </PageTransition>
