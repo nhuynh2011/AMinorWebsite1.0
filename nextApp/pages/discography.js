@@ -70,14 +70,6 @@ export default class extends Component {
         <style jsx>
           {
             `
-              #discography {
-              	padding-top: 55px;
-              	margin: 0;
-              	font-size: 16px;
-              	line-height: 1.5;
-              	text-align: center;
-              }
-
               img {
                 display: block;
                 width: 100%;
