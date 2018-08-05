@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import Link from 'next/link'
-import Router from 'next/router'
+import { withRouter } from 'next/router'
 
-export default class extends Component {
+class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -19,7 +19,10 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    this.setActiveLink(document.getElementById(Router.route).firstChild)
+    const route = this.props.router.pathname
+    if (this.links.find(link => link.href === route)) {
+	    this.setActiveLink(document.getElementById(route).firstChild)
+    }
   }
 
 	/**
@@ -103,3 +106,5 @@ export default class extends Component {
     )
   }
 }
+
+export default withRouter(Header)
