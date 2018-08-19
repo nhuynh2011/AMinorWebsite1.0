@@ -30,29 +30,6 @@ export default class extends Component {
     })
   }
 
-  // generateAlbum = (content, name) => {
-  //   console.log('\n' + name + '\n');
-  //   console.log(content);
-  //   return (
-  //     <section className="albumSection grid">
-  //       <div className="content-wrap left-side">
-  //         <h2 className="content-title">{ name + ' (' + content.year + ')' }</h2>
-  //         <p>Available now on <a href='#'>{Object.keys(content.links)}</a></p>
-  //         <SongList songList={content.songs} />
-  //       </div>
-  //       <div className="content-wrap right-side album">
-  //         <img src={content.logo} alt={content.logo} /><br />
-  //         <p className='albumtitle'>{name} Details:</p>
-  //         <p><b className='albuminfotitle'>Release</b> : {content.release}</p>
-  //         <p><b className='albuminfotitle'>Album Art & Design</b> : {content.design}</p>
-  //         <p><b className='albuminfotitle'>Recording & Mixing</b> : {content.recording}</p>
-  //         <p><b className='albuminfotitle'>Mastering</b> : {content.mastering}</p>
-  //         { content.text.map((paragraph, index) => <p>{paragraph}</p>) }
-  //       </div>
-  //     </section>
-  //   )
-  // }
-
 	render() {
     const { discography } = this.props
 
