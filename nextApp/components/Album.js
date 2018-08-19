@@ -27,7 +27,7 @@ class Album extends Component {
             .albumSection {
               background: #fff;
               color: #333;
-              padding-top: 2rem;
+              padding: 2rem;
             }
 
             h2 {

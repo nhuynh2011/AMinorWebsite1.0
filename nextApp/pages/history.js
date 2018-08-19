@@ -1,4 +1,5 @@
-import fetch from "isomorphic-fetch";
+import fetch from 'isomorphic-fetch';
+import HistorySection from '../components/HistorySection'
 
 const people = [
 	{
@@ -10,7 +11,7 @@ const people = [
 			'A Minor was fortunate to have had three hilarious and fun-filled years with Dave, and his sense of humor, drive for perfection and bear hugs will live on with the group and its alumni forever.',
 			'One of the last songs Dave sang with A Minor was Coldplay\'s "Fix You", a moving song about coming to terms with loss. In honor of Dave, A Minor has kept "Fix You" in our repertoire. We encourage any and all alumni to join us in singing this song whenever possible.'
 		],
-		image: 'http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/3366762_orig.jpg',
+		image: '../static/images/plommy_photo.png',
 		alt: 'Photo of Dave Plommy'
 	},
 	{
@@ -23,40 +24,23 @@ const people = [
 			'Katie was a student in the Honors Program and was pursuing dual degrees in Environmental Science and Natural Resources. Her life was tragically cut short in her Junior year.',
 			'Katie was a beloved member of our a cappella group and she will always have an impact on our A Minor family.'
 		],
-		image: 'http://uconnaminor.weebly.com/uploads/3/2/7/8/3278517/8324617.jpg?1424901525',
+		image: '../static/images/katie_photo.png',
 		alt: 'Photo of Katie Bu'
 	}
 ]
 
-function generateSection(people) {
-	return people.map((person) => {
-		return (
-			<section className="section-f grid">
-				<div className="content-wrap">
-					<div className="left-side">
-						<h5><b>{person.name}</b></h5>
-						<h6>{person.dates}</h6>
-						{ person.text.map((paragraph) => <p>{paragraph}</p>) }
-					</div>
-					<div className="right-side">
-						<img src={person.image} alt={person.alt} />
-					</div>
-				</div>
-			</section>
-		)
-	})
-}
+
 
 const HISTORY_PAGE = ({ history }) => (
 	<div>
-		<section className='section-a grid'>
+		<section className='section-a'>
 			<div>
 				<br />
 					<h2 className='content-title'>Our History</h2>
 			</div>
 		</section>
 
-		<section className='section-f grid'>
+		<section className='section-f'>
 			<div className="content-wrap">
 				<h3 className="content-subtitle">Our Origins</h3>
 				<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
@@ -64,106 +48,40 @@ const HISTORY_PAGE = ({ history }) => (
 			</div>
 		</section>
 
-		{ generateSection(people) }
+		<HistorySection
+			people={ people } />
 
 		<style jsx>
 		{
 			`
-				img {
-					display: block;
-					width: 100%;
-					height: cover;
+				.section-a {
+					background: #eaeaea;
+					text-align: center;
+					color: #333;
+					padding: 1rem 2rem 2rem 2rem;
 				}
+
+        .content-title {
+          font-size: 1.5rem;
+          font-weight: 550;
+          color: black;
+        }
 
 				h1, h2, h3, h4 {
 					margin: 0px;
 					padding: 1em 0;
 				}
 
-				h5 {
-					margin: 0px;
-					padding: .5em 5% 0 5%;
-				}
-
-				h6 {
-					margin: 0px;
-					padding: .25em 5% 1em 5%;
-				}
-
-				#section-a {
-					background: #eaeaea;
-					color: #333;
-					padding-bottom: 2em;
-				}
-
-				#section-f {
+				.section-f {
 					text-align: center;
 					background: #fff;
 					color: #333;
 					padding: 2em 6em 2em 6em;
-				}
-
-				#section-f .left-side p {
-					padding-top: .5em;
-					padding-bottom: .5em;
-					color: #666;
-				}
-
-				#section-f .right-side {
-					padding-top: 2em;
-					margin-right: auto;
-					margin-left: auto;
-				}
-
-				@media(min-width: 700px) {
-					.grid {
-						display: grid;
-						grid-tempolate-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
-					}
-
-					#section-a .content-text {
-						columns: 1;
-						column-gap: 2em;
-					}
-
-					#section-a .content-text p {
-						padding-top: 0;
-					}
-
-					#section-f {
-						text-align: left;
-					}
-
-					#section-f .left-side {
-						width: 60%;
-						border-left: 1px solid #ccc;
-						float: left;
-					}
-
-					#section-f .right-side {
-						padding-top: 0;
-						width: 35%;
-						float: right;
-					}
-
-					#section-f .right-side img {
-						margin-top: auto;
-						margin-bottom: auto;
-						margin-left: auto;
-						margin-right: auto;
-					}
 				}
 			`
 		}
 		</style>
 	</div>
 )
-
-/*HISTORY_PAGE.getInitialProps = async () => {
-	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=history')
-	const data = await response.json()
-	const history = data.message.content
-	return { history }
-}*/
 
 export default HISTORY_PAGE
