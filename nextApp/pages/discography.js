@@ -38,7 +38,7 @@ export default class extends Component {
         <section className="section-a">
           <div className="content-wrap">
             <h1 className="content-title">Our Discography</h1>
-            <p>{ this.generateHeader(discography) }</p>
+            { this.generateHeader(discography) }
           </div>
         </section>
         <Album

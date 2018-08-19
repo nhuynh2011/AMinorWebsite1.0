@@ -34,6 +34,7 @@ class Album extends Component {
               padding: 0 0 0 2rem;
               font-size: 1.2rem;
               margin-bottom: .5rem;
+              text-align: center;
             }
 
             p {
@@ -41,6 +42,7 @@ class Album extends Component {
               font-size: .8rem;
               margin-top: 0;
               margin-bottom: 1rem;
+              text-align: center;
             }
 
             @media(min-width: 700px) {

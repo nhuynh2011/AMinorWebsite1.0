@@ -6,9 +6,9 @@ class SongList extends Component {
   }
 
   generateSongs = () => {
-    return Object.keys(this.props.songList).map((name) => {
+    return Object.keys(this.props.songList).map((name, index) => {
       return (
-        <li className='song'>
+        <li key={index} className='song'>
           <p><b className='songtitle'>{ name } ({this.props.songList[name].time})</b></p>
           <p className='songinfo'>o.p.b {this.props.songList[name].opb}</p>
           <p className='songinfo'><b className='songinfotitle'>Soloists: </b>{this.props.songList[name].soloists}</p>

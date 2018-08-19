@@ -14,7 +14,7 @@ class AlbumDetails extends Component {
         <p><b className='albuminfotitle'>Album Art & Design</b> : {this.props.content.design}</p>
         <p><b className='albuminfotitle'>Recording & Mixing</b> : {this.props.content.recording}</p>
         <p><b className='albuminfotitle'>Mastering</b> : {this.props.content.mastering}</p>
-        { this.props.content.text.map((paragraph, index) => <p>{paragraph}</p>) }
+        { this.props.content.text.map((paragraph, index) => <p key={index}>{paragraph}</p>) }
 
         <style jsx>
         {
