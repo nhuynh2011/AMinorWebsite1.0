@@ -117,10 +117,6 @@ export default class MyApp extends App {
               word-spacing: .125rem;
             }
 
-            main {
-              padding: 1rem;
-            }
-
             .page-transition-enter {
               transform: translateX(${this.getPageInDirection()}100vw);
               opacity: 0;
@@ -145,6 +141,18 @@ export default class MyApp extends App {
             .page-transition-exit-active {
               opacity: 0;
               transform: translateX(${this.getPageOutDirection()}100vw);
+            }
+
+            @media(min-width: 700px) {
+              main {
+                padding: 1rem;
+              }
+            }
+
+            @media(max-width: 700px) {
+              main {
+                padding: 0;
+              }
             }
           `}
         </style>
