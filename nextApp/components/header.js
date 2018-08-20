@@ -1,13 +1,10 @@
-import { Component } from 'react'
-import Link from 'next/link'
-import { withRouter } from 'next/router'
+import { Component } from 'react';
+import Link from 'next/link';
 
-class Header extends Component {
+export default class Header extends Component {
   constructor(props) {
-    super(props)
-    this.state = {
-      activeLink: undefined
-    }
+    super(props);
+
     this.links = [
       {title: 'Home', href: '/'},
       {title: 'History', href: '/history'},
@@ -15,50 +12,45 @@ class Header extends Component {
       {title: 'News', href: '/news'},
       {title: 'Repertoire', href: '/repertoire'},
       {title: 'Services', href: '/services'}
-    ]
+    ];
   }
-
-  componentDidMount() {
-    const route = this.props.router.pathname
-    if (this.links.find(link => link.href === route)) {
-	    this.setActiveLink(document.getElementById(route).firstChild)
-    }
-  }
-
-	/**
-   * Given the new active link, animate the navbar to reflect this update
-	 * @param newActiveLink
-	 */
-	setActiveLink = (newActiveLink) => {
-    if (this.state.activeLink) {
-      this.state.activeLink.classList.remove('active-link')
-    }
-
-    this.setState({ activeLink: newActiveLink },
-      () => this.state.activeLink.classList.add('active-link'))
-  }
-
 
   render() {
+	  const { currentRoute } = this.props;
+
     return (
       <header>
+	      <img alt="Aminor Logo" src="/static/images/AMinorLogo.png"/>
         <nav>
           <ul>
-            {this.links.map(link =>
-              <li id={link.href} key={link.title} onClick={(e) => this.setActiveLink(e.target)}>
+            {this.links.map(link => (
+              <li className={currentRoute === link.href ? '' : 'unactive-link'} id={link.href} key={link.title}>
                 <Link href={link.href} prefetch>
-                  <a data-hover={link.title}>{link.title}</a>
+                  <a>{link.title}</a>
                 </Link>
+                <div className="link-underline"></div>
               </li>
-            )}
+            ))}
           </ul>
         </nav>
 
         <style jsx>
           {`
             header {
-              background: black;
+              background: silver;
+              display: flex;
+              justify-content: space-between;
               padding: 1rem;
+            }
+
+            img {
+              --logo-width: 170px;
+	            height: calc(var(--logo-width) * 0.524);
+	            width: var(--logo-width);
+	          }
+
+            nav {
+              display: inline-block;
             }
 
             ul {
@@ -67,6 +59,7 @@ class Header extends Component {
               list-style-type: none;
               justify-content: center;
               margin: 0;
+              padding: 0;
             }
 
             li {
@@ -81,30 +74,33 @@ class Header extends Component {
               transition: color var(--page-transition) cubic-bezier(0, 0.9, 0, 0.9);
             }
 
-            a::before {
-              color: #4C7FB2;
-              content: attr(data-hover);
-              max-width: 0;
-              overflow: hidden;
-              position: absolute;
-                left: 0;
-              transition: max-width var(--page-transition) ease-in-out;
-              will-change: width;
+            .link-underline {
+              border-top: 3px solid #304eaa;
+              position: relative;
+                top: 3px;
+              transition: transform 0.5s ease-out;
             }
 
-            .active-link {
-              color: #4C7FB2;
-              transition: color var(--page-transition) cubic-bezier(0.9, 0, 0.9, 0);
+            .unactive-link .link-underline {
+              transform: scaleX(0);
             }
 
-            .active-link::before {
-              max-width: 100%;
+            .unactive-link:hover .link-underline {
+							transform: scaleX(0.5);
+            }
+
+            @media screen and (max-width: 1000px) {
+              header {
+                justify-content: center;
+              }
+
+              img {
+	              display: none;
+	            }
             }
           `}
         </style>
       </header>
-    )
+    );
   }
 }
-
-export default withRouter(Header)
