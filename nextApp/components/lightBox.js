@@ -9,6 +9,7 @@ export default class extends Component {
 
 		this.state = {
 			isLightBoxExpanded: false,
+			transitionState: 'exited',
 			transformX: 0,
 			transformY: 0
 		}
@@ -42,20 +43,34 @@ export default class extends Component {
 		})
 	}
 
+	onEntering = () => setTimeout(() => this.setState({ transitionState: 'entering' }), this.props.delay)
+
+	onEntered = () => this.setState({ transitionState: 'entered' })
+
+	onExiting = () => this.setState({ transitionState: 'exiting' })
+
+	onExited = () => this.setState({ transitionState: 'exited' })
+
+
+
 	render() {
-		const { isLightBoxExpanded, transformX, transformY } = this.state
-		const { timeout, zIndexExpanded } = this.props
+		const { isLightBoxExpanded, transitionState, transformX, transformY } = this.state
+		const { delay, timeout, zIndexExpanded } = this.props
 
 		return (
 			<div>
 				<Transition
 					in={isLightBoxExpanded}
+					onEntering={this.onEntering}
+					onEntered={this.onEntered}
+					onExiting={this.onExiting}
+					onExited={this.onExited}
 				  timeout={timeout}
 				>
 					{(state) =>	(
 						<Fragment>
-							<div className={`lightbox expand-${state}`} onClick={() => this.resizeLightBox(!isLightBoxExpanded)}>
-								{this.props.children(state)}
+							<div className={`lightbox center-${state} expand-${transitionState}`} onClick={() => this.resizeLightBox(!isLightBoxExpanded)}>
+								{this.props.children(transitionState)}
 							</div>
 							<div className={`overlay overlay-${state}`} onClick={() => isLightBoxExpanded && this.resizeLightBox(false)}></div>
 						</Fragment>
@@ -72,22 +87,36 @@ export default class extends Component {
 							overflow: hidden;
 							position: relative;
 							transform: rotate(0.0001deg);
+							transform-oigin: center center;
 							width: 13.455rem;
 							will-change: transform;
 						}
 
-						.expand-entering, .expand-entered {
-							transform: translate(${transformX}px, ${transformY}px) scale(2.5, 2);
+						.center-entering, .center-entered {
+							transform: translate(${transformX}px, ${transformY}px);
 							z-index: ${zIndexExpanded};
 						}
 
-						.expand-entering, .expand-exiting, .expand-entering .content, .expand-exiting .content {
+						.center-entering {
 							transition: transform ${timeout}ms,
 													z-index ${timeout}ms;
 						}
 
-						.expand-exiting, .expand-exited {
+						.center-exiting {
+							transition: transform ${timeout}ms ${timeout}ms,
+													z-index ${timeout}ms ${timeout}ms;
+						}
+
+						.center-exiting, .center-exited {
 							z-index: 0;
+						}
+
+						.expand-entering, .expand-entered {
+							transform: scale(2.5, 2);
+						}
+
+						.expand-entering, .expand-exiting {
+							transition: transform ${timeout}ms;
 						}
 
 						.overlay {
@@ -108,6 +137,16 @@ export default class extends Component {
 						.overlay-entering, .overlay-exiting {
 							transition: opacity ${timeout}ms,
 													z-index ${timeout}ms;
+						}
+
+						.overlay-entering {
+							transition: opacity ${timeout}ms,
+													z-index ${timeout}ms;
+						}
+
+						.overlay-exiting {
+							transition: opacity ${timeout}ms ${timeout}ms,
+													z-index ${timeout}ms ${timeout}ms;
 						}
 
 						.overlay-exiting, .overlay-exited {
