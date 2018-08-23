@@ -1,4 +1,4 @@
-******If all pictures are the same resolution, you can simply get rid of 
+******If all pictures are the same resolution, you can simply get rid of
 height stylings and the pictures will scale much better
 
 1.) All - Change color scheme to blue/gold/black/white
@@ -7,6 +7,4 @@ height stylings and the pictures will scale much better
 
 3.) Repertoire - Add in Music Web Player APIs
 
-4.) Contact Us - Add in PHP and Servers, so we can email ourselves
-
-5.) Index - Make Showcase a Slidey Boi
+4.) Contact Us - Add in Emailing

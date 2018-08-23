@@ -1,3 +1,0 @@
-exports.dateTime = () => {
-  return Date();
-}
