@@ -37,7 +37,7 @@ export default class Header extends Component {
         <style jsx>
           {`
             header {
-              background: silver;
+              background: black;
               display: flex;
               justify-content: space-between;
               padding: 1rem;

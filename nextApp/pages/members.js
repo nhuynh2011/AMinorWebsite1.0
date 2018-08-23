@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import MemberLightBox from '../components/membersLightBox';
+import MemberModals from '../components/member-modals';
 import fetch from 'isomorphic-fetch';
 
 export default class extends Component {
@@ -19,10 +19,10 @@ export default class extends Component {
 
 				<h3>Eboard Members</h3>
 
-				<MemberLightBox members={members.current.exec} transitionTime={1000}></MemberLightBox>
+				<MemberModals members={members.current.exec}></MemberModals>
 
 				<h3>Members</h3>
-				<MemberLightBox members={members.current.generalmembers} transitionTime={1000}></MemberLightBox>
+				<MemberModals members={members.current.generalmembers}></MemberModals>
 
 				<style jsx>
 					{
