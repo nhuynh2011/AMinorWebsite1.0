@@ -2,6 +2,7 @@ import { Component, Fragment } from 'react'
 import fetch from 'isomorphic-fetch'
 import SongList from '../components/SongList'
 import Album from '../components/Album'
+import DescriptionBox from '../components/DescriptionBox'
 
 const fadeTime = 1000
 
@@ -22,25 +23,14 @@ export default class extends Component {
     return { discography }
   }
 
-  generateHeader = (discography) => {
-    return Object.entries(discography.content.summary).map((paragraph, index) => {
-      return (
-        <p className="content-text" key={index}>{ paragraph[1] }</p>
-      )
-    })
-  }
-
 	render() {
     const { discography } = this.props
 
 		return (
       <div className="discography">
-        <section className="section-a">
-          <div className="content-wrap">
-            <h1 className="content-title">Our Discography</h1>
-            { this.generateHeader(discography) }
-          </div>
-        </section>
+        <DescriptionBox
+          heading="Our Discography"
+          subtext={discography.content.summary} />
         <Album
           content={discography.content.Ignite}
           name='Ignite' />
