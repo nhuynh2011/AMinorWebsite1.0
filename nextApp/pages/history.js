@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import HistorySection from '../components/HistorySection'
+import DescriptionBox from '../components/DescriptionBox'
 
 const people = [
 	{
@@ -33,12 +34,8 @@ const people = [
 
 const HISTORY_PAGE = ({ history }) => (
 	<div>
-		<section className='section-a'>
-			<div>
-				<br />
-					<h2 className='content-title'>Our History</h2>
-			</div>
-		</section>
+		<DescriptionBox
+			heading="Our History" />
 
 		<section className='section-f'>
 			<div className="content-wrap">
@@ -54,19 +51,6 @@ const HISTORY_PAGE = ({ history }) => (
 		<style jsx>
 		{
 			`
-				.section-a {
-					background: #eaeaea;
-					text-align: center;
-					color: #333;
-					padding: 1rem 2rem 2rem 2rem;
-				}
-
-        .content-title {
-          font-size: 1.5rem;
-          font-weight: 550;
-          color: black;
-        }
-
 				h1, h2, h3, h4 {
 					margin: 0px;
 					padding: 1em 0;
