@@ -42,28 +42,13 @@ export default class extends Component {
         <style jsx>
           {
             `
-              .section-a {
-              	background: #eaeaea;
-                text-align: center;
-              	color: #333;
-              	padding: 1rem 2rem 2rem 2rem;
-              }
-
               .break {
                 height: 2px;
               	background: #eaeaea;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
                 padding: 0;
-              }
-
-              .content-title {
-                font-size: 1.5rem;
-                font-weight: 550;
-                color: black;
-              }
-
-              p {
-                font-weight: 500;
-                font-size: 1rem;
               }
             `
           }

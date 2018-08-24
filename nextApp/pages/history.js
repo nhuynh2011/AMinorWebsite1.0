@@ -51,19 +51,6 @@ const HISTORY_PAGE = ({ history }) => (
 		<style jsx>
 		{
 			`
-				.section-a {
-					background: #eaeaea;
-					text-align: center;
-					color: #333;
-					padding: 1rem 2rem 2rem 2rem;
-				}
-
-        .content-title {
-          font-size: 1.5rem;
-          font-weight: 550;
-          color: black;
-        }
-
 				h1, h2, h3, h4 {
 					margin: 0px;
 					padding: 1em 0;
