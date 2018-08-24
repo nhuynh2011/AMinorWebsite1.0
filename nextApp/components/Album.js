@@ -10,9 +10,13 @@ class Album extends Component {
   printLinks(links) {
     if (links.length > 1) {
       return links.map((key, index) => {
-        if (index < links.length-1)
+        if (index < links.length-2)
           return (
             <span><a href={this.props.content.links[key]} key={key}>{key}</a>, </span>
+          )
+        else if (index < links.length-1)
+          return (
+            <span><a href={this.props.content.links[key]} key={key}>{key}</a> </span>
           )
         else return <span>and <a href={this.props.content.links[key]} key={key}>{key}</a></span>
       })
