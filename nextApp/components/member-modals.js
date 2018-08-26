@@ -54,9 +54,9 @@ export default ({ members }) => (
 					}
 
 					.content {
-						background: silver;
-						border-radius: 0.5rem;
-						box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.5);
+						background: #eaeaea;
+						border-radius: 0.25rem;
+						box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.6);
 					}
 
 					.content-unexpanded {

@@ -1,4 +1,4 @@
-import fetch from "isomorphic-fetch";
+import fetch from 'isomorphic-fetch';
 
 const REPERTOIRE_PAGE = ({ repertoire }) => (
 	<p>Rep</p>
@@ -11,4 +11,4 @@ REPERTOIRE_PAGE.getInitialProps = async () => {
 	return { repertoire }
 }
 
-export default REPERTOIRE_PAGE
+export default REPERTOIRE_PAGE;

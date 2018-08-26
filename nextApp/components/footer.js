@@ -46,7 +46,7 @@ export default () => {
       <style jsx>
         {`
         footer {
-          background: black;
+          background: #94cfff;
           color: white;
           padding:  1rem 0 2rem;
         }
@@ -114,8 +114,8 @@ export default () => {
             flex-direction: column;
           }
 
-          ul {
-            margin-bottom: 2.828rem;
+          h2, ul {
+            margin-bottom: 1.414rem;
           }
         }
       `}

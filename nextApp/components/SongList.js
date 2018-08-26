@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-class SongList extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class SongList extends Component {
   generateSongs = () => {
     return Object.keys(this.props.songList).map((name, index) => {
       return (
         <li key={index} className='song'>
-          <p><b className='songtitle'>{ name } ({this.props.songList[name].time})</b></p>
-          <p className='songinfo'>o.p.b {this.props.songList[name].opb}</p>
-          <p className='songinfo'><b className='songinfotitle'>Soloists: </b>{this.props.songList[name].soloists}</p>
-          <p className='songinfo'><b className='songinfotitle'>Arranger: </b>{this.props.songList[name].arranger}</p>
+          <p><b className='song-title'>{ name } ({this.props.songList[name].time})</b></p>
+          <p className='song-info'>o.p.b {this.props.songList[name].opb}</p>
+          <p className='song-info'><b className='song-info-title'>Soloists: </b>{this.props.songList[name].soloists}</p>
+          <p className='song-info'><b className='song-info-title'>Arranger: </b>{this.props.songList[name].arranger}</p>
           <style jsx>
             {
               `
@@ -21,19 +17,19 @@ class SongList extends Component {
                   color: #666;
                 }
 
-                .songtitle {
+                .song-title {
                   font-weight: 700;
                   font-size: 1rem;
                   color: black;
                 }
 
-                .songinfotitle {
+                .song-info-title {
                   font-weight: 600;
                   font-size: .8rem;
                   color: black;
                 }
 
-                .songinfo; {
+                .song-info; {
                   color: #666;
                   font-weight: 200;
                   font-size: .5rem;
@@ -53,7 +49,7 @@ class SongList extends Component {
             }
           </style>
         </li>
-      )
+      );
     })
   }
 
@@ -62,8 +58,6 @@ class SongList extends Component {
       <ol>
         { this.generateSongs() }
       </ol>
-    )
+    );
   }
 }
-
-export default SongList

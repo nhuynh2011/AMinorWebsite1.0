@@ -7,11 +7,12 @@ export default class Header extends Component {
 
     this.links = [
       {title: 'Home', href: '/'},
-      {title: 'History', href: '/history'},
-      {title: 'Members', href: '/members'},
-      {title: 'News', href: '/news'},
-      {title: 'Repertoire', href: '/repertoire'},
-      {title: 'Services', href: '/services'}
+	    {title: 'News', href: '/news'},
+	    {title: 'Members', href: '/members'},
+	    {title: 'Discography', href: '/discography'},
+	    {title: 'Repertoire', href: '/repertoire'},
+	    {title: 'Services', href: '/services'},
+	    {title: 'History', href: '/history'}
     ];
   }
 
@@ -37,7 +38,7 @@ export default class Header extends Component {
         <style jsx>
           {`
             header {
-              background: black;
+              background: #94cfff;
               display: flex;
               justify-content: space-between;
               padding: 1rem;
@@ -63,7 +64,7 @@ export default class Header extends Component {
             }
 
             li {
-              margin: 0 1.189rem;
+              margin: 0 0.707rem;
             }
 
             a {
@@ -75,6 +76,7 @@ export default class Header extends Component {
             }
 
             .link-underline {
+              border-radius: 1px;
               border-top: 3px solid #304eaa;
               position: relative;
                 top: 3px;

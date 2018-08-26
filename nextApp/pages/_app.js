@@ -122,7 +122,7 @@ export default class extends App {
 
 	            @media screen and (max-width: 1000px) {
 	              main {
-		              min-height: calc(100vh - 68.714px - 278.643px);
+		              min-height: calc(100vh - 68.714px - 227.732px);
 		            }
 	            }
             `

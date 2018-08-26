@@ -1,23 +1,12 @@
-import { Component, Fragment } from 'react'
+import { Component } from 'react'
 import fetch from 'isomorphic-fetch'
-import SongList from '../components/SongList'
 import Album from '../components/Album'
 import DescriptionBox from '../components/DescriptionBox'
 
-const fadeTime = 1000
 
 export default class extends Component {
   static async getInitialProps() {
-    const response = await fetch(
-      'https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=discography',
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        credentials: "include"
-      }
-    )
+    const response = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=discography')
     const data = await response.json()
     const discography = data.message
     return { discography }

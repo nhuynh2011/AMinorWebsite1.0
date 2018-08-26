@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-const DescriptionBox = ({ heading, subtext }) => {
-  const generateText = (arr) => {
+export default ({ heading, subtext }) => {
+  const generateText = () => {
     return subtext.map((paragraph, index) => {
       return (
         <p className="content-text" key={index}>{paragraph}</p>
-      )
-    })
+      );
+    });
   }
 
   const processSubtext = () => {
     if (subtext) {
-      if (Array.isArray(subtext)) return generateText(subtext);
-      else return subtext
+      if (Array.isArray(subtext)) {
+      	return generateText();
+      }
+      return subtext;
     }
   }
 
@@ -27,6 +29,7 @@ const DescriptionBox = ({ heading, subtext }) => {
           `
             .description {
               background: #eaeaea;
+              box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
               text-align: center;
               color: #333;
               padding: 1rem 2rem 2rem 2rem;
@@ -52,7 +55,5 @@ const DescriptionBox = ({ heading, subtext }) => {
         }
       </style>
     </section>
-  )
+  );
 }
-
-export default DescriptionBox

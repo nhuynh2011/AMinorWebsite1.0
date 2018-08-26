@@ -1,5 +1,5 @@
-import NextHead from 'next/head'
-import { string } from 'prop-types'
+import NextHead from 'next/head';
+import { string } from 'prop-types';
 
 const defaultDescription = ''
 
@@ -20,6 +20,6 @@ Head.propTypes = {
   description: string,
   url: string,
   ogImage: string
-}
+};
 
-export default Head
+export default Head;

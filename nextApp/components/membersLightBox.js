@@ -1,5 +1,5 @@
-import {Fragment} from "react";
-import LightBox from "./lightBox";
+import { Fragment } from 'react';
+import LightBox from './lightBox';
 
 export default ({ members, transitionTime }) => (
 	<ul>
@@ -125,4 +125,4 @@ export default ({ members, transitionTime }) => (
 			}
 		</style>
 	</ul>
-)
+);

@@ -1,37 +1,33 @@
-import React, { Component } from 'react'
-import SongList from './SongList'
-import AlbumDetails from './AlbumDetails'
+import React, { Component } from 'react';
+import SongList from './SongList';
+import AlbumDetails from './AlbumDetails';
 
-class Album extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class Album extends Component {
   printLinks(links) {
     if (links.length > 1) {
       return links.map((key, index) => {
-        if (index < links.length-2)
+        if (index < links.length - 2)
           return (
-            <span><a href={this.props.content.links[key]} key={key}>{key}</a>, </span>
-          )
-        else if (index < links.length-1)
+            <span key={index}><a href={this.props.content.links[key]} key={key}>{key}</a>, </span>
+          );
+        else if (index < links.length - 1)
           return (
-            <span><a href={this.props.content.links[key]} key={key}>{key}</a> </span>
-          )
-        else return <span>and <a href={this.props.content.links[key]} key={key}>{key}</a></span>
+            <span key={index}><a href={this.props.content.links[key]} key={key}>{key}</a> </span>
+          );
+        else return <span key={index}>and <a href={this.props.content.links[key]} key={key}>{key}</a></span>;
       })
-    } else if (links.length == 1) {
-      var key = links[0];
-      return <span><a href={this.props.content.links[key]} key={key}>{key}</a></span>
+    } else if (links.length === 1) {
+      const key = links[0];
+      return <span><a href={this.props.content.links[key]} key={key}>{key}</a></span>;
     } else {
-      return <span>ERROR</span>
+      return <span>ERROR</span>;
     }
   }
 
   render() {
     return (
-      <section className="albumSection grid">
-        <div className="albumHeader left-side">
+      <section className="album-section grid">
+        <div className="album-header left-side">
           <h2>{ this.props.name + ' (' + this.props.content.year + ')' }</h2>
           <p>Available now on { this.printLinks(Object.keys(this.props.content.links)) }</p>
           <SongList songList={this.props.content.songs} />
@@ -45,10 +41,11 @@ class Album extends Component {
         <style jsx>
         {
           `
-            .albumSection {
+            .album-section {
               background: #fff;
               color: #333;
-              padding: 2rem;
+              padding: 0 2rem;
+              margin-top: 2rem;
             }
 
             h2 {
@@ -88,5 +85,3 @@ class Album extends Component {
     );
   }
 }
-
-export default Album

@@ -1,6 +1,5 @@
-import fetch from 'isomorphic-fetch';
-import HistorySection from '../components/HistorySection'
-import DescriptionBox from '../components/DescriptionBox'
+import HistorySection from '../components/HistorySection';
+import DescriptionBox from '../components/DescriptionBox';
 
 const people = [
 	{
@@ -28,11 +27,11 @@ const people = [
 		image: '../static/images/katie_photo.png',
 		alt: 'Photo of Katie Bu'
 	}
-]
+];
 
 
 
-const HISTORY_PAGE = ({ history }) => (
+export default () => (
 	<div>
 		<DescriptionBox
 			heading="Our History" />
@@ -53,19 +52,17 @@ const HISTORY_PAGE = ({ history }) => (
 			`
 				h1, h2, h3, h4 {
 					margin: 0px;
-					padding: 1em 0;
+					padding: 1rem 0;
 				}
 
 				.section-f {
 					text-align: center;
 					background: #fff;
 					color: #333;
-					padding: 2em 6em 2em 6em;
+					padding: 2rem 6rem 2rem 6rem;
 				}
 			`
 		}
 		</style>
 	</div>
 )
-
-export default HISTORY_PAGE

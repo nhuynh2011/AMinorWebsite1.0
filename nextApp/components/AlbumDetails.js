@@ -1,10 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-class AlbumDetails extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class AlbumDetails extends Component {
   render() {
     return (
       <div>
@@ -46,8 +42,6 @@ class AlbumDetails extends Component {
         }
         </style>
       </div>
-    )
+    );
   }
 }
-
-export default AlbumDetails

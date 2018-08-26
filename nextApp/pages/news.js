@@ -1,7 +1,14 @@
-import fetch from "isomorphic-fetch";
+import fetch from 'isomorphic-fetch';
+import NewModals from '../components/news-modals';
+import DescriptionBox from '../components/DescriptionBox';
+import { Fragment } from 'react';
 
 const NEWS_PAGE = ({ news }) => (
-	<h1>News</h1>
+	<Fragment>
+		<DescriptionBox heading="News" subtext="Check out our lastest new."></DescriptionBox>
+
+		<NewModals news={news}></NewModals>
+	</Fragment>
 )
 
 NEWS_PAGE.getInitialProps = async () => {
@@ -11,4 +18,4 @@ NEWS_PAGE.getInitialProps = async () => {
 	return { news }
 }
 
-export default NEWS_PAGE
+export default NEWS_PAGE;
