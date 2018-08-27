@@ -1,39 +1,34 @@
-import { Component } from 'react';
-import MemberModals from '../components/member-modals';
 import fetch from 'isomorphic-fetch';
 
-export default class extends Component {
+import MemberModals from '../components/member-modals';
 
-	static async getInitialProps() {
-		const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=members');
-		const data = await response.json();
-		const members = data.message.content;
-		return { members };
-	}
+const MEMBERS_PAGE = ({ members }) => (
+	<section>
 
-	render() {
-		const { members } = this.props;
+		<h3>Eboard Members</h3>
 
-		return (
-			<section>
+		<MemberModals members={members.current.exec}></MemberModals>
 
-				<h3>Eboard Members</h3>
+		<h3>Members</h3>
+		<MemberModals members={members.current.generalmembers}></MemberModals>
 
-				<MemberModals members={members.current.exec}></MemberModals>
-
-				<h3>Members</h3>
-				<MemberModals members={members.current.generalmembers}></MemberModals>
-
-				<style jsx>
-					{
-						`
-							h3 {
-								text-align: center;
-							}
-						`
+		<style jsx>
+			{
+				`
+					h3 {
+						text-align: center;
 					}
-				</style>
-			</section>
-		);
-	}
+				`
+			}
+		</style>
+	</section>
+);
+
+MEMBERS_PAGE.getInitialProps = async ()  => {
+	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=members');
+	const data = await response.json();
+	const members = data.message.content;
+	return { members };
 }
+
+export default MEMBERS_PAGE;

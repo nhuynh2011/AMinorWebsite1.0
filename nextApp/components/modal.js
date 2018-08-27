@@ -62,7 +62,7 @@ export default class Modal extends Component {
 									right: 0;
 									bottom: 0;
 									left: 0;
-								transition: opacity 1s ease-out;
+								transition: opacity .5s ease-out;
 								will-change: opacity;
 								z-index: ${zIndexWhenExpanded};
 							}

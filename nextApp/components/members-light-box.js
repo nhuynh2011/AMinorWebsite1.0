@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+
 import LightBox from './lightBox';
 
 export default ({ members, transitionTime }) => (

@@ -39,17 +39,9 @@ export default ({ serviceTitle, service, imageLink }) => (
 					}
 
 					.content-unexpanded {
-						max-height: 20rem;
-						max-width: 38.054rem;
+						max-height: 25rem;
+						max-width: 64rem;
 						overflow: hidden;
-					}
-
-					.content-unexpanded h1 {
-						margin: 0;
-						position: absolute;
-							top: 0.125rem;
-						width: 100%;
-
 					}
 
 					.content-unexpanded img {

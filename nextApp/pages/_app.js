@@ -1,6 +1,6 @@
-import App, { Container } from 'next/app';
-
 import React from 'react';
+
+import App, { Container } from 'next/app';
 
 import { PageTransition } from 'next-page-transitions';
 
@@ -20,12 +20,13 @@ export default class extends App {
 
   render() {
     const { Component, pageProps, router } = this.props;
+    const pageTitle = router.route === '/' ? 'Home' : router.route[1].toUpperCase() + router.route.slice(2);
 
-    const TIMEOUT = 700;
+    const TIMEOUT = 500;
 
     return (
       <Container>
-        <Head title="Home"></Head>
+        <Head title={pageTitle}></Head>
 
         <Header currentRoute={router.route}></Header>
 
@@ -42,20 +43,8 @@ export default class extends App {
         <style jsx global>
           {
           	`
-	            @font-face {
-	              font-family: "Din";
-	              src: url("../static/fonts/DIN.ttf");
-	            }
-
-	            @font-face {
-	              font-family: "Din";
-	              src: url("../static/fonts/DIN_Black.ttf");
-	              font-weight: 900;
-	            }
-
 	            html {
-
-	              --page-transition: ${2 * TIMEOUT}ms;
+	              --page-transition: ${TIMEOUT}ms;
 	              font-size: 18px;
 	            }
 

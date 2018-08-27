@@ -1,5 +1,5 @@
-import HistorySection from '../components/HistorySection';
-import DescriptionBox from '../components/DescriptionBox';
+import HistorySection from '../components/history-section';
+import DescriptionBox from '../components/description-box';
 
 const people = [
 	{
@@ -33,8 +33,7 @@ const people = [
 
 export default () => (
 	<div>
-		<DescriptionBox
-			heading="Our History" />
+		<DescriptionBox heading="Our History"></DescriptionBox>
 
 		<section className='section-f'>
 			<div className="content-wrap">
@@ -51,18 +50,18 @@ export default () => (
 		{
 			`
 				h1, h2, h3, h4 {
-					margin: 0px;
 					padding: 1rem 0;
+					margin: 0;
 				}
 
 				.section-f {
-					text-align: center;
 					background: #fff;
 					color: #333;
-					padding: 2rem 6rem 2rem 6rem;
+					padding: 2rem 6rem;
+					text-align: center;
 				}
 			`
 		}
 		</style>
 	</div>
-)
+);

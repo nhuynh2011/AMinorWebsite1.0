@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import SongList from './SongList';
-import AlbumDetails from './AlbumDetails';
+import { Component } from 'react';
+
+import SongList from './song-list';
+
+import AlbumDetails from './album-details';
 
 export default class Album extends Component {
   printLinks(links) {
@@ -49,15 +51,15 @@ export default class Album extends Component {
             }
 
             h2 {
-              padding: 0 0 0 2rem;
               font-size: 1.2rem;
-              margin-bottom: .5rem;
+              padding: 0 0 0 2rem;
+              margin-bottom: 0.5rem;
               text-align: center;
             }
 
             p {
+              font-size: 0.8rem;
               padding: 0 0 0 2rem;
-              font-size: .8rem;
               margin-top: 0;
               margin-bottom: 1rem;
               text-align: center;

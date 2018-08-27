@@ -1,61 +1,63 @@
-import ReactDOM from 'react-dom'
-import {Component, Fragment} from 'react'
-import { Transition } from 'react-transition-group'
+import { Component, Fragment } from 'react';
+
+import ReactDOM from 'react-dom';
+
+import { Transition } from 'react-transition-group';
 
 export default class extends Component {
 
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.state = {
 			isLightBoxExpanded: false,
 			transitionState: 'exited',
 			transformX: 0,
 			transformY: 0
-		}
+		};
 	}
 
 	componentDidMount() {
-		document.addEventListener('resize', this.repositionLightBox)
+		document.addEventListener('resize', this.repositionLightBox);
 	}
 
 	componentWillUnmount() {
-		document.removeEventListener('resize', this.repositionLightBox)
+		document.removeEventListener('resize', this.repositionLightBox);
 	}
 
 	repositionLightBox = () => {
 		if (this.state.isLightBoxExpanded) {
-			this.resizeLightBox(this.state.isLightBoxExpanded)
+			this.resizeLightBox(this.state.isLightBoxExpanded);
 		}
 	}
 
 	resizeLightBox = (isLightBoxExpanded) => {
-		const lightBox = ReactDOM.findDOMNode(this)
-		const centerOfPageX = window.innerWidth / 2
-		const centerOfPageY = (window.innerHeight / 2) + window.scrollY
-		const centerOfLightBoxX = lightBox.offsetLeft + (lightBox.offsetWidth / 2)
-		const centerOfLightBoxY = lightBox.offsetTop + (lightBox.offsetHeight / 2)
+		const lightBox = ReactDOM.findDOMNode(this);
+		const centerOfPageX = window.innerWidth / 2;
+		const centerOfPageY = (window.innerHeight / 2) + window.scrollY;
+		const centerOfLightBoxX = lightBox.offsetLeft + (lightBox.offsetWidth / 2);
+		const centerOfLightBoxY = lightBox.offsetTop + (lightBox.offsetHeight / 2);
 
 		this.setState({
 			isLightBoxExpanded: isLightBoxExpanded,
 			transformX: centerOfPageX - centerOfLightBoxX,
 			transformY: centerOfPageY - centerOfLightBoxY
-		})
+		});
 	}
 
-	onEntering = () => setTimeout(() => this.setState({ transitionState: 'entering' }), this.props.delay)
+	onEntering = () => setTimeout(() => this.setState({ transitionState: 'entering' }), this.props.delay);
 
-	onEntered = () => this.setState({ transitionState: 'entered' })
+	onEntered = () => this.setState({ transitionState: 'entered' });
 
-	onExiting = () => this.setState({ transitionState: 'exiting' })
+	onExiting = () => this.setState({ transitionState: 'exiting' });
 
-	onExited = () => this.setState({ transitionState: 'exited' })
+	onExited = () => this.setState({ transitionState: 'exited' });
 
 
 
 	render() {
-		const { isLightBoxExpanded, transitionState, transformX, transformY } = this.state
-		const { delay, timeout, zIndexExpanded } = this.props
+		const { isLightBoxExpanded, transitionState, transformX, transformY } = this.state;
+		const { delay, timeout, zIndexExpanded } = this.props;
 
 		return (
 			<div>
@@ -156,7 +158,6 @@ export default class extends Component {
 					`}
 				</style >
 			</div>
-		)
+		);
 	}
-
 }

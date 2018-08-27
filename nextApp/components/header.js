@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import Link from 'next/link';
 
 export default class Header extends Component {
@@ -6,7 +7,6 @@ export default class Header extends Component {
     super(props);
 
     this.links = [
-      {title: 'Home', href: '/'},
 	    {title: 'News', href: '/news'},
 	    {title: 'Members', href: '/members'},
 	    {title: 'Discography', href: '/discography'},
@@ -21,7 +21,11 @@ export default class Header extends Component {
 
     return (
       <header>
-	      <img alt="Aminor Logo" src="/static/images/AMinorLogo.png"/>
+	      <Link href="/" prefetch>
+					<a>
+						<img alt="Aminor Logo" src="/static/images/AMinorLogoWhite.png"/>
+					</a>
+	      </Link>
         <nav>
           <ul>
             {this.links.map(link => (
@@ -38,7 +42,7 @@ export default class Header extends Component {
         <style jsx>
           {`
             header {
-              background: #94cfff;
+              background: #304eaa;
               display: flex;
               justify-content: space-between;
               padding: 1rem;
@@ -69,18 +73,17 @@ export default class Header extends Component {
 
             a {
               color: white;
-              font-size: 1.189rem;
+              font-size: 1.682rem;
               position: relative;
               text-decoration: none;
-              transition: color var(--page-transition) cubic-bezier(0, 0.9, 0, 0.9);
             }
 
             .link-underline {
               border-radius: 1px;
-              border-top: 3px solid #304eaa;
+              border-top: 3px solid white;
               position: relative;
                 top: 3px;
-              transition: transform 0.5s ease-out;
+              transition: transform var(--page-transition) ease-out;
             }
 
             .unactive-link .link-underline {
@@ -94,6 +97,10 @@ export default class Header extends Component {
             @media screen and (max-width: 1000px) {
               header {
                 justify-content: center;
+              }
+              
+              li a {
+                font-size: 1.198rem;
               }
 
               img {

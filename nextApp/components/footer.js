@@ -46,7 +46,7 @@ export default () => {
       <style jsx>
         {`
         footer {
-          background: #94cfff;
+          background: #304eaa;
           color: white;
           padding:  1rem 0 2rem;
         }
@@ -69,22 +69,22 @@ export default () => {
         ul {
           list-style-type: none;
           margin: 0 1rem;
-          -webkit-padding-start: 0;
+          padding: 0;
         }
 
         li {
           display: inline-block;
-          margin: 0 10px;
+          margin: 0 0.707rem;
         }
 
         a {
           color: white;
           text-decoration: none;
-          transition: color calc(var(--page-transition) / 2);
+          transition: color var(--page-transition);
         }
 
         a:hover {
-          color: #4C7FB2;
+          color: silver;
         }
 
         .icon {

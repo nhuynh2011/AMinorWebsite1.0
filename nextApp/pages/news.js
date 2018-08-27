@@ -1,7 +1,9 @@
-import fetch from 'isomorphic-fetch';
-import NewModals from '../components/news-modals';
-import DescriptionBox from '../components/DescriptionBox';
 import { Fragment } from 'react';
+
+import fetch from 'isomorphic-fetch';
+
+import DescriptionBox from '../components/description-box';
+import NewModals from '../components/news-modals';
 
 const NEWS_PAGE = ({ news }) => (
 	<Fragment>
@@ -9,7 +11,7 @@ const NEWS_PAGE = ({ news }) => (
 
 		<NewModals news={news}></NewModals>
 	</Fragment>
-)
+);
 
 NEWS_PAGE.getInitialProps = async () => {
 	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=news')

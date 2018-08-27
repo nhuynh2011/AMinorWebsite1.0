@@ -1,7 +1,9 @@
-import fetch from 'isomorphic-fetch';
-import DescriptionBox from '../components/DescriptionBox';
-import ServiceModal from '../components/service-modal';
 import { Fragment } from 'react';
+
+import fetch from 'isomorphic-fetch';
+
+import DescriptionBox from '../components/description-box';
+import ServiceModal from '../components/service-modal';
 
 const SERVICES_PAGE = ({ services }) => (
 	<Fragment>

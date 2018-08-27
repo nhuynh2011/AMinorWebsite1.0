@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch';
-import DescriptionBox from '../components/DescriptionBox';
+
+import DescriptionBox from '../components/description-box';
 
 const REPERTOIRE_PAGE = ({ repertoire }) => (
 	<section>
@@ -30,7 +31,7 @@ const REPERTOIRE_PAGE = ({ repertoire }) => (
 			}
 		</style>
 	</section>
-)
+);
 
 REPERTOIRE_PAGE.getInitialProps = async () => {
 	const response  = await fetch('https://0zw0wj7m2i.execute-api.us-east-1.amazonaws.com/TestGet/content?page=repertoire');
