@@ -57,6 +57,10 @@ export default ({ news }) => {
 							overflow: hidden;
 							width: 16rem;
 						}
+						
+						.content-unexpanded:active {
+							transform: scale(0.99);
+						}
 
 						.content-expanded {
 							box-sizing: border-box;

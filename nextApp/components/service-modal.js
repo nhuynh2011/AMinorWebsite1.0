@@ -43,6 +43,10 @@ export default ({ serviceTitle, service, imageLink }) => (
 						max-width: 64rem;
 						overflow: hidden;
 					}
+					
+					.content-unexpanded:active {
+						transform: scale(0.99);
+					}
 
 					.content-unexpanded img {
 						height: 100%;
