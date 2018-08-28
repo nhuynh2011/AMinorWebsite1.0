@@ -7,6 +7,7 @@ export default class Header extends Component {
     super(props);
 
     this.links = [
+	    {title: 'Home', href: '/'},
 	    {title: 'News', href: '/news'},
 	    {title: 'Members', href: '/members'},
 	    {title: 'Discography', href: '/discography'},
@@ -42,16 +43,16 @@ export default class Header extends Component {
         <style jsx>
           {`
             header {
+              align-items: center;
               background: #304eaa;
               display: flex;
+              height: 4rem;
               justify-content: space-between;
-              padding: 2rem;
+              padding: 1rem 1rem 1rem 2rem;
             }
 
             img {
-              --logo-width: 200px;
-	            height: calc(var(--logo-width) * 0.524);
-	            width: var(--logo-width);
+	            height: 4rem;
 	          }
 
             nav {
@@ -59,7 +60,6 @@ export default class Header extends Component {
             }
 
             ul {
-              align-items: center;
               display: flex;
               list-style-type: none;
               justify-content: center;
@@ -94,18 +94,14 @@ export default class Header extends Component {
 							transform: scaleX(0.5);
             }
 
-            @media screen and (max-width: 1200px) {
-              header {
-                justify-content: center;
+            @media screen and (max-width: 1300px) {
+              header, img {
+                height: 2.828rem;
               }
               
               a {
                 font-size: 1.198rem;
               }
-
-              img {
-	              display: none;
-	            }
             }
           `}
         </style>

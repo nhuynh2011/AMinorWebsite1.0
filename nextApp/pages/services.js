@@ -15,10 +15,10 @@ const SERVICES_PAGE = ({ services }) => (
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (
-						<h3 className="flier-unexpanded">Check out our Flier</h3>
+						<h3 className="content-unexpanded">Check out our Flier</h3>
 					),
 					expanded: (
-						<img alt="Services Flier" className="flier-expanded" src="/static/images/servicePoster.jpg"/>
+						<img alt="Services Flier" className="content-expanded" src="/static/images/servicePoster.jpg"/>
 					)
 				}}
 			</Modal>
@@ -47,7 +47,7 @@ const SERVICES_PAGE = ({ services }) => (
 		<style jsx>
 			{
 				`
-					.flier-unexpanded {
+					.content-unexpanded {
 						background: #304eaa;
 						border-radius: 0.5rem;
 						box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.8);
@@ -57,12 +57,15 @@ const SERVICES_PAGE = ({ services }) => (
 						width: fit-content;
 					}
 					
-					.flier-unexpanded:active {
+					.content-unexpanded:active {
 						transform: scale(0.99);
 					}
 					
-					.flier-expanded {
+					.content-expanded {
 						border-radius: 0.5rem;
+						margin: 2rem 1rem;
+						max-width: 692px;
+						width: calc(100vw - 2rem);
 					}
 					
 					.services {
@@ -71,13 +74,6 @@ const SERVICES_PAGE = ({ services }) => (
 						justify-content: space-around;
 						list-style-type: none;
 						padding: 0;
-					}
-					
-					@media screen and (max-width: 932px) {
-						.flier-expanded {
-							margin: 2rem 1rem;
-							width: calc(100vw - 2rem);
-						}
 					}
 				`
 			}
