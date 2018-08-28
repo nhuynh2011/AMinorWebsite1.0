@@ -7,7 +7,10 @@ import ServiceModal from '../components/service-modal';
 
 const SERVICES_PAGE = ({ services }) => (
 	<Fragment>
-		<DescriptionBox heading="Services" subtext={services.summary}></DescriptionBox>
+		<DescriptionBox bgColor="#eaeaea">
+			<h1>Services</h1>
+			<p>{services.summary}</p>
+		</DescriptionBox>
 
 		<ul className="services">
 			<li className="service">

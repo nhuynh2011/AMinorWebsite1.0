@@ -4,10 +4,9 @@ import DescriptionBox from '../components/description-box';
 
 const REPERTOIRE_PAGE = ({ repertoire }) => (
 	<section>
-		<DescriptionBox
-			heading="Current Repertoire"
-			subtext="The following list of songs is the songs that we can sing at a gig or teach at a master class."
-		>
+		<DescriptionBox bgColor="#eaeaea">
+			<h1>Current Repertoire</h1>
+			<p>The following list of songs is the songs that we can sing at a gig or teach at a master class.</p>
 		</DescriptionBox>
 
 		<ul>

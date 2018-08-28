@@ -59,8 +59,8 @@ export default class extends App {
 
 	            main {
 	              box-sizing: border-box;
-	              min-height: calc(100vh - 125.071px - 198.027px);
-	              padding: 1rem;
+	              min-height: calc(100vh - 187.08px - 198.027px);
+	              padding: 1rem 2rem;
 	            }
 
 	            .page-enter {

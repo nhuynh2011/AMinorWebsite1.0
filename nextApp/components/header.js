@@ -45,11 +45,11 @@ export default class Header extends Component {
               background: #304eaa;
               display: flex;
               justify-content: space-between;
-              padding: 1rem;
+              padding: 2rem;
             }
 
             img {
-              --logo-width: 170px;
+              --logo-width: 200px;
 	            height: calc(var(--logo-width) * 0.524);
 	            width: var(--logo-width);
 	          }
@@ -94,12 +94,12 @@ export default class Header extends Component {
 							transform: scaleX(0.5);
             }
 
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 1200px) {
               header {
                 justify-content: center;
               }
               
-              li a {
+              a {
                 font-size: 1.198rem;
               }
 

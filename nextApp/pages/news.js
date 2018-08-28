@@ -7,7 +7,10 @@ import NewModals from '../components/news-modals';
 
 const NEWS_PAGE = ({ news }) => (
 	<Fragment>
-		<DescriptionBox heading="News" subtext="Check out our lastest new."></DescriptionBox>
+		<DescriptionBox bgColor="#eaeaea">
+			<h1>News</h1>
+			<p>Check out our lastest new.</p>
+		</DescriptionBox>
 
 		<NewModals news={news}></NewModals>
 	</Fragment>

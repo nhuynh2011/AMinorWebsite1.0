@@ -29,39 +29,14 @@ const people = [
 	}
 ];
 
-
-
 export default () => (
 	<div>
-		<DescriptionBox heading="Our History"></DescriptionBox>
+		<DescriptionBox bgColor="#eaeaea">
+			<h1>Our History</h1>
+			<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
+			<h4>"Fix You" o.p.b Coldplay in loving memory of...</h4>
+		</DescriptionBox>
 
-		<section className='section-f'>
-			<div className="content-wrap">
-				<h3 className="content-subtitle">Our Origins</h3>
-				<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
-				<h4>"Fix You" o.p.b Coldplay in loving memory of...</h4>
-			</div>
-		</section>
-
-		<HistorySection
-			people={ people } />
-
-		<style jsx>
-		{
-			`
-				h1, h2, h3, h4 {
-					padding: 1rem 0;
-					margin: 0;
-				}
-
-				.section-f {
-					background: #fff;
-					color: #333;
-					padding: 2rem 6rem;
-					text-align: center;
-				}
-			`
-		}
-		</style>
+		<HistorySection people={people}></HistorySection>
 	</div>
 );
