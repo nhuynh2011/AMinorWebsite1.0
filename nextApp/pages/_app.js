@@ -59,7 +59,7 @@ export default class extends App {
 
 	            main {
 	              box-sizing: border-box;
-	              min-height: calc(100vh - 187.08px - 198.027px);
+	              min-height: calc(100vh - 108px - 198.027px);
 	              padding: 1rem 2rem;
 	            }
 
@@ -109,9 +109,15 @@ export default class extends App {
 	              will-change: opacity;
 	            }
 
+	            @media screen and (max-width: 1300px) {
+	              main {
+		              min-height: calc(100vh - 86.902px - 198.027px);
+		            }
+	            }
+	            
 	            @media screen and (max-width: 1000px) {
 	              main {
-		              min-height: calc(100vh - 68.714px - 227.732px);
+		              min-height: calc(100vh - 86.902px - 227.732px);
 		            }
 	            }
             `
