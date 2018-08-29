@@ -25,7 +25,7 @@ export default () => {
   return (
     <footer>
       <div className="footer-flex-box">
-        <h2 className={'catch-phrase'}>Peace. Love. AMinor.</h2>
+        <h2 className={'catch-phrase'}>Peace. Love. A Minor.</h2>
 
         <ul>
           {icons.map(icon =>

@@ -8,7 +8,7 @@ export default class SongList extends Component {
           <p><b className='song-title'>{ name } ({this.props.songList[name].time})</b></p>
           <p className='song-info'>o.p.b {this.props.songList[name].opb}</p>
           <p className='song-info'><b className='song-info-title'>Soloists: </b>{this.props.songList[name].soloists}</p>
-          <p className='song-info'><b className='song-info-title'>Arranger: </b>{this.props.songList[name].arranger}</p>
+          <p className='song-info'><b className='song-info-title'>Arranged by: </b>{this.props.songList[name].arranger}</p>
           <style jsx>
             {
               `
