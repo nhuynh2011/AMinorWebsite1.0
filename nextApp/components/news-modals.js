@@ -7,7 +7,7 @@ export default ({ news }) => {
 		<section>
 			<ul className="news-articles">
 				{newsTitles.map((article, index) => {
-					const { text, heading, subheading, author } = news[article];
+					const { text, heading, subheading, author, image } = news[article];
 
 					return (
 						<li key={index}>
@@ -15,6 +15,7 @@ export default ({ news }) => {
 								{{
 									unexpanded: (
 										<div className="content content-unexpanded">
+											<img src={image} />
 											<h1>{heading}</h1>
 											<h3>By {author}</h3>
 											<p className="sub-heading">{subheading}</p>
@@ -22,6 +23,7 @@ export default ({ news }) => {
 									),
 									expanded: (
 										<div className="content content-expanded">
+											<img src={image} />
 											<h1>{heading}</h1>
 											<h3>{subheading}</h3>
 											<p>By {author}</p>
@@ -53,11 +55,16 @@ export default ({ news }) => {
 							text-align: center;
 						}
 
+						.content img {
+							height: 100px;
+							width: 100%;
+						}
+
 						.content-unexpanded {
 							overflow: hidden;
-							width: 16rem;
+							width: 80vw;
 						}
-						
+
 						.content-unexpanded:active {
 							transform: scale(0.99);
 						}

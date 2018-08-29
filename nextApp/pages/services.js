@@ -11,7 +11,7 @@ const SERVICES_PAGE = ({ services }) => (
 		<DescriptionBox bgColor="#eaeaea">
 			<h1>Services</h1>
 			<p>{services.summary}</p>
-			
+
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (
@@ -56,18 +56,18 @@ const SERVICES_PAGE = ({ services }) => (
 						margin: 2rem auto 0;
 						width: fit-content;
 					}
-					
+
 					.content-unexpanded:active {
 						transform: scale(0.99);
 					}
-					
+
 					.content-expanded {
 						border-radius: 0.5rem;
 						margin: 2rem 1rem;
 						max-width: 692px;
 						width: calc(100vw - 2rem);
 					}
-					
+
 					.services {
 						display: flex;
 						flex-wrap: wrap;
