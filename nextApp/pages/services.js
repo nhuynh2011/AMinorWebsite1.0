@@ -18,7 +18,9 @@ const SERVICES_PAGE = ({ services }) => (
 						<h3 className="content-unexpanded">Check out our Flier</h3>
 					),
 					expanded: (
-						<img alt="Services Flier" className="content-expanded" src="/static/images/servicePoster.jpg"/>
+						<div className="content-expanded">
+							<img alt="Services Flier" src="/static/images/servicePoster.jpg"/>
+						</div>
 					)
 				}}
 			</Modal>
@@ -60,12 +62,18 @@ const SERVICES_PAGE = ({ services }) => (
 					.content-unexpanded:active {
 						transform: scale(0.99);
 					}
-
+					
 					.content-expanded {
 						border-radius: 0.5rem;
-						margin: 2rem 1rem;
-						max-width: 692px;
-						width: calc(100vw - 2rem);
+						box-sizing: border-box;
+						max-height: 90vh;
+						max-width: calc(692px + 19px);
+						overflow-y: scroll;
+						width: 90vw;
+					}
+					
+					.content-expanded img {
+						width: 100%;
 					}
 
 					.services {
