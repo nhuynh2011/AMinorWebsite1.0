@@ -8,37 +8,37 @@ const REPERTOIRE_PAGE = ({ repertoire }) => (
 		<DescriptionBox bgColor="#eaeaea">
 			<h1>Current Repertoire</h1>
 			<p>The following list of songs is the songs that we can sing at a gig or teach at a master class.</p>
+			
+			<Modal zIndexWhenExpanded={100}>
+				{{
+					unexpanded: (
+						<h3 className="content-unexpanded">See Current Songs</h3>
+					),
+					expanded: (
+						<div className="modal-container">
+							<h2>List of Current Songs</h2>
+							<hr />
+							<ul className="background">{repertoire.current.map((song, index) => <li key={index}>{song}</li>)}</ul>
+						</div>
+					)
+				}}
+			</Modal>
+			
+			<Modal zIndexWhenExpanded={100}>
+				{{
+					unexpanded: (
+						<h3 className="content-unexpanded">See Past Songs</h3>
+					),
+					expanded: (
+						<div className="modal-container">
+							<h2>List of All Past Songs</h2>
+							<hr />
+							<ul className="background">{repertoire.past.map((song, index) => <li key={index}>{song}</li>)}</ul>
+						</div>
+					)
+				}}
+			</Modal>
 		</DescriptionBox>
-
-		<Modal zIndexWhenExpanded={100}>
-			{{
-				unexpanded: (
-					<h3 className="content-unexpanded">See Current Songs</h3>
-				),
-				expanded: (
-					<div className="modal-container">
-						<h2>List of Current Songs</h2>
-						<hr />
-						<ul className="background">{repertoire.current.map((song, index) => <li key={index}>{song}</li>)}</ul>
-					</div>
-				)
-			}}
-		</Modal>
-
-		<Modal zIndexWhenExpanded={100}>
-			{{
-				unexpanded: (
-					<h3 className="content-unexpanded">See Past Songs</h3>
-				),
-				expanded: (
-					<div className="modal-container">
-						<h2>List of All Past Songs</h2>
-						<hr />
-						<ul className="background">{repertoire.past.map((song, index) => <li key={index}>{song}</li>)}</ul>
-					</div>
-				)
-			}}
-		</Modal>
 
 		<style jsx>
 			{
