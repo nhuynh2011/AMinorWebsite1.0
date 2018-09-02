@@ -2,9 +2,15 @@ import { Component } from 'react';
 
 import Link from 'next/link';
 
+import Menu from 'react-burger-menu/lib/menus/slide';
+
 export default class Header extends Component {
   constructor(props) {
     super(props);
+    
+    this.state = {
+    	displayHamburgerMenu: false
+    }
 
     this.links = [
 	    {title: 'Home', href: '/'},
@@ -19,6 +25,8 @@ export default class Header extends Component {
 
   render() {
 	  const { currentRoute } = this.props;
+	  
+	  const { displayHamburgerMenu } = this.state;
 
     return (
       <header>
@@ -28,16 +36,31 @@ export default class Header extends Component {
 					</a>
 	      </Link>
         <nav>
-          <ul>
-            {this.links.map(link => (
-              <li className={currentRoute === link.href ? '' : 'unactive-link'} id={link.href} key={link.title}>
-                <Link href={link.href} prefetch>
-                  <a>{link.title}</a>
-                </Link>
-                <div className="link-underline"></div>
-              </li>
-            ))}
-          </ul>
+	        {displayHamburgerMenu ? (
+		        <ul>
+			        {this.links.map(link => (
+				        <li className={currentRoute === link.href ? '' : 'unactive-link'} id={link.href} key={link.title}>
+					        <Link href={link.href} prefetch>
+						        <a>{link.title}</a>
+					        </Link>
+					        <div className="link-underline"></div>
+				        </li>
+			        ))}
+		        </ul>
+	        ) : (
+	        	<Menu isOpen={false} right>
+			        {this.links.map(link => (
+				        <div className={currentRoute === link.href ? '' : 'unactive-link'} id={link.href} key={link.title}>
+					        <Link href={link.href} prefetch>
+						        <a>
+							        {link.title}
+							        <div className="link-underline"></div>
+						        </a>
+					        </Link>
+				        </div>
+			        ))}
+		        </Menu>
+	        )}
         </nav>
 
         <style jsx>
@@ -57,6 +80,7 @@ export default class Header extends Component {
 
             nav {
               display: inline-block;
+              position: relative;
             }
 
             ul {
@@ -77,7 +101,7 @@ export default class Header extends Component {
               position: relative;
               text-decoration: none;
             }
-
+            
             .link-underline {
               border-radius: 1px;
               border-top: 3px solid white;
@@ -105,6 +129,70 @@ export default class Header extends Component {
             }
           `}
         </style>
+	      
+	      <style jsx global>
+		      {
+		      	`
+		      	  .bm-burger-button {
+		      	    height: 2rem;
+		      	    width: 2rem;
+		      	  }
+		      	  
+		      	  .bm-burger-bars {
+		      	    background: white;
+		      	    boder-radius: 1px;
+		      	    max-height: 3px;
+							}
+							
+							.bm-cross-button {
+							  height: 24px;
+							  width: 24px;
+							}
+							
+							.bm-cross {
+							  background: black;
+							}
+							
+							.bm-menu-wrap {
+								top: 0;
+							}
+							
+							.bm-menu {
+							  background: #eaeaea;
+							  padding: 2.5em 1.5em 0;
+							}
+							
+							.bm-item {
+								marign-bottom: 1rem;
+							}
+							
+							.bm-item a {
+							  color: black;
+							  display: block;
+							  font-size: 1.682rem;
+							  margin-bottom: 1rem;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+							}
+							
+							.bm-item .link-underline {
+	              border-top: 3px solid black;
+							}
+							
+							.bm-item.unactive-link:hover .link-underline {
+	              transform: scaleX(0.3);
+							}
+							
+							.bm-overlay {
+								top: 0;
+								left: 0;
+								right: 0;
+							  background: rgba(0, 0, 0, 0.5) !important;
+							}
+		      	`
+		      }
+	      </style>
       </header>
     );
   }
