@@ -152,13 +152,13 @@ export default class Header extends Component {
 		      {
 		      	`
 		      	  .bm-burger-button {
-		      	    height: 2rem;
-		      	    width: 2rem;
+		      	    height: 1.682rem;
+		      	    width: 1.682rem;
 		      	  }
 		      	  
 		      	  .bm-burger-bars {
 		      	    background: white;
-		      	    boder-radius: 3px;
+		      	    border-radius: 3px;
 		      	    max-height: 3px;
 							}
 							
