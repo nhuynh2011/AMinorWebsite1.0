@@ -6,9 +6,9 @@ import Modal from '../components/modal'
 const REPERTOIRE_PAGE = ({ repertoire }) => (
 	<section>
 		<DescriptionBox bgColor="#eaeaea">
-			<h1>Current Repertoire</h1>
-			<p>The following list of songs is the songs that we can sing at a gig or teach at a master class.</p>
-			
+			<h1>Repertoire</h1>
+			<p>The following list of songs are songs that we can sing at a gig or teach at a master class.</p>
+
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (
@@ -23,7 +23,7 @@ const REPERTOIRE_PAGE = ({ repertoire }) => (
 					)
 				}}
 			</Modal>
-			
+
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (

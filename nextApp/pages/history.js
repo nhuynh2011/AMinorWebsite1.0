@@ -32,8 +32,8 @@ const people = [
 export default () => (
 	<div>
 		<DescriptionBox bgColor="#eaeaea">
-			<h1>Our History</h1>
-			<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
+			<h1>In Loving Memory...</h1>
+			<p>While A Minor has had a broad and varying repertoire, there is one song that we have kept with us to this day, in remembrance of past members that we have lost. This song and members is as follows:</p>
 			<h4>"Fix You" o.p.b Coldplay in loving memory of...</h4>
 		</DescriptionBox>
 

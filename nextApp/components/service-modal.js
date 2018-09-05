@@ -16,6 +16,7 @@ export default ({ serviceTitle, service, imageLink }) => (
 
 						<h3>What to Expect</h3>
 						<p>{service['what_to_expect']}</p>
+						<p> P.S. If you have a song that you'd prefer us to teach, definitely let us know.</p>
 
 						<h3>Pricing</h3>
 						<ul>
@@ -43,7 +44,7 @@ export default ({ serviceTitle, service, imageLink }) => (
 						max-width: 64rem;
 						overflow: hidden;
 					}
-					
+
 					.content-unexpanded:active {
 						transform: scale(0.99);
 					}

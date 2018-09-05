@@ -7,8 +7,8 @@ const MEMBERS_PAGE = ({ members }) => (
 	<section>
 
 		<DescriptionBox bgColor="#eaeaea">
-			<h1>Members</h1>
-			<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
+			<h1>Here's our current batch of A Minorians!</h1>
+			<p>To learn more about each member, click on their photo!  For a list of Alumni, please check out the History tab.</p>
 		</DescriptionBox>
 
 		<h3>Executive Board Members</h3>

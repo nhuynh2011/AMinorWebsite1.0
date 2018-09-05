@@ -9,7 +9,7 @@ const NEWS_PAGE = ({ news }) => (
 	<Fragment>
 		<DescriptionBox bgColor="#eaeaea">
 			<h1>News</h1>
-			<p>Check out our lastest new.</p>
+			<p>Check out our latest news.</p>
 		</DescriptionBox>
 
 		<NewModals news={news}></NewModals>

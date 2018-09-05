@@ -15,7 +15,7 @@ const SERVICES_PAGE = ({ services }) => (
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (
-						<h3 className="content-unexpanded">Check out our Flier</h3>
+						<h3 className="content-unexpanded">Check Out Our Flyer</h3>
 					),
 					expanded: (
 						<div className="content-expanded">
@@ -62,7 +62,7 @@ const SERVICES_PAGE = ({ services }) => (
 					.content-unexpanded:active {
 						transform: scale(0.99);
 					}
-					
+
 					.content-expanded {
 						border-radius: 0.5rem;
 						box-sizing: border-box;
@@ -71,7 +71,7 @@ const SERVICES_PAGE = ({ services }) => (
 						overflow-y: scroll;
 						width: 90vw;
 					}
-					
+
 					.content-expanded img {
 						width: 100%;
 					}
