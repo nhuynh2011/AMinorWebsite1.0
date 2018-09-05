@@ -112,6 +112,7 @@ export default class Header extends Component {
             a {
               color: white;
               font-size: 1.682rem;
+              outline: none;
               position: relative;
               text-decoration: none;
             }

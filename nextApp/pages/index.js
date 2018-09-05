@@ -25,7 +25,7 @@ export default class extends Component {
 	resizeCarousel = () => {
 		const screenWidth = window.innerWidth;
 		const maxWidth = 1500;
-		this.setState({carouselWidth: `${screenWidth > (maxWidth + 72) ? `${maxWidth}` : screenWidth - 72}px`});
+		this.setState({carouselWidth: `${screenWidth > (maxWidth + 72) ? `${maxWidth}` : screenWidth - 72 - 18}px`});
 	}
 	
 	render() {
@@ -98,6 +98,7 @@ export default class extends Component {
 								position: relative;
 								overflow: hidden;
 								width: fit-content;
+								width: -moz-fit-content;
 							}
 							
 							.carousel-overlay {
