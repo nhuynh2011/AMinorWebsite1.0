@@ -70,19 +70,21 @@ const REPERTOIRE_PAGE = ({ repertoire }) => (
 					}
 
 					.modal-container {
-						max-height: 80vh;
-						width: 80vw;
-						overflow-y: scroll;
-						text-align: center;
+						background: white;
+						border-radius: 0.25rem;
 						display: flex;
-						padding: 1rem 0;
 						flex-direction: column;
-						background-color: white;
+						max-height: 80vh;
+						padding: 1rem;
+						overflow: hidden;
+						overflow-y: auto;
+						text-align: center;
+						width: 80vw;
 					}
 
 					hr {
 						display: block;
-						margin: .5rem auto;
+						margin: 0.5rem auto;
 						height: 1px;
 						width: 10rem;
 						border-style: insert;

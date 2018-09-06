@@ -3,13 +3,14 @@ import { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import DescriptionBox from '../components/description-box';
+import Modal from '../components/modal';
 
 export default class extends Component {
 	constructor(props) {
 		super(props);
 		
 		this.state = {
-			carouselWidth: null
+			carouselWidth: undefined
 		};
 	}
 	
@@ -36,7 +37,6 @@ export default class extends Component {
 				<div className="carousel">
 					<Carousel
 						autoPlay
-						
 						infiniteLoop
 						interval={4000}
 						showArrows={false}
@@ -80,8 +80,63 @@ export default class extends Component {
 				</DescriptionBox>
 				
 				<DescriptionBox bgColor="#eaeaea">
-					<h1>Services</h1>
-					<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
+					<h1>Recent Gigs</h1>
+					<ul className="recent-gigs">
+						<li>
+							<Modal>
+								{{
+									unexpanded: (
+										<div className="recent-gig-unexpanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									),
+									expanded: (
+										<div className="recent-gig-expanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									)
+								}}
+							</Modal>
+						</li>
+						<li>
+							<Modal>
+								{{
+									unexpanded: (
+										<div className="recent-gig-unexpanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									),
+									expanded: (
+										<div className="recent-gig-expanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									)
+								}}
+							</Modal>
+						</li>
+						<li>
+							<Modal>
+								{{
+									unexpanded: (
+										<div className="recent-gig-unexpanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									),
+									expanded: (
+										<div className="recent-gig-expanded">
+											<h1>Lorem Ipsum</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									)
+								}}
+							</Modal>
+						</li>
+					</ul>
 				</DescriptionBox>
 				
 				<DescriptionBox bgColor="#eaeaea">
@@ -127,6 +182,40 @@ export default class extends Component {
 							.thin-font {
 								font-weight: 200;
 							}
+							
+						.recent-gigs {
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-around;
+								list-style-type: none;
+								padding: 0;
+							}
+							
+							.recent-gig-unexpanded {
+								background: #304eaa;
+								border-radius: 1rem;
+								box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.8);
+								color: white;
+								padding: 0.5rem 2rem;
+								margin: 1rem;
+								width: 9.514rem;
+							}
+							
+							.recent-gig-unexpanded:active {
+								transform: scale(0.99);
+							}
+							
+							.recent-gig-expanded {
+								background: #eaeaea;
+								border-radius: 1rem;
+								box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.6);
+								box-sizing: border-box;
+								max-height: 90vh;
+								padding: 1rem 2rem 2rem;
+								overflow-y: auto;
+								width: 70vw;
+							}
+							
 							
 							.email {
 								font-style: italic;
