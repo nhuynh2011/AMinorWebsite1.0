@@ -56,7 +56,7 @@ export default ({ news }) => {
 						}
 
 						.content img {
-							height: 100px;
+							height: 300px;
 							width: 100%;
 						}
 

@@ -66,72 +66,60 @@ export default class extends Component {
 
 					<div className="carousel-overlay">
 							<h1>
-								<span className="thin-font">A </span>
-								Minor
-								<span className="thin-font"> A </span>
-								Cappella
+								A Minor A Cappella
 							</h1>
-							<h2>UConn's Oldest Co-ed A Cappella Group</h2>
+							<h2>Premium A Cappella Group</h2>
 					</div>
 				</div>
 
 				<DescriptionBox bgColor="#eaeaea">
 					<h1>Who are we?</h1>
-					<p>Donec sed nisi nisi. Nam ultrices, leo et hendrerit consequat, mi elit pretium felis, varius venenatis justo mauris sit amet lectus. Etiam dolor dolor, iaculis in ornare ut, vestibulum sit amet nibh. Nullam gravida pellentesque ex id semper. Duis eu fringilla ante. Nulla facilisi. Phasellus sed nibh vitae quam viverra gravida. Aenean volutpat ultricies nunc, quis porttitor mi porta eu. Praesent sollicitudin pellentesque pretium. Aenean non sapien vulputate, pretium eros in, consectetur nisi. Proin non pretium tortor, ac vestibulum neque. Aenean nec lorem erat. Morbi eleifend mattis lacinia. Nulla in urna fermentum, sagittis diam sit amet, auctor nulla. Aenean a mauris sem.</p>
+					<p>A Minor, UConn's oldest co-ed a cappella group, was founded in 2004 by members of the Asian American Cultural Center (AsACC) following their performance during the 2003 Annual Alma Mater Homecoming Competition. Since then, A Minor has become a family of more than 40 alumni and current members who remain passionate about a cappella music and sharing their gift with the community!
+					A Minor's repertoire has included everything from Beyoncé to Disney music, with plenty of tunes in between. We perform on- and off-campus at charity events, competitions, college invitationals, showcases and more!</p>
 				</DescriptionBox>
 
 				<DescriptionBox bgColor="#eaeaea">
-					<h1>Recent Gigs</h1>
-					<ul className="recent-gigs">
+					<h1>Upcoming Gigs</h1>
+					<ul className="upcoming-gigs">
 						<li>
 							<Modal>
 								{{
 									unexpanded: (
-										<div className="recent-gig-unexpanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div className="upcoming-gig-unexpanded">
+											<h1>Fall 2018 Rush Concert</h1>
+											<h4>Date: 9/8/18</h4>
+											<p>We will be performing at the Fall '18 Rush Concert at Jorgenson Theater.  Click to find more details!</p>
 										</div>
 									),
 									expanded: (
-										<div className="recent-gig-expanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<div className="upcoming-gig-expanded">
+											<h1>Fall 2018 Rush Concert</h1>
+											<h4>Date: 9/8/18</h4>
+											<p>We will be performing at the Fall '18 Rush Concert at Jorgensen Theater on Saturday, September 8th.  This will be our first gig of the semester and we cannot begin to express how excited we are.  Please come out to see us and the other a cappella groups!</p>
+											<p>Doors open at 7:00 PM and the show starts at 7:30 PM.</p>
+											<p>Tickets are $3 for students if you buy them online and $5 at the door for everyone.  Please visit <a target="_blank" href="https://jorgensen.uconn.edu/Online/default.asp">Jorgensen's site</a> for more details!</p>
 										</div>
 									)
 								}}
 							</Modal>
 						</li>
+
 						<li>
 							<Modal>
 								{{
 									unexpanded: (
-										<div className="recent-gig-unexpanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div className="upcoming-gig-unexpanded">
+											<h1>SoE Scholarship Dinner</h1>
+											<h4>Date: 10/10/18</h4>
+											<p>We will perform for UConn School of Engineering Scholarship dinner.  Click to find more details!</p>
 										</div>
 									),
 									expanded: (
-										<div className="recent-gig-expanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									)
-								}}
-							</Modal>
-						</li>
-						<li>
-							<Modal>
-								{{
-									unexpanded: (
-										<div className="recent-gig-unexpanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										</div>
-									),
-									expanded: (
-										<div className="recent-gig-expanded">
-											<h1>Lorem Ipsum</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<div className="upcoming-gig-expanded">
+											<h1>SoE Scholarship Dinner</h1>
+											<h4>Date: 10/10/18</h4>
+											<p>We felt honored when UConn's School of Engineering reached out to us to perform at their scholarship banquet on October 10th, 2018.</p>
+											<p>Congratulations to all of the scholarship recipients!</p>
 										</div>
 									)
 								}}
@@ -141,8 +129,10 @@ export default class extends Component {
 				</DescriptionBox>
 
 				<DescriptionBox bgColor="#eaeaea">
-					<h1>Contact Us</h1>
-					<p>Get in contact with us by emailing <span className="email">aminor@gmail.com</span> and follow us on social media (links below).</p>
+					<h1>Contact Us and Follow Us!</h1>
+					<p>Do you want to have A Minor perform at your next event?  Do you have any questions for us?  Feel free to get in contact with us by emailing <span className="email">bookings.aminor@gmail.com</span>.</p>
+					<p>If you want to keep up with what A Minor is up to, please check out the News section of the site and follow us on our social media accounts!</p>
+					<p><a target="_blank" href="https://www.facebook.com/uconnaminor">Facebook</a> | <a target="_blank" href="https://instagram.com/uconnaminor">Instagram</a> | <a target="_blank" href="https://twitter.com/UConnAMinor">Twitter</a> | <a target="_blank" href="https://open.spotify.com/artist/2JJfz2n3LRJYrPTlAinaay?si=TEVZZOPhToi0rgwc7ktGBA">Spotify</a></p>
 				</DescriptionBox>
 
 				<style>
@@ -165,15 +155,16 @@ export default class extends Component {
 								flex-direction: column;
 								justify-content: center;
 								position: absolute;
-									top: 0;
-									right: 0;
-									bottom: 0;
-									left: 0;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								left: 0;
 							}
 
 							.carousel-overlay h1 {
 								font-size: 4rem;
 								font-weight: 700;
+								margin: 0;
 							}
 
 							.carousel-overlay h2 {
@@ -184,7 +175,7 @@ export default class extends Component {
 								font-weight: 200;
 							}
 
-						.recent-gigs {
+							.upcoming-gigs {
 								display: flex;
 								flex-wrap: wrap;
 								justify-content: space-around;
@@ -192,21 +183,39 @@ export default class extends Component {
 								padding: 0;
 							}
 
-							.recent-gig-unexpanded {
-								background: #304eaa;
+							.upcoming-gig-unexpanded {
+								background: #304ebb;
 								border-radius: 1rem;
 								box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.8);
 								color: white;
-								padding: 0.5rem 2rem;
-								margin: 1rem;
-								width: 9.514rem;
+								padding: 0.5rem 1.5rem;
+								margin: 1rem .5rem;
+								max-width: 15rem;
+								max-height: 15rem;
+								overflow: hidden;
 							}
 
-							.recent-gig-unexpanded:active {
+							.upcoming-gig-unexpanded h1 {
+								margin-bottom: 0;
+							}
+
+							.upcoming-gig-unexpanded h4 {
+								margin-top: 0;
+								margin-bottom: 0;
+								padding-bottom: .5rem;
+								font-weight: 550;
+								border-bottom: 1px solid white;
+							}
+
+							.upcoming-gigs-unexpanded p {
+								margin-top 0;
+							}
+
+							.upcoming-gig-unexpanded:active {
 								transform: scale(0.99);
 							}
 
-							.recent-gig-expanded {
+							.upcoming-gig-expanded {
 								background: #eaeaea;
 								border-radius: 1rem;
 								box-shadow: 0 0.25rem 1rem 0 rgba(0,0,0,0.6);
@@ -241,6 +250,10 @@ export default class extends Component {
 								.carousel-overlay h2 {
 									font-size: 1rem;
 								}
+
+								.upcoming-gig-unexpanded {
+									max-width: 15rem;
+								}
 							}
 
 							@media screen and (max-width: 500px) {
@@ -250,6 +263,11 @@ export default class extends Component {
 
 								.carousel-overlay h2 {
 									font-size: 0.707rem;
+								}
+
+								.upcoming-gig-unexpanded {
+									max-width: 9.514rem;
+									max-height: 30rem;
 								}
 							}
 						`
