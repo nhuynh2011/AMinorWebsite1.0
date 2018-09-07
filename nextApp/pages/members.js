@@ -9,7 +9,7 @@ const MEMBERS_PAGE = ({ members }) => (
 
 		<DescriptionBox bgColor="#eaeaea">
 			<h1>Here's our current batch of A Minorians!</h1>
-			<p>To learn more about each member, click on their photo!  For a list of Alumni, please check out the "See Alumni A Minorians" at the bottom of this page.</p>
+			<p>To learn more about each member, click on their photo!  For a list of Alumni, please check out the "See Alumni" at the bottom of this page.</p>
 		</DescriptionBox>
 
 		<h3>Executive Board Members</h3>
@@ -22,7 +22,7 @@ const MEMBERS_PAGE = ({ members }) => (
 			<Modal zIndexWhenExpanded={100}>
 				{{
 					unexpanded: (
-						<h3 className="content-unexpanded">See Alumni A Minorians</h3>
+						<h3 className="content-unexpanded">See Alumni</h3>
 					),
 					expanded: (
 						<div className="modal-container">

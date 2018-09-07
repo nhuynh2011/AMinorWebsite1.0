@@ -62,7 +62,7 @@ export default ({ members }) => (
 						overflow: hidden;
 						width: 13.455rem;
 					}
-					
+
 					.content-unexpanded:active {
 						transform: scale(0.99);
 					}
