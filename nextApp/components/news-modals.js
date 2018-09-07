@@ -73,7 +73,7 @@ export default ({ news }) => {
 							box-sizing: border-box;
 							max-height: 90vh;
 							padding: 1rem 2rem 2rem;
-							overflow-y: scroll;
+							overflow-y: auto;
 							width: 90vw;
 						}
 

@@ -42,10 +42,8 @@ export default ({ members }) => (
 						flex-wrap: wrap;
 						list-style-type: none;
 						justify-content: center;
-						-webkit-padding-start: 0;
+						padding: 0;
 						margin: 0 auto;
-						-webkit-margin-before: 0;
-			      -webkit-margin-after: 0;
 			      max-width: 53.819rem;
 					}
 
@@ -91,8 +89,7 @@ export default ({ members }) => (
 
 					h1, h4, p {
 						text-align: center;
-						-webkit-margin-before: 0;
-			      -webkit-margin-after: 0;
+						margin: 0;
 					}
 
 					p {
