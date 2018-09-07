@@ -57,6 +57,7 @@ export default ({ serviceTitle, service, imageLink }) => (
 					.content-expanded {
 						box-sizing: border-box;
 						padding: 1rem 2rem 2rem;
+						overflow-y: scroll;
 						max-width: 32rem;
 					}
 
