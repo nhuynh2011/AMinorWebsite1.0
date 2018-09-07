@@ -1,0 +1,174 @@
+[
+  {
+    "page": "discography",
+    "content": {
+      "summary": [
+        "Here's some of our music, past and present!  Over the years, A Minor has had the opportunity to professionally record music and produce several awesome albums. However, the cost of creating an album (including studio time, mixing, and mastering) can cost up to $10,000.",
+        "We appreciate any and all contributions."
+      ],
+      "Ignite": {
+        "year": 2016,
+        "release": "December 2, 2016",
+        "logo": "ignitelogo.png",
+        "design": "Mai Walters",
+        "recording": "Liquid 5th Production",
+        "mastering": "Eric Scholz",
+        "text": [
+          "We are so grateful to all who were involved in the making of this album -- thank you SO much, we could not have done it without your support and guidance!",
+          "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut."
+        ],
+        "links": {
+          "itunes": "#",
+          "applemusic": "#",
+          "spotify": "#"
+        },
+        "songs": [
+          {
+            "name": "Irresistible",
+            "time": "4:33",
+            "opb": "Fall Out Boy (feat. Demi Lovato)",
+            "soloists": "Danielle Wrubel and Jessica Fernandes",
+            "arranger": "Jeremiah Merkel"
+          },
+          { "name": "Wildest Dreams",
+            "time": "3:46",
+            "opb": "Taylor Swift",
+            "soloists": "Rachel Conte",
+            "arranger": "Jeremiah Merkel"
+          },
+          { "name": "Talking Habits",
+            "time": "3:34",
+            "opb": "Tove Lo",
+            "soloists": "Jeremiah Merkel and Narineh Torosyan",
+            "arranger": "Jeremiah Merkel"
+          },
+          { "name": "Gold",
+            "time": "2:50",
+            "opb": "from the Broadway musical \"Once\"",
+            "soloists": "Ensemble",
+            "arranger": "David Moul"
+          },
+          { "name": "Control",
+            "time": "3:38",
+            "opb": "Halsey",
+            "soloists": "Andria Benvenuto",
+            "arranger": "Jessica Fernandes and Jeremiah Merkel"
+          },
+          { "name": "See You Again",
+            "time": "4:29",
+            "opb": "Wiz Khalifa (feat. Charlie Puth)",
+            "soloists": "Elaina Giodano and Ivan Paz",
+            "arranger": "Jeremiah Merkel and Nicholas Tan"
+          },
+          { "name": "Bieber Medley",
+            "time": "5:49",
+            "opb": "Justin Bieber and Selena Gomez",
+            "soloists": "Jeremiah Merkel, Lauren Drainville, Bobby Wyman and Matt Brandt",
+            "arranger": "Jeremiah Merkel"
+          },
+          { "name": "Elastic Heart",
+            "time": "4:20",
+            "opb": "Sia",
+            "soloists": "Rachel Conte",
+            "arranger": "Jeremiah Merkel"
+          },
+          { "name": "New Year's Day",
+            "time": "3:39",
+            "opb": "Pentatonix",
+            "soloists": "Andria Benvenuto",
+            "arranger": "Jessica Fernandes"
+          },
+          { "name": "American Boy",
+            "time": "2:56",
+            "opb": "Estelle (feat. Kanye West)",
+            "soloists": "Lauren Drainville and Nick Tambini",
+            "arranger": "VJ Rosales"
+          },
+          { "name": "I Was Here",
+            "time": "2:43",
+            "opb": "Beyonce",
+            "soloists": "Narineh Torosyan",
+            "arranger": "Jessica Fernandes and Jeremiah Merkel"
+          }
+        ]
+      },
+      "Incognito": {
+        "year": 2012,
+        "release": "November 26th, 2016",
+        "logo": "incognitologo.png",
+        "design": "Jackson Tsai",
+        "recording": "Angela Ugolini | The vocal Company",
+        "mastering": "Dave Sperandio | Diovoce",
+        "text": [
+          "Many thanks to Angela, Dave and Jackson for all of your help.",
+          "Album funded by the Undergraduate Student Government (USG) at the University of Connecticut and distributed for at no profit."
+        ],
+        "links": {
+          "freedownload": "#"
+        },
+        "songs": [
+          { "name": "Beyonce Medley",
+            "time": "5:47",
+            "opb": "Beyonce & Destiny's Child",
+            "soloists": "Jasmine Kehrhahn, Mandy Cook, Taylor Meltzer, Justine Nixon and Caroline Cacciola",
+            "arranger": "Noah Berg"
+          },
+          { "name": "The Chain",
+            "time": "3:18",
+            "opb": "Ingrid Michaelson",
+            "soloists": "Jasmine Kehrhahn",
+            "arranger": "Amanda Friedman"
+          },
+          { "name": "Ragged Wood",
+            "time": "3:15",
+            "opb": "Fleet Foxes",
+            "soloists": "Paul Banach",
+            "arranger": "Paul Banach"
+          },
+          { "name": "King of Anything",
+            "time": "3:23",
+            "opb": "Sara Bareilles",
+            "soloists": "Justine Nixon",
+            "arranger": "Mandy Cook"
+          },
+          { "name": "Cry Me A River",
+            "time": "4:59",
+            "opb": "Justin Timberlake",
+            "soloists": "Simon Abrahms",
+            "arranger": "Mandy Cook"
+          },
+          { "name": "Gavin's Song",
+            "time": "2:45",
+            "opb": "Mark Broussard",
+            "soloists": "Taylor Meltzer",
+            "arranger": "Jenny Bunce"
+          },
+          { "name": "The Lion King Medley",
+            "time": "6:27",
+            "opb": "Hanz Zimmer, et. al.",
+            "soloists": "Lauren Arcement, Jasmine Kehrhahn, Taylor Meltzer, Connor Sullivan, Cody White and Adam Bstrom",
+            "arranger": "UW Madhatters"
+          },
+          { "name": "Fix You",
+            "time": "4:06",
+            "opb": "Coldplay",
+            "soloists": "Jasmine Kehrhahn",
+            "arranger": "Jasmine Kehrhahn"
+          },
+          { "name": "It Don't Have to Change",
+            "time": "2:58",
+            "opb": "John Legend",
+            "soloists": "Cody White",
+            "arranger": "Laura Weismantel"
+          },
+          { "name": "Free Ride",
+            "time": "2:43",
+            "opb": "Edgar Winter Group",
+            "soloists": "Connor Sullivan",
+            "arranger": "Mandy Cook"
+          }
+        ]
+      }
+    }
+  }
+]

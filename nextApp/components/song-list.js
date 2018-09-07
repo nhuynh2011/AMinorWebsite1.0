@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 export default class SongList extends Component {
   generateSongs = () => {
-    return Object.keys(this.props.songList).map((name, index) => {
+    return Object.keys(this.props.songList).map((album, index) => {
       return (
         <li key={index} className='song'>
-          <p><b className='song-title'>{ name } ({this.props.songList[name].time})</b></p>
-          <p className='song-info'>o.p.b {this.props.songList[name].opb}</p>
-          <p className='song-info'><b className='song-info-title'>Soloists: </b>{this.props.songList[name].soloists}</p>
-          <p className='song-info'><b className='song-info-title'>Arranged by: </b>{this.props.songList[name].arranger}</p>
+          <p><b className='song-title'>{this.props.songList[album].name} ({this.props.songList[album].time})</b></p>
+          <p className='song-info'>o.p.b {this.props.songList[album].opb}</p>
+          <p className='song-info'><b className='song-info-title'>Soloists: </b>{this.props.songList[album].soloists}</p>
+          <p className='song-info'><b className='song-info-title'>Arranged by: </b>{this.props.songList[album].arranger}</p>
           <style jsx>
             {
               `
